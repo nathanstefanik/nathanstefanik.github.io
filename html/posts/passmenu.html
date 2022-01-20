@@ -1,0 +1,75 @@
+<hr>
+<p>Passmenu for Accessing Passwords Using Pass
+[2022-01-02]</p>
+<hr>
+<h2 id="dwm-dmenu-and-pass">dwm, dmenu, and pass</h2>
+<p>I have recently made the switch to dwm (see my personal config of dwm <a href="https://github.com/nathanstefanik/dotfiles/tree/master/dwm">here</a>) as my main window manager. Its default menu is dmenu (see my personal config of dmenu <a href="https://github.com/nathanstefanik/dotfiles/tree/master/dmenu">here</a>), which is also similarly 
+written in C. One of the advantages of dmenu is that it manages user-defined scripts in a straightforward manner. Since
+it is written in C, it is quite efficient and decently easy to configure.</p>
+<p>My free time during school break has also led me to explore using a variety of other password managers than KeePassXC,
+which I have been using for at least a year now. The most promising of them is <a href="https://www.passwordstore.org/">pass</a>, 
+an extensively documented CLI password manager. </p>
+<p>Pass is quite unique as it uses PGP standards to encrypt each password as its own file. For example, this would be the
+result of <code>tree ~/.password-store</code></p>
+<pre><code>user@machine ~ $ tree ~/.password-store
+.password-store
+├── Email
+│   ├── outlook.com.gpg
+│   └── gmail.com.gpg
+├── Bank Accounts
+│   ├── Bank of America
+│   │   ├── cc number.gpg
+│   │   └── password.gpg
+│   ├── Discover
+│   │   ├── cc number.gpg
+│   │   └── password.gpg
+└── Steam
+    ├── username.gpg
+    └── password.gpg
+</code></pre>
+<h2 id="passmenu">passmenu</h2>
+<p>Since it is highly extensible, it&#39;s quite easy to create your own 
+script to handle pass through dmenu. Below is my configuration of passmenu, which is a bash script that uses dmenu 
+to view and copy over your passwords into your clipboard. I am quite fond of pass&#39;s approach to password management, 
+and binding passmenu (which is now a part of pass itself) to a keyboard shortcut saves me a significant amount of
+time.</p>
+<pre><code>#!/usr/bin/env bash
+
+shopt -s nullglob globstar
+
+typeit=0
+if [[ $1 == &quot;--type&quot; ]]; then
+    typeit=1
+    shift
+fi
+
+if [[ -n $WAYLAND_DISPLAY ]]; then
+    dmenu=dmenu-wl
+    xdotool=&quot;ydotool type --file -&quot;
+elif [[ -n $DISPLAY ]]; then
+    dmenu=&quot;dmenu -fn FiraMono:size=12 -nb #282828 -nf #ebdbb2 -sb #3c3836 -sf #d79921&quot;
+    xdotool=&quot;xdotool type --clearmodifiers --file -&quot;
+else
+    echo &quot;Error: No Wayland or X11 display detected&quot; &gt;&amp;2
+    exit 1
+fi
+
+prefix=${PASSWORD_STORE_DIR-~/.password-store}
+password_files=( &quot;$prefix&quot;/**/*.gpg )
+password_files=( &quot;${password_files[@]#&quot;$prefix&quot;/}&quot; )
+password_files=( &quot;${password_files[@]%.gpg}&quot; )
+
+password=$(printf &#39;%s\n&#39; &quot;${password_files[@]}&quot; | $dmenu &quot;$@&quot;)
+
+[[ -n $password ]] || exit
+
+if [[ $typeit -eq 0 ]]; then
+    pass show -c &quot;$password&quot; 2&gt;/dev/null
+else
+    pass show &quot;$password&quot; | { IFS= read -r pass; printf %s &quot;$pass&quot;; } | $xdotool
+fi
+</code></pre>
+<h3 id="notes">Notes</h3>
+<p>I have spent some time &quot;ricing&quot; and &quot;patching&quot; my dwm and dmenu linux environment. For example, dmenu does
+not come with fuzzy match out of the box. This does make using pass and passmenu more annoying. For a quick and easy 
+setup, keepassxc may be the more preferable option, however the extra work goes a very long way.</p>
