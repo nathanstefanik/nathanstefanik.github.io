@@ -1,0 +1,650 @@
+htfcss: cmss   font-family: sans-serif;
+htfcss: cmssbx  font-family: sans-serif; font-weight: bold;
+htfcss: cmssbxo  font-family: sans-serif; font-style: oblique; font-weight: bold;
+htfcss: cmssdc  font-family: sans-serif;
+htfcss: cmssi  font-family: sans-serif; font-style: oblique;
+htfcss: cmss   font-family: sans-serif;
+htfcss: cmssbx  font-family: sans-serif; font-weight: bold;
+htfcss: cmssbxo  font-family: sans-serif; font-style: oblique; font-weight: bold;
+htfcss: cmssdc  font-family: sans-serif;
+htfcss: cmssi  font-family: sans-serif; font-style: oblique;
+htfcss: cmmi font-style: italic;
+htfcss: cmmib font-style: italic; font-weight: bold;
+htfcss: cmss   font-family: sans-serif;
+htfcss: cmssbx  font-family: sans-serif; font-weight: bold;
+htfcss: cmssbxo  font-family: sans-serif; font-style: oblique; font-weight: bold;
+htfcss: cmssdc  font-family: sans-serif;
+htfcss: cmssi  font-family: sans-serif; font-style: oblique;
+htfcss: cmss   font-family: sans-serif;
+htfcss: cmssbx  font-family: sans-serif; font-weight: bold;
+htfcss: cmssbxo  font-family: sans-serif; font-style: oblique; font-weight: bold;
+htfcss: cmssdc  font-family: sans-serif;
+htfcss: cmssi  font-family: sans-serif; font-style: oblique;
+htfcss: cmss   font-family: sans-serif;
+htfcss: cmssbx  font-family: sans-serif; font-weight: bold;
+htfcss: cmssbxo  font-family: sans-serif; font-style: oblique; font-weight: bold;
+htfcss: cmssdc  font-family: sans-serif;
+htfcss: cmssi  font-family: sans-serif; font-style: oblique;
+htfcss: cmss   font-family: sans-serif;
+htfcss: cmssbx  font-family: sans-serif; font-weight: bold;
+htfcss: cmssbxo  font-family: sans-serif; font-style: oblique; font-weight: bold;
+htfcss: cmssdc  font-family: sans-serif;
+htfcss: cmssi  font-family: sans-serif; font-style: oblique;
+htfcss: cmss   font-family: sans-serif;
+htfcss: cmssbx  font-family: sans-serif; font-weight: bold;
+htfcss: cmssbxo  font-family: sans-serif; font-style: oblique; font-weight: bold;
+htfcss: cmssdc  font-family: sans-serif;
+htfcss: cmssi  font-family: sans-serif; font-style: oblique;
+htfcss: cmss   font-family: sans-serif;
+htfcss: cmssbx  font-family: sans-serif; font-weight: bold;
+htfcss: cmssbxo  font-family: sans-serif; font-style: oblique; font-weight: bold;
+htfcss: cmssdc  font-family: sans-serif;
+htfcss: cmssi  font-family: sans-serif; font-style: oblique;
+htfcss: cmss   font-family: sans-serif;
+htfcss: cmssbx  font-family: sans-serif; font-weight: bold;
+htfcss: cmssbxo  font-family: sans-serif; font-style: oblique; font-weight: bold;
+htfcss: cmssdc  font-family: sans-serif;
+htfcss: cmssi  font-family: sans-serif; font-style: oblique;
+File: presentation.html
+File: presentation.css
+File: presentation.tmp
+File: presentation2.html
+File: presentation-1.svg
+File: presentation-8.svg
+File: presentation-11.svg
+File: presentation-10.svg
+File: presentation-13.svg
+File: presentation-12.svg
+File: presentation-15.svg
+File: presentation-14.svg
+File: presentation-18.svg
+File: presentation-17.svg
+File: presentation-21.svg
+File: presentation-20.svg
+File: presentation-24.svg
+File: presentation-23.svg
+File: presentation-26.svg
+File: presentation-25.svg
+File: presentation-28.svg
+File: presentation-27.svg
+File: presentation-31.svg
+File: presentation-30.svg
+File: presentation-34.svg
+File: presentation-33.svg
+File: presentation-37.svg
+File: presentation-36.svg
+File: presentation-39.svg
+File: presentation-38.svg
+File: presentation-41.svg
+File: presentation-40.svg
+File: presentation-44.svg
+File: presentation-43.svg
+File: presentation-47.svg
+File: presentation-46.svg
+File: presentation-50.svg
+File: presentation-49.svg
+File: presentation-52.svg
+File: presentation-51.svg
+File: presentation-54.svg
+File: presentation-53.svg
+File: presentation-57.svg
+File: presentation-56.svg
+File: presentation-60.svg
+File: presentation-59.svg
+File: presentation-63.svg
+File: presentation-62.svg
+File: presentation-65.svg
+File: presentation-64.svg
+File: presentation-67.svg
+File: presentation-66.svg
+File: presentation-70.svg
+File: presentation-69.svg
+File: presentation-73.svg
+File: presentation-72.svg
+File: presentation-75.svg
+File: presentation-74.svg
+File: presentation-77.svg
+File: presentation-76.svg
+File: presentation-79.svg
+File: presentation-78.svg
+File: presentation-80.svg
+File: presentation-82.svg
+File: presentation-81.svg
+File: presentation-89.svg
+File: presentation-90.svg
+File: presentation-92.svg
+File: presentation-91.svg
+File: presentation-99.svg
+File: presentation-100.svg
+File: presentation-102.svg
+File: presentation-101.svg
+File: presentation-109.svg
+Font_Class(1,"1"): <img  src="" alt="" class="%s-%dx-x-%x" />
+File: presentation-110.svg
+File: presentation-112.svg
+File: presentation-111.svg
+File: presentation-119.svg
+File: presentation-120.svg
+File: presentation-122.svg
+File: presentation-121.svg
+File: presentation-129.svg
+File: presentation-130.svg
+File: presentation-132.svg
+File: presentation-131.svg
+File: presentation-139.svg
+File: presentation-140.svg
+File: presentation-142.svg
+File: presentation-141.svg
+File: presentation-149.svg
+File: presentation-150.svg
+File: presentation-152.svg
+File: presentation-151.svg
+File: presentation-159.svg
+File: presentation-160.svg
+File: presentation-162.svg
+File: presentation-161.svg
+File: presentation-169.svg
+File: presentation-170.svg
+File: presentation-172.svg
+File: presentation-171.svg
+File: presentation-185.svg
+File: presentation-174.svg
+File: presentation-173.svg
+File: presentation-176.svg
+File: presentation-175.svg
+File: presentation-178.svg
+File: presentation-177.svg
+File: presentation-186.svg
+File: presentation-188.svg
+File: presentation-187.svg
+File: presentation-195.svg
+File: presentation-196.svg
+File: presentation-198.svg
+File: presentation-197.svg
+File: presentation-205.svg
+File: presentation-206.svg
+File: presentation-208.svg
+File: presentation-207.svg
+File: presentation-215.svg
+File: presentation-216.svg
+File: presentation-218.svg
+File: presentation-217.svg
+File: presentation-225.svg
+File: presentation-226.svg
+File: presentation-228.svg
+File: presentation-227.svg
+File: presentation-235.svg
+File: presentation-236.svg
+File: presentation-238.svg
+File: presentation-237.svg
+File: presentation-245.svg
+File: presentation-246.svg
+File: presentation-248.svg
+File: presentation-247.svg
+File: presentation-255.svg
+File: presentation-256.svg
+File: presentation-258.svg
+File: presentation-257.svg
+File: presentation-265.svg
+File: presentation-266.svg
+File: presentation-268.svg
+File: presentation-267.svg
+File: presentation-275.svg
+File: presentation-276.svg
+File: presentation-278.svg
+File: presentation-277.svg
+File: presentation-285.svg
+File: presentation-286.svg
+File: presentation-288.svg
+File: presentation-287.svg
+File: presentation-295.svg
+File: presentation-296.svg
+File: presentation-298.svg
+File: presentation-297.svg
+File: presentation-305.svg
+File: presentation-309.svg
+File: presentation-311.svg
+File: presentation-310.svg
+File: presentation-318.svg
+File: presentation-322.svg
+File: presentation-324.svg
+File: presentation-323.svg
+File: presentation-331.svg
+File: presentation-335.svg
+File: presentation-337.svg
+File: presentation-336.svg
+File: presentation-344.svg
+File: presentation-345.svg
+File: presentation-347.svg
+File: presentation-346.svg
+File: presentation-354.svg
+File: presentation-356.svg
+File: presentation-355.svg
+File: presentation-358.svg
+File: presentation-357.svg
+File: presentation-360.svg
+File: presentation-359.svg
+File: presentation-362.svg
+File: presentation-361.svg
+Css: p{margin-top:0;margin-bottom:0}
+Css: p.indent{text-indent:0;}
+Css: p + p{margin-top:1em;}
+Css: p + div, p + pre {margin-top:1em;}
+Css: div + p, pre + p {margin-top:1em;}
+Css: a { overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; hyphens: auto; }
+Css: @media print {div.crosslinks {visibility:hidden;}}
+Css: table.tabular{border-collapse: collapse; border-spacing: 0;}
+Css: a img { border-top: 0; border-left: 0; border-right: 0; }
+Font_Css("4"): .small-caps{font-variant: small-caps; }
+Font_Css("10"): .htf-cmbx {font-weight: bold; font-style:normal;}
+Font_Css("12"): .htf-calligraphy {font-family:cursive}
+Font_Css("14"): .htf-italic {font-style: italic;}
+Font_Css("16"): .htf-bold {font-weight: bold;}
+Font_Css("12"): .htf-calligraphy-bold {font-family:cursive ; font-weight: bold; }
+Css: center { margin-top:1em; margin-bottom:1em; }
+Css: td center { margin-top:0em; margin-bottom:0em; }
+Css: .Canvas { position:relative; }
+Css: img.math{vertical-align:middle;}
+Css: div.par-math-display, div.math-display{text-align:center;}
+Css: li p.indent { text-indent: 0em }
+Css: li p:first-child{ margin-top:0em; }
+Css: li p:last-child, li div:last-child { margin-bottom:0.5em; }
+Css: li p:first-child{ margin-bottom:0; }
+Css: li p~ul:last-child, li p~ol:last-child{ margin-bottom:0.5em; }
+Css: .enumerate1 {list-style-type:decimal;}
+Css: .enumerate2 {list-style-type:lower-alpha;}
+Css: .enumerate3 {list-style-type:lower-roman;}
+Css: .enumerate4 {list-style-type:upper-alpha;}
+Css: div.newtheorem { margin-bottom: 2em; margin-top: 2em;}
+Css: div.newtheorem .head{font-weight: bold;}
+Css: .obeylines-h,.obeylines-v {white-space: nowrap; }
+Css: div.obeylines-v p { margin-top:0; margin-bottom:0; }
+Css: .overline{ text-decoration:overline; }
+Css: .overline img{ border-top: 1px solid black; }
+Css: td.displaylines {text-align:center; white-space:nowrap;}
+Css: .centerline {text-align:center;}
+Css: .rightline {text-align:right;}
+Css: pre.verbatim {font-family: monospace,monospace; text-align:left; clear:both; }
+Css: .fbox {padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }
+Css: div.fbox {display:table}
+Css: div.center div.fbox {text-align:center; clear:both; padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }
+Css: div.minipage{width:100%;}
+Css: div.center, div.center div.center {text-align: center; margin-left:1em; margin-right:1em;}
+Css: div.center div {text-align: left;}
+Css: div.flushright, div.flushright div.flushright {text-align: right;}
+Css: div.flushright div {text-align: left;}
+Css: div.flushleft {text-align: left;}
+Css: .underline{ text-decoration:underline; }
+Css: .underline img{ border-bottom: 1px solid black; margin-bottom:1pt; }
+Css: .framebox-c, .framebox-l, .framebox-r { padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }
+Css: .framebox-c {text-align:center;}
+Css: .framebox-l {text-align:left;}
+Css: .framebox-r {text-align:right;}
+Css: span.thank-mark{ vertical-align: super }
+Css: span.footnote-mark sup.textsuperscript, span.footnote-mark a sup.textsuperscript{ font-size:80%; }
+Css: div.tabular, div.center div.tabular {text-align: center; margin-top:0.5em; margin-bottom:0.5em; }
+Css: table.tabular td p{margin-top:0em;}
+Css: table.tabular {margin-left: auto; margin-right: auto;}
+Css: td p:first-child{ margin-top:0em; }
+Css: td p:last-child{ margin-bottom:0em; }
+Css: div.td00{ margin-left:0pt; margin-right:0pt; }
+Css: div.td01{ margin-left:0pt; margin-right:5pt; }
+Css: div.td10{ margin-left:5pt; margin-right:0pt; }
+Css: div.td11{ margin-left:5pt; margin-right:5pt; }
+Css: table[rules] {border-left:solid black 0.4pt; border-right:solid black 0.4pt; }
+Css: td.td00{ padding-left:0pt; padding-right:0pt; }
+Css: td.td01{ padding-left:0pt; padding-right:5pt; }
+Css: td.td10{ padding-left:5pt; padding-right:0pt; }
+Css: td.td11{ padding-left:5pt; padding-right:5pt; }
+Css: table[rules] {border-left:solid black 0.4pt; border-right:solid black 0.4pt; }
+Css: .hline hr, .cline hr{ height : 0px; margin:0px; }
+Css: .hline td, .cline td{ padding: 0; }
+Css: .hline hr, .cline hr{border:none;border-top:1px solid black;}
+Css: .hline {border-top: 1px solid black;}
+Css: .tabbing-right {text-align:right;}
+Css: div.float, div.figure {margin-left: auto; margin-right: auto;}
+Css: div.float img {text-align:center;}
+Css: div.figure img {text-align:center;}
+Css: .marginpar,.reversemarginpar {width:20%; float:right; text-align:left; margin-left:auto; margin-top:0.5em; font-size:85%; text-decoration:underline;}
+Css: .marginpar p,.reversemarginpar p{margin-top:0.4em; margin-bottom:0.4em;}
+Css: .reversemarginpar{float:left;}
+Css: table.equation {width:100%;}
+Css: .equation td{text-align:center; }
+Css: td.equation { margin-top:1em; margin-bottom:1em; } 
+Css: td.equation-label { width:5%; text-align:center; }
+Css: td.eqnarray4 { width:5%; white-space: normal; }
+Css: td.eqnarray2 { width:5%; }
+Css: table.eqnarray-star, table.eqnarray {width:100%;}
+Css: div.eqnarray{text-align:center;}
+Css: div.array {text-align:center;}
+Css: div.pmatrix {text-align:center;}
+Css: table.pmatrix {width:100%;}
+Css: span.pmatrix img{vertical-align:middle;}
+Css: div.pmatrix {text-align:center;}
+Css: table.pmatrix {width:100%;}
+Css: span.bar-css {text-decoration:overline;}
+Css: img.cdots{vertical-align:middle;}
+Css: div.slide {border:solid black 0.4pt;}
+Css: div.slide {border:solid black 0.4pt;margin-bottom:1em;}
+Css: div.Example, div.examplblock, div.Beispiele, div.Beispiel, div.Examples, div.example, div.examples{color:green;}
+Css: h1, h2, span.inst sup{font-size:100%;}
+Css: .hidden {visibility:hidden;}
+Css: table.columns {width:100%;}
+Css: td.column {vertical-align:top;}
+Css: div.titlepage {text-align:center;}
+Css: div.institute { margin-bottom: 1em; margin-top: 1em;}
+Css: div.sectionintoc, div.sectionshadedintoc{ margin-top:1em; }
+Css: div.tableofcontents { padding-left:1em; padding-right:1em; padding-bottom:1em; }
+Css: .tableofcontents div.subsectionintoc, .tableofcontents div.subsectionshadedintoc{ margin-left:1em; }
+Css: div.header{ margin:0; text-align:right; font-size:70%; }
+Css: p.links{ margin:0; float:right; text-align:right; font-size:70%; }
+Css: div.bookmarks {white-space: nowrap;}
+Css: div.bookmarks div.subsectionintoc a { text-decoration: none; font-size:85%;}
+Css: span.alert {color:#FF0000;}
+Css: .rotatebox{display: inline-block;}
+Css: dd.enumerate {margin-left: 2em;}
+Css: dt.enumerate {float:left; clear:left; margin-right:0.5em; margin-left:0.5em; text-align:right; }
+Css: .equation td{text-align:center; }
+Css: .equation-star td{text-align:center; }
+Css: table.equation-star { width:100%; }
+Css: table.equation { width:100%; }
+Css: table.align, table.alignat, table.xalignat, table.xxalignat, table.flalign {width:95%; margin-left:5%; white-space: nowrap;}
+Css: table.align-star, table.alignat-star, table.xalignat-star, table.flalign-star {margin-left:auto; margin-right:auto; white-space: nowrap;}
+Css: td.align-label { width:5%; text-align:center; }
+Css: td.align-odd { text-align:right; padding-right:0.3em;}
+Css: td.align-even { text-align:left; padding-right:0.6em;}
+Css: table.multline, table.multline-star {width:100%;}
+Css: td.gather {text-align:center; }
+Css: table.gather {width:100%;}
+Css: div.gather-star {text-align:center;}
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css: span#colorbox4{background-color:#3333B2;}
+Css: span#colorbox5{background-color:#3333B2;}
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css: span#colorbox6{background-color:#3333B2;}
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css: span#colorbox7{background-color:#3333B2;}
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css: span#colorbox8{background-color:#3333B2;}
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css: span#colorbox9{background-color:#3333B2;}
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css: span#colorbox10{background-color:#3333B2;}
+--- needs --- presentation.idv[2] ==> presentation0x.png ---
+--- needs --- presentation.idv[3] ==> presentation1x.png ---
+Css: span#colorbox11{background-color:#3333B2;}
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+--- needs --- presentation.idv[5] ==> presentation2x.png ---
+Css: span#colorbox12{background-color:#3333B2;}
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css: span#colorbox13{background-color:#3333B2;}
+File: PSPACE.png
+Css: span#colorbox14{background-color:#3333B2;}
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css: span#colorbox15{background-color:#3333B2;}
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css: span#colorbox16{background-color:#3333B2;}
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css: span#colorbox17{background-color:#3333B2;}
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+--- needs --- presentation.idv[7] ==> presentation3x.png ---
+--- needs --- presentation.idv[8] ==> presentation4x.png ---
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css: span#colorbox18{background-color:#3333B2;}
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+--- needs --- presentation.idv[10] ==> presentation5x.png ---
+--- needs --- presentation.idv[11] ==> presentation6x.png ---
+--- needs --- presentation.idv[12] ==> presentation7x.png ---
+Css: span#colorbox19{background-color:#3333B2;}
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css: span#colorbox20{background-color:#3333B2;}
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+--- needs --- presentation.idv[14] ==> presentation8x.png ---
+Css: span#colorbox21{background-color:#3333B2;}
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+--- needs --- presentation.idv[16] ==> presentation9x.png ---
+Css: span#colorbox22{background-color:#3333B2;}
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css: span#colorbox23{background-color:#3333B2;}
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css: span#colorbox24{background-color:#3333B2;}
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css: span#colorbox25{background-color:#3333B2;}
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css: span#colorbox26{background-color:#3333B2;}
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css: span#colorbox27{background-color:#3333B2;}
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css: span#colorbox28{background-color:#3333B2;}
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css: span#colorbox29{background-color:#3333B2;}
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css: span#colorbox30{background-color:#3333B2;}
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+Css:  .foreignobject {line-height:100%; font-size:120%; font-family:STIXgeneral,Times,Symbol,cmr10,CMSY10,CMEX10;padding:0; margin:0; text-align:center; } 
+Css: math {vertical-align:baseline; line-height:100%; font-size:100%; font-family:STIXGeneral,Times,Symbol, cmr10,cmsy10,cmex10,cmmi10; font-style: normal; margin:0; padding:0; }
+tex4ht.c error: 21
+--- characters ---
+Font("cmss","10","10","109")
+Font("cmss","8","8","75")
+Font("cmss","12","12","120")
+Font("cmss","8","8","100")
+Font("cmss","10","10","100")
+Font("cmssbx","10","10","100")
+Font("cmssbx","10","10","109")
+Font("cmmi","10","10","109")
+Font("cmsy","10","10","109")
+--- needs --- presentation.idv[18] ==> cmsy10-50.png ---
+--- needs --- presentation.idv[19] ==> cmsy10-4e.png ---
+--- needs --- presentation.idv[20] ==> cmsy10-48.png ---
+--- needs --- presentation.idv[21] ==> cmsy10-42.png ---
+Font("cmsy","8","8","100")
+Font("cmsy","6","6","100")
+Font("cmex","10","10","109")
+Font("mathkerncmssi","10","10","109")
+Font("mathkerncmssi","8","8","100")
+Font("mathkerncmssi","8","8","75")
+Font("cmss","12","12","100")
+Font("cmssi","10","10","109")

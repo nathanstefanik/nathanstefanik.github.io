@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?> 
+<?xml-stylesheet href="presentation.css" type="text/css"?> 
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0.0pt" height="1.0pt" viewBox="0.0 0.0 0.0 1.0 "> 
+<g transform="translate(0, 0.0 ) scale(1,-1) translate(0,0.0 )"> 
+    <g stroke="#000" fill="#000">
+ <g stroke-width="0.4">
+ <path d=" M 0.0 -7.02625 h 350.3253 v 140.21666 h -350.3253 Z  " stroke="none"/>
+ <g stroke="#e6f0e6" fill="#e6f0e6">
+ <path d=" M -4.015 1.00374 C -4.015 -1.20448 -2.20824 -3.01125 0.0 -3.01125 L 342.2953 -3.01125 C 344.50354 -3.01125 346.3103 -1.20448 346.3103 1.00374 L 346.3103 119.51254 L -4.015 119.51254  " stroke="none"/>
+ </g>
+ </g>
+ </g> 
+</svg> 

@@ -1,0 +1,2120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  
+  "http://www.w3.org/TR/html4/loose.dtd">  
+<html > 
+<head><title></title> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)"> 
+<meta name="originator" content="TeX4ht (https://tug.org/tex4ht/)"> 
+<!-- html,htex4ht --> 
+<meta name="src" content="presentation.tex"> 
+<link rel="stylesheet" type="text/css" href="presentation.css"> 
+</head><body 
+>
+  <nav>  
+    <ul>  
+      <li><a href="../../../index.html"> Home </a></li>  
+      <li><a href="../../blog.html"> Blog </a></li>
+      <li><a href="../../projects.html"> Projects </a></li>
+    </ul>  
+  </nav> 
+                                                                 
+<div class="slide"> <div class="titlepage"><a 
+ id="sl1"></a><p class="links"><a 
+href="presentation2.html#bookmark" target="tex4ht-menu" >toc</a></p>
+<object data="presentation-1.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object>
+<object data="presentation-8.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage">                                  <h1 class="title"><tspan font-family="cmss" font-size="12">Complexity</tspan>
+                                 <tspan font-family="cmss" font-size="12">Class:</tspan>
+                                   <tspan font-family="cmss" font-size="12">PP</tspan></h1>                                   </div>
+                             <div class="author">Nathan
+                             Stefanik
+                               and
+                              Yukun
+                              Zheng</div>
+                                                                 
+                              <div class="institute"><tspan font-family="cmss" font-size="8">Georgia</tspan>
+                              <tspan font-family="cmss" font-size="8">Institute</tspan>
+                                <tspan font-family="cmss" font-size="8">of</tspan>
+                             <tspan font-family="cmss" font-size="8">Technology</tspan></div>
+                                                                 
+                                <div class="date" >13
+                            December
+                               2021</div>
+                                                                 
+</div>                                                                 
+                                                                 
+</div>
+                                                                 
+                                                                 
+<div class="slide"> <span 
+class="colorbox" id="colorbox4"> <tspan font-family="cmss" font-size="12">Table</tspan>
+  <tspan font-family="cmss" font-size="12">of</tspan>
+  <tspan font-family="cmss" font-size="12">Contents</tspan>                                                                 </span>
+<h2 class="frametitle"></h2><div class="TableOfContents">
+</div>
+                                                                 
+                                                                 
+</div>
+                                                                 
+                                                                 
+<a 
+ id="x1-2r1"></a>
+<a 
+ id="Outline0.1"></a>
+                                                                 
+                                                                 
+<div class="slide"> <span 
+class="colorbox" id="colorbox5"> <tspan font-family="cmss" font-size="12">History</tspan>                                                                   </span>
+<h2 class="frametitle"></h2>
+     <ul class="itemize1">
+     <li class="itemize">
+     <!--l. 49--><p class="noindent" >1977 
+            <dl class="enumerate"><dt class="enumerate">
+       <object data="presentation-11.svg" width="12.85179 " height="10.77768 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object> </dt><dd 
+class="enumerate">
+                     <!--l. 49--><p class="noindent" ><tspan font-family="cmss" font-size="10">Solovay</tspan>
+             <tspan font-family="cmss" font-size="10">and</tspan>
+             <tspan font-family="cmss" font-size="10">Strassen</tspan>
+             <tspan font-family="cmss" font-size="10">gave</tspan>
+             <tspan font-family="cmss" font-size="10">a</tspan>
+             <tspan font-family="cmss" font-size="10">new</tspan>
+             <tspan font-family="cmss" font-size="10">kind</tspan>
+             <tspan font-family="cmss" font-size="10">of</tspan>
+             <tspan font-family="cmss" font-size="10">algorithm</tspan>
+             <tspan font-family="cmss" font-size="10">for</tspan>
+             <tspan font-family="cmss" font-size="10">primality</tspan>
+             <tspan font-family="cmss" font-size="10">which</tspan>
+             <tspan font-family="cmss" font-size="10">uses</tspan>
+             <tspan font-family="cmss" font-size="10">flipped</tspan>
+             <tspan font-family="cmss" font-size="10">coins</tspan>
+             <tspan font-family="cmss" font-size="10">to</tspan>
+             <tspan font-family="cmss" font-size="10">help</tspan>
+             <tspan font-family="cmss" font-size="10">search</tspan>
+             <tspan font-family="cmss" font-size="10">for</tspan>
+             <tspan font-family="cmss" font-size="10">counterexample.</tspan><g visibility="hidden">
+ 
+             </dd><dt class="enumerate">
+        <object data="presentation-13.svg" width="12.85179 " height="10.77768 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object> </dt><dd 
+class="enumerate">
+                     <!--l. 49--><p class="noindent" ><tspan font-family="cmss" font-size="10">Gill</tspan>
+             <tspan font-family="cmss" font-size="10">defined</tspan>
+             <tspan font-family="cmss" font-size="10">the</tspan>
+             <tspan font-family="cmss" font-size="10">class</tspan>
+             <tspan font-family="cmssbx" font-size="10">BPP</tspan>
+            <tspan font-family="cmss" font-size="10">to</tspan>
+             <tspan font-family="cmss" font-size="10">capture</tspan>
+             <tspan font-family="cmss" font-size="10">this</tspan>
+             <tspan font-family="cmss" font-size="10">new</tspan>
+             <tspan font-family="cmss" font-size="10">notion.</tspan>
+             <tspan font-family="cmss" font-size="10">Adleman</tspan>
+             <tspan font-family="cmss" font-size="10">and</tspan>
+             <tspan font-family="cmss" font-size="10">Manders</tspan>
+             <tspan font-family="cmss" font-size="10">defined</tspan>
+             <tspan font-family="cmss" font-size="10">the</tspan>
+             <tspan font-family="cmss" font-size="10">class</tspan>
+             <tspan font-family="cmssbx" font-size="10">R</tspan>
+            <tspan font-family="cmss" font-size="10">that</tspan>
+             <tspan font-family="cmss" font-size="10">represented</tspan>
+             <tspan font-family="cmss" font-size="10">the</tspan>
+             <tspan font-family="cmss" font-size="10">set</tspan>
+             <tspan font-family="cmss" font-size="10">of</tspan>
+             <tspan font-family="cmss" font-size="10">problems</tspan>
+             <tspan font-family="cmss" font-size="10">with</tspan>
+             <tspan font-family="cmss" font-size="10">one-sided</tspan>
+             <tspan font-family="cmss" font-size="10">randomness,</tspan>
+             <tspan font-family="cmss" font-size="10">and</tspan>
+             <tspan font-family="cmss" font-size="10">they</tspan>
+             <tspan font-family="cmss" font-size="10">put</tspan>
+             <tspan font-family="cmss" font-size="10">Solovay</tspan>
+             <tspan font-family="cmss" font-size="10">and</tspan>
+             <tspan font-family="cmss" font-size="10">Strassen&#8217;s</tspan>
+             <tspan font-family="cmss" font-size="10">algorithm</tspan>
+             <tspan font-family="cmss" font-size="10">in</tspan>
+             <tspan font-family="cmssbx" font-size="10">R</tspan><tspan font-family="cmss" font-size="10">.</tspan></g> <g visibility="hidden">
+ 
+             </dd><dt class="enumerate">
+        <object data="presentation-15.svg" width="12.85179 " height="10.77768 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object> </dt><dd 
+class="enumerate">
+                     <!--l. 49--><p class="noindent" ><tspan font-family="cmss" font-size="10">Babai</tspan>
+             <tspan font-family="cmss" font-size="10">introduced</tspan>
+             <tspan font-family="cmss" font-size="10">the</tspan>
+             <tspan font-family="cmss" font-size="10">concept</tspan>
+             <tspan font-family="cmss" font-size="10">of</tspan>
+             <tspan font-family="cmss" font-size="10">a</tspan>
+             <tspan font-family="cmss" font-size="10">&#8220;Las</tspan>
+             <tspan font-family="cmss" font-size="10">Vegas&#8221;</tspan>
+             <tspan font-family="cmss" font-size="10">algorithm.</tspan><tspan font-family="cmssbx" font-size="10">ZPP</tspan>
+            <tspan font-family="cmss" font-size="10">is</tspan>
+             <tspan font-family="cmss" font-size="10">equivalent</tspan>
+             <tspan font-family="cmss" font-size="10">to</tspan>
+             <tspan font-family="cmss" font-size="10">the</tspan>
+             <tspan font-family="cmss" font-size="10">&#8221;Las</tspan>
+             <tspan font-family="cmss" font-size="10">Vegas&#8221;</tspan>
+             <tspan font-family="cmss" font-size="10">algorithm</tspan>
+             <tspan font-family="cmss" font-size="10">with</tspan>
+             <tspan font-family="cmss" font-size="10">both</tspan>
+             <tspan font-family="cmss" font-size="10">positive</tspan>
+             <tspan font-family="cmss" font-size="10">and</tspan>
+             <tspan font-family="cmss" font-size="10">negative</tspan>
+             <tspan font-family="cmss" font-size="10">instances</tspan>
+             <tspan font-family="cmss" font-size="10">in</tspan>
+             <tspan font-family="cmssbx" font-size="10">R</tspan><tspan font-family="cmss" font-size="10">.</tspan></dd></dl>
+       <!--l. 49--><p class="noindent" ><g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> 
+       </g> <g visibility="hidden">
+ 
+       </li>
+       <li class="itemize">
+       <!--l. 49--><p class="noindent" >1983 
+            <dl class="enumerate"><dt class="enumerate">
+       <object data="presentation-18.svg" width="12.85179 " height="10.77768 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object> </dt><dd 
+class="enumerate">
+                     <!--l. 49--><p class="noindent" ><tspan font-family="cmss" font-size="10">Sipser</tspan>
+             <tspan font-family="cmss" font-size="10">showed</tspan>
+             <tspan font-family="cmss" font-size="10">that</tspan>
+             <tspan font-family="cmss" font-size="10">BPP</tspan>
+             <tspan font-family="cmss" font-size="10">is</tspan>
+             <tspan font-family="cmss" font-size="10">contained</tspan>
+             <tspan font-family="cmss" font-size="10">in</tspan>
+             <tspan font-family="cmss" font-size="10">the</tspan>
+             <tspan font-family="cmss" font-size="10">polynomial</tspan>
+             <tspan font-family="cmss" font-size="10">time</tspan>
+             <tspan font-family="cmss" font-size="10">hierarchy.</tspan></dd></dl>
+       <!--l. 49--><p class="noindent" ></g> <g visibility="hidden">
+ 
+       </li>
+       <li class="itemize">
+       <!--l. 49--><p class="noindent" >2002 
+            <dl class="enumerate"><dt class="enumerate">
+       <object data="presentation-21.svg" width="12.85179 " height="10.77768 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object> </dt><dd 
+class="enumerate">
+                     <!--l. 49--><p class="noindent" ><tspan font-family="cmss" font-size="10">Agrawal,</tspan>
+             <tspan font-family="cmss" font-size="10">Kayal</tspan>
+             <tspan font-family="cmss" font-size="10">and</tspan>
+             <tspan font-family="cmss" font-size="10">Saxena</tspan>
+             <tspan font-family="cmss" font-size="10">gave</tspan>
+             <tspan font-family="cmss" font-size="10">a</tspan>
+             <tspan font-family="cmss" font-size="10">deterministic</tspan>
+             <tspan font-family="cmss" font-size="10">polynomial-time</tspan>
+             <tspan font-family="cmss" font-size="10">algorithm</tspan>
+             <tspan font-family="cmss" font-size="10">for</tspan>
+             <tspan font-family="cmss" font-size="10">primality.</tspan></dd></dl>
+       </li></ul>
+<!--l. 49--><p class="noindent" ><g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> 
+</g> <g visibility="hidden">
+ </g>                                                                 
+                                                                 
+</div> <div class="slide">
+                                                                 
+                                                                 
+<span 
+class="colorbox" id="colorbox6"><tspan font-family="cmss" font-size="12">History</tspan>                                                            </span>
+<h2 class="frametitle"></h2>
+    <ul class="itemize1">
+    <li class="itemize">
+    <!--l. 49--><p class="noindent" >1977 
+        <dl class="enumerate"><dt class="enumerate">
+     <object data="presentation-24.svg" width="12.85179 " height="10.77768 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object></dt><dd 
+class="enumerate">
+        <!--l. 49--><p class="noindent" ><tspan font-family="cmss" font-size="10">Solovay</tspan>
+        <tspan font-family="cmss" font-size="10">and</tspan>
+        <tspan font-family="cmss" font-size="10">Strassen</tspan>
+        <tspan font-family="cmss" font-size="10">gave</tspan>
+        <tspan font-family="cmss" font-size="10">a</tspan>
+        <tspan font-family="cmss" font-size="10">new</tspan>
+        <tspan font-family="cmss" font-size="10">kind</tspan>
+        <tspan font-family="cmss" font-size="10">of</tspan>
+        <tspan font-family="cmss" font-size="10">algorithm</tspan>
+        <tspan font-family="cmss" font-size="10">for</tspan>
+        <tspan font-family="cmss" font-size="10">primality</tspan>
+        <tspan font-family="cmss" font-size="10">which</tspan>
+        <tspan font-family="cmss" font-size="10">uses</tspan>
+        <tspan font-family="cmss" font-size="10">flipped</tspan>
+        <tspan font-family="cmss" font-size="10">coins</tspan>
+        <tspan font-family="cmss" font-size="10">to</tspan>
+        <tspan font-family="cmss" font-size="10">help</tspan>
+        <tspan font-family="cmss" font-size="10">search</tspan>
+        <tspan font-family="cmss" font-size="10">for</tspan>
+        <tspan font-family="cmss" font-size="10">counterexample.</tspan><g visibility="hidden">
+ </g> 
+        </dd><dt class="enumerate">
+     <object data="presentation-26.svg" width="12.85179 " height="10.77768 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object></dt><dd 
+class="enumerate">
+        <!--l. 49--><p class="noindent" ><tspan font-family="cmss" font-size="10">Gill</tspan>
+        <tspan font-family="cmss" font-size="10">defined</tspan>
+        <tspan font-family="cmss" font-size="10">the</tspan>
+        <tspan font-family="cmss" font-size="10">class</tspan>
+        <tspan font-family="cmssbx" font-size="10">BPP</tspan>
+        <tspan font-family="cmss" font-size="10">to</tspan>
+        <tspan font-family="cmss" font-size="10">capture</tspan>
+        <tspan font-family="cmss" font-size="10">this</tspan>
+        <tspan font-family="cmss" font-size="10">new</tspan>
+        <tspan font-family="cmss" font-size="10">notion.</tspan>
+        <tspan font-family="cmss" font-size="10">Adleman</tspan>
+        <tspan font-family="cmss" font-size="10">and</tspan>
+        <tspan font-family="cmss" font-size="10">Manders</tspan>
+        <tspan font-family="cmss" font-size="10">defined</tspan>
+        <tspan font-family="cmss" font-size="10">the</tspan>
+        <tspan font-family="cmss" font-size="10">class</tspan>
+        <tspan font-family="cmssbx" font-size="10">R</tspan>
+        <tspan font-family="cmss" font-size="10">that</tspan>
+        <tspan font-family="cmss" font-size="10">represented</tspan>
+        <tspan font-family="cmss" font-size="10">the</tspan>
+        <tspan font-family="cmss" font-size="10">set</tspan>
+        <tspan font-family="cmss" font-size="10">of</tspan>
+        <tspan font-family="cmss" font-size="10">problems</tspan>
+        <tspan font-family="cmss" font-size="10">with</tspan>
+        <tspan font-family="cmss" font-size="10">one-sided</tspan>
+        <tspan font-family="cmss" font-size="10">randomness,</tspan>
+        <tspan font-family="cmss" font-size="10">and</tspan>
+        <tspan font-family="cmss" font-size="10">they</tspan>
+        <tspan font-family="cmss" font-size="10">put</tspan>
+        <tspan font-family="cmss" font-size="10">Solovay</tspan>
+        <tspan font-family="cmss" font-size="10">and</tspan>
+        <tspan font-family="cmss" font-size="10">Strassen&#8217;s</tspan>
+        <tspan font-family="cmss" font-size="10">algorithm</tspan>
+        <tspan font-family="cmss" font-size="10">in</tspan>
+        <tspan font-family="cmssbx" font-size="10">R</tspan><tspan font-family="cmss" font-size="10">.</tspan><g visibility="hidden">
+ </g> <g visibility="hidden">
+ 
+        </dd><dt class="enumerate">
+     <object data="presentation-28.svg" width="12.85179 " height="10.77768 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object></dt><dd 
+class="enumerate">
+        <!--l. 49--><p class="noindent" ><tspan font-family="cmss" font-size="10">Babai</tspan>
+        <tspan font-family="cmss" font-size="10">introduced</tspan>
+        <tspan font-family="cmss" font-size="10">the</tspan>
+        <tspan font-family="cmss" font-size="10">concept</tspan>
+        <tspan font-family="cmss" font-size="10">of</tspan>
+        <tspan font-family="cmss" font-size="10">a</tspan>
+        <tspan font-family="cmss" font-size="10">&#8220;Las</tspan>
+        <tspan font-family="cmss" font-size="10">Vegas&#8221;</tspan>
+        <tspan font-family="cmss" font-size="10">algorithm.</tspan><tspan font-family="cmssbx" font-size="10">ZPP</tspan>
+        <tspan font-family="cmss" font-size="10">is</tspan>
+        <tspan font-family="cmss" font-size="10">equivalent</tspan>
+        <tspan font-family="cmss" font-size="10">to</tspan>
+        <tspan font-family="cmss" font-size="10">the</tspan>
+        <tspan font-family="cmss" font-size="10">&#8221;Las</tspan>
+        <tspan font-family="cmss" font-size="10">Vegas&#8221;</tspan>
+        <tspan font-family="cmss" font-size="10">algorithm</tspan>
+        <tspan font-family="cmss" font-size="10">with</tspan>
+        <tspan font-family="cmss" font-size="10">both</tspan>
+        <tspan font-family="cmss" font-size="10">positive</tspan>
+        <tspan font-family="cmss" font-size="10">and</tspan>
+        <tspan font-family="cmss" font-size="10">negative</tspan>
+        <tspan font-family="cmss" font-size="10">instances</tspan>
+        <tspan font-family="cmss" font-size="10">in</tspan>
+        <tspan font-family="cmssbx" font-size="10">R</tspan><tspan font-family="cmss" font-size="10">.</tspan></dd></dl>
+    <!--l. 49--><p class="noindent" ><g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> 
+    </g> <g visibility="hidden">
+ 
+    </li>
+    <li class="itemize">
+    <!--l. 49--><p class="noindent" >1983 
+        <dl class="enumerate"><dt class="enumerate">
+     <object data="presentation-31.svg" width="12.85179 " height="10.77768 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object></dt><dd 
+class="enumerate">
+        <!--l. 49--><p class="noindent" ><tspan font-family="cmss" font-size="10">Sipser</tspan>
+        <tspan font-family="cmss" font-size="10">showed</tspan>
+        <tspan font-family="cmss" font-size="10">that</tspan>
+        <tspan font-family="cmss" font-size="10">BPP</tspan>
+        <tspan font-family="cmss" font-size="10">is</tspan>
+        <tspan font-family="cmss" font-size="10">contained</tspan>
+        <tspan font-family="cmss" font-size="10">in</tspan>
+        <tspan font-family="cmss" font-size="10">the</tspan>
+        <tspan font-family="cmss" font-size="10">polynomial</tspan>
+        <tspan font-family="cmss" font-size="10">time</tspan>
+        <tspan font-family="cmss" font-size="10">hierarchy.</tspan></dd></dl>
+    <!--l. 49--><p class="noindent" ></g> <g visibility="hidden">
+ 
+    </li>
+    <li class="itemize">
+    <!--l. 49--><p class="noindent" >2002 
+        <dl class="enumerate"><dt class="enumerate">
+     <object data="presentation-34.svg" width="12.85179 " height="10.77768 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object></dt><dd 
+class="enumerate">
+        <!--l. 49--><p class="noindent" ><tspan font-family="cmss" font-size="10">Agrawal,</tspan>
+        <tspan font-family="cmss" font-size="10">Kayal</tspan>
+        <tspan font-family="cmss" font-size="10">and</tspan>
+        <tspan font-family="cmss" font-size="10">Saxena</tspan>
+        <tspan font-family="cmss" font-size="10">gave</tspan>
+        <tspan font-family="cmss" font-size="10">a</tspan>
+        <tspan font-family="cmss" font-size="10">deterministic</tspan>
+        <tspan font-family="cmss" font-size="10">polynomial-time</tspan>
+        <tspan font-family="cmss" font-size="10">algorithm</tspan>
+        <tspan font-family="cmss" font-size="10">for</tspan>
+        <tspan font-family="cmss" font-size="10">primality.</tspan></dd></dl>
+    </li></ul>
+<!--l. 49--><p class="noindent" ><g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> 
+</g> <g visibility="hidden">
+ </g>                                                                  
+                                                                 
+</div> <div class="slide">
+                                                                 
+                                                                 
+<span 
+class="colorbox" id="colorbox7"><tspan font-family="cmss" font-size="12">History</tspan>                                                            </span>
+<h2 class="frametitle"></h2>
+    <ul class="itemize1">
+    <li class="itemize">
+    <!--l. 49--><p class="noindent" >1977 
+        <dl class="enumerate"><dt class="enumerate">
+     <object data="presentation-37.svg" width="12.85179 " height="10.77768 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object></dt><dd 
+class="enumerate">
+        <!--l. 49--><p class="noindent" ><tspan font-family="cmss" font-size="10">Solovay</tspan>
+        <tspan font-family="cmss" font-size="10">and</tspan>
+        <tspan font-family="cmss" font-size="10">Strassen</tspan>
+        <tspan font-family="cmss" font-size="10">gave</tspan>
+        <tspan font-family="cmss" font-size="10">a</tspan>
+        <tspan font-family="cmss" font-size="10">new</tspan>
+        <tspan font-family="cmss" font-size="10">kind</tspan>
+        <tspan font-family="cmss" font-size="10">of</tspan>
+        <tspan font-family="cmss" font-size="10">algorithm</tspan>
+        <tspan font-family="cmss" font-size="10">for</tspan>
+        <tspan font-family="cmss" font-size="10">primality</tspan>
+        <tspan font-family="cmss" font-size="10">which</tspan>
+        <tspan font-family="cmss" font-size="10">uses</tspan>
+        <tspan font-family="cmss" font-size="10">flipped</tspan>
+        <tspan font-family="cmss" font-size="10">coins</tspan>
+        <tspan font-family="cmss" font-size="10">to</tspan>
+        <tspan font-family="cmss" font-size="10">help</tspan>
+        <tspan font-family="cmss" font-size="10">search</tspan>
+        <tspan font-family="cmss" font-size="10">for</tspan>
+        <tspan font-family="cmss" font-size="10">counterexample.</tspan><g visibility="hidden">
+ </g> 
+        </dd><dt class="enumerate">
+     <object data="presentation-39.svg" width="12.85179 " height="10.77768 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object></dt><dd 
+class="enumerate">
+        <!--l. 49--><p class="noindent" ><tspan font-family="cmss" font-size="10">Gill</tspan>
+        <tspan font-family="cmss" font-size="10">defined</tspan>
+        <tspan font-family="cmss" font-size="10">the</tspan>
+        <tspan font-family="cmss" font-size="10">class</tspan>
+        <tspan font-family="cmssbx" font-size="10">BPP</tspan>
+        <tspan font-family="cmss" font-size="10">to</tspan>
+        <tspan font-family="cmss" font-size="10">capture</tspan>
+        <tspan font-family="cmss" font-size="10">this</tspan>
+        <tspan font-family="cmss" font-size="10">new</tspan>
+        <tspan font-family="cmss" font-size="10">notion.</tspan>
+        <tspan font-family="cmss" font-size="10">Adleman</tspan>
+        <tspan font-family="cmss" font-size="10">and</tspan>
+        <tspan font-family="cmss" font-size="10">Manders</tspan>
+        <tspan font-family="cmss" font-size="10">defined</tspan>
+        <tspan font-family="cmss" font-size="10">the</tspan>
+        <tspan font-family="cmss" font-size="10">class</tspan>
+        <tspan font-family="cmssbx" font-size="10">R</tspan>
+        <tspan font-family="cmss" font-size="10">that</tspan>
+        <tspan font-family="cmss" font-size="10">represented</tspan>
+        <tspan font-family="cmss" font-size="10">the</tspan>
+        <tspan font-family="cmss" font-size="10">set</tspan>
+        <tspan font-family="cmss" font-size="10">of</tspan>
+        <tspan font-family="cmss" font-size="10">problems</tspan>
+        <tspan font-family="cmss" font-size="10">with</tspan>
+        <tspan font-family="cmss" font-size="10">one-sided</tspan>
+        <tspan font-family="cmss" font-size="10">randomness,</tspan>
+        <tspan font-family="cmss" font-size="10">and</tspan>
+        <tspan font-family="cmss" font-size="10">they</tspan>
+        <tspan font-family="cmss" font-size="10">put</tspan>
+        <tspan font-family="cmss" font-size="10">Solovay</tspan>
+        <tspan font-family="cmss" font-size="10">and</tspan>
+        <tspan font-family="cmss" font-size="10">Strassen&#8217;s</tspan>
+        <tspan font-family="cmss" font-size="10">algorithm</tspan>
+        <tspan font-family="cmss" font-size="10">in</tspan>
+        <tspan font-family="cmssbx" font-size="10">R</tspan><tspan font-family="cmss" font-size="10">.</tspan><g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> 
+        </dd><dt class="enumerate">
+     <object data="presentation-41.svg" width="12.85179 " height="10.77768 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object></dt><dd 
+class="enumerate">
+        <!--l. 49--><p class="noindent" ><tspan font-family="cmss" font-size="10">Babai</tspan>
+        <tspan font-family="cmss" font-size="10">introduced</tspan>
+        <tspan font-family="cmss" font-size="10">the</tspan>
+        <tspan font-family="cmss" font-size="10">concept</tspan>
+        <tspan font-family="cmss" font-size="10">of</tspan>
+        <tspan font-family="cmss" font-size="10">a</tspan>
+        <tspan font-family="cmss" font-size="10">&#8220;Las</tspan>
+        <tspan font-family="cmss" font-size="10">Vegas&#8221;</tspan>
+        <tspan font-family="cmss" font-size="10">algorithm.</tspan><tspan font-family="cmssbx" font-size="10">ZPP</tspan>
+        <tspan font-family="cmss" font-size="10">is</tspan>
+        <tspan font-family="cmss" font-size="10">equivalent</tspan>
+        <tspan font-family="cmss" font-size="10">to</tspan>
+        <tspan font-family="cmss" font-size="10">the</tspan>
+        <tspan font-family="cmss" font-size="10">&#8221;Las</tspan>
+        <tspan font-family="cmss" font-size="10">Vegas&#8221;</tspan>
+        <tspan font-family="cmss" font-size="10">algorithm</tspan>
+        <tspan font-family="cmss" font-size="10">with</tspan>
+        <tspan font-family="cmss" font-size="10">both</tspan>
+        <tspan font-family="cmss" font-size="10">positive</tspan>
+        <tspan font-family="cmss" font-size="10">and</tspan>
+        <tspan font-family="cmss" font-size="10">negative</tspan>
+        <tspan font-family="cmss" font-size="10">instances</tspan>
+        <tspan font-family="cmss" font-size="10">in</tspan>
+        <tspan font-family="cmssbx" font-size="10">R</tspan><tspan font-family="cmss" font-size="10">.</tspan></dd></dl>
+    <!--l. 49--><p class="noindent" ><g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> 
+    <g visibility="hidden">
+ </g> <g visibility="hidden">
+ 
+    </li>
+    <li class="itemize">
+    <!--l. 49--><p class="noindent" >1983 
+        <dl class="enumerate"><dt class="enumerate">
+     <object data="presentation-44.svg" width="12.85179 " height="10.77768 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object></dt><dd 
+class="enumerate">
+        <!--l. 49--><p class="noindent" ><tspan font-family="cmss" font-size="10">Sipser</tspan>
+        <tspan font-family="cmss" font-size="10">showed</tspan>
+        <tspan font-family="cmss" font-size="10">that</tspan>
+        <tspan font-family="cmss" font-size="10">BPP</tspan>
+        <tspan font-family="cmss" font-size="10">is</tspan>
+        <tspan font-family="cmss" font-size="10">contained</tspan>
+        <tspan font-family="cmss" font-size="10">in</tspan>
+        <tspan font-family="cmss" font-size="10">the</tspan>
+        <tspan font-family="cmss" font-size="10">polynomial</tspan>
+        <tspan font-family="cmss" font-size="10">time</tspan>
+        <tspan font-family="cmss" font-size="10">hierarchy.</tspan></dd></dl>
+    <!--l. 49--><p class="noindent" ></g> <g visibility="hidden">
+ 
+    </li>
+    <li class="itemize">
+    <!--l. 49--><p class="noindent" >2002 
+        <dl class="enumerate"><dt class="enumerate">
+     <object data="presentation-47.svg" width="12.85179 " height="10.77768 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object></dt><dd 
+class="enumerate">
+        <!--l. 49--><p class="noindent" ><tspan font-family="cmss" font-size="10">Agrawal,</tspan>
+        <tspan font-family="cmss" font-size="10">Kayal</tspan>
+        <tspan font-family="cmss" font-size="10">and</tspan>
+        <tspan font-family="cmss" font-size="10">Saxena</tspan>
+        <tspan font-family="cmss" font-size="10">gave</tspan>
+        <tspan font-family="cmss" font-size="10">a</tspan>
+        <tspan font-family="cmss" font-size="10">deterministic</tspan>
+        <tspan font-family="cmss" font-size="10">polynomial-time</tspan>
+        <tspan font-family="cmss" font-size="10">algorithm</tspan>
+        <tspan font-family="cmss" font-size="10">for</tspan>
+        <tspan font-family="cmss" font-size="10">primality.</tspan></dd></dl>
+    </li></ul>
+<!--l. 49--><p class="noindent" ><g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> 
+</g> <g visibility="hidden">
+ </g>                                                                  
+                                                                 
+</div> <div class="slide">
+                                                                 
+                                                                 
+<span 
+class="colorbox" id="colorbox8"><tspan font-family="cmss" font-size="12">History</tspan>                                                            </span>
+<h2 class="frametitle"></h2>
+    <ul class="itemize1">
+    <li class="itemize">
+    <!--l. 49--><p class="noindent" >1977 
+        <dl class="enumerate"><dt class="enumerate">
+     <object data="presentation-50.svg" width="12.85179 " height="10.77768 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object></dt><dd 
+class="enumerate">
+        <!--l. 49--><p class="noindent" ><tspan font-family="cmss" font-size="10">Solovay</tspan>
+        <tspan font-family="cmss" font-size="10">and</tspan>
+        <tspan font-family="cmss" font-size="10">Strassen</tspan>
+        <tspan font-family="cmss" font-size="10">gave</tspan>
+        <tspan font-family="cmss" font-size="10">a</tspan>
+        <tspan font-family="cmss" font-size="10">new</tspan>
+        <tspan font-family="cmss" font-size="10">kind</tspan>
+        <tspan font-family="cmss" font-size="10">of</tspan>
+        <tspan font-family="cmss" font-size="10">algorithm</tspan>
+        <tspan font-family="cmss" font-size="10">for</tspan>
+        <tspan font-family="cmss" font-size="10">primality</tspan>
+        <tspan font-family="cmss" font-size="10">which</tspan>
+        <tspan font-family="cmss" font-size="10">uses</tspan>
+        <tspan font-family="cmss" font-size="10">flipped</tspan>
+        <tspan font-family="cmss" font-size="10">coins</tspan>
+        <tspan font-family="cmss" font-size="10">to</tspan>
+        <tspan font-family="cmss" font-size="10">help</tspan>
+        <tspan font-family="cmss" font-size="10">search</tspan>
+        <tspan font-family="cmss" font-size="10">for</tspan>
+        <tspan font-family="cmss" font-size="10">counterexample.</tspan><g visibility="hidden">
+ </g> 
+        </dd><dt class="enumerate">
+     <object data="presentation-52.svg" width="12.85179 " height="10.77768 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object></dt><dd 
+class="enumerate">
+        <!--l. 49--><p class="noindent" ><tspan font-family="cmss" font-size="10">Gill</tspan>
+        <tspan font-family="cmss" font-size="10">defined</tspan>
+        <tspan font-family="cmss" font-size="10">the</tspan>
+        <tspan font-family="cmss" font-size="10">class</tspan>
+        <tspan font-family="cmssbx" font-size="10">BPP</tspan>
+        <tspan font-family="cmss" font-size="10">to</tspan>
+        <tspan font-family="cmss" font-size="10">capture</tspan>
+        <tspan font-family="cmss" font-size="10">this</tspan>
+        <tspan font-family="cmss" font-size="10">new</tspan>
+        <tspan font-family="cmss" font-size="10">notion.</tspan>
+        <tspan font-family="cmss" font-size="10">Adleman</tspan>
+        <tspan font-family="cmss" font-size="10">and</tspan>
+        <tspan font-family="cmss" font-size="10">Manders</tspan>
+        <tspan font-family="cmss" font-size="10">defined</tspan>
+        <tspan font-family="cmss" font-size="10">the</tspan>
+        <tspan font-family="cmss" font-size="10">class</tspan>
+        <tspan font-family="cmssbx" font-size="10">R</tspan>
+        <tspan font-family="cmss" font-size="10">that</tspan>
+        <tspan font-family="cmss" font-size="10">represented</tspan>
+        <tspan font-family="cmss" font-size="10">the</tspan>
+        <tspan font-family="cmss" font-size="10">set</tspan>
+        <tspan font-family="cmss" font-size="10">of</tspan>
+        <tspan font-family="cmss" font-size="10">problems</tspan>
+        <tspan font-family="cmss" font-size="10">with</tspan>
+        <tspan font-family="cmss" font-size="10">one-sided</tspan>
+        <tspan font-family="cmss" font-size="10">randomness,</tspan>
+        <tspan font-family="cmss" font-size="10">and</tspan>
+        <tspan font-family="cmss" font-size="10">they</tspan>
+        <tspan font-family="cmss" font-size="10">put</tspan>
+        <tspan font-family="cmss" font-size="10">Solovay</tspan>
+        <tspan font-family="cmss" font-size="10">and</tspan>
+        <tspan font-family="cmss" font-size="10">Strassen&#8217;s</tspan>
+        <tspan font-family="cmss" font-size="10">algorithm</tspan>
+        <tspan font-family="cmss" font-size="10">in</tspan>
+        <tspan font-family="cmssbx" font-size="10">R</tspan><tspan font-family="cmss" font-size="10">.</tspan><g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> 
+        </dd><dt class="enumerate">
+     <object data="presentation-54.svg" width="12.85179 " height="10.77768 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object></dt><dd 
+class="enumerate">
+        <!--l. 49--><p class="noindent" ><tspan font-family="cmss" font-size="10">Babai</tspan>
+        <tspan font-family="cmss" font-size="10">introduced</tspan>
+        <tspan font-family="cmss" font-size="10">the</tspan>
+        <tspan font-family="cmss" font-size="10">concept</tspan>
+        <tspan font-family="cmss" font-size="10">of</tspan>
+        <tspan font-family="cmss" font-size="10">a</tspan>
+        <tspan font-family="cmss" font-size="10">&#8220;Las</tspan>
+        <tspan font-family="cmss" font-size="10">Vegas&#8221;</tspan>
+        <tspan font-family="cmss" font-size="10">algorithm.</tspan><tspan font-family="cmssbx" font-size="10">ZPP</tspan>
+        <tspan font-family="cmss" font-size="10">is</tspan>
+        <tspan font-family="cmss" font-size="10">equivalent</tspan>
+        <tspan font-family="cmss" font-size="10">to</tspan>
+        <tspan font-family="cmss" font-size="10">the</tspan>
+        <tspan font-family="cmss" font-size="10">&#8221;Las</tspan>
+        <tspan font-family="cmss" font-size="10">Vegas&#8221;</tspan>
+        <tspan font-family="cmss" font-size="10">algorithm</tspan>
+        <tspan font-family="cmss" font-size="10">with</tspan>
+        <tspan font-family="cmss" font-size="10">both</tspan>
+        <tspan font-family="cmss" font-size="10">positive</tspan>
+        <tspan font-family="cmss" font-size="10">and</tspan>
+        <tspan font-family="cmss" font-size="10">negative</tspan>
+        <tspan font-family="cmss" font-size="10">instances</tspan>
+        <tspan font-family="cmss" font-size="10">in</tspan>
+        <tspan font-family="cmssbx" font-size="10">R</tspan><tspan font-family="cmss" font-size="10">.</tspan></dd></dl>
+    <!--l. 49--><p class="noindent" ><g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> 
+    <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> 
+    </li>
+    <li class="itemize">
+    <!--l. 49--><p class="noindent" >1983 
+        <dl class="enumerate"><dt class="enumerate">
+     <object data="presentation-57.svg" width="12.85179 " height="10.77768 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object></dt><dd 
+class="enumerate">
+        <!--l. 49--><p class="noindent" ><tspan font-family="cmss" font-size="10">Sipser</tspan>
+        <tspan font-family="cmss" font-size="10">showed</tspan>
+        <tspan font-family="cmss" font-size="10">that</tspan>
+        <tspan font-family="cmss" font-size="10">BPP</tspan>
+        <tspan font-family="cmss" font-size="10">is</tspan>
+        <tspan font-family="cmss" font-size="10">contained</tspan>
+        <tspan font-family="cmss" font-size="10">in</tspan>
+        <tspan font-family="cmss" font-size="10">the</tspan>
+        <tspan font-family="cmss" font-size="10">polynomial</tspan>
+        <tspan font-family="cmss" font-size="10">time</tspan>
+        <tspan font-family="cmss" font-size="10">hierarchy.</tspan></dd></dl>
+    <!--l. 49--><p class="noindent" ><g visibility="hidden">
+ </g> <g visibility="hidden">
+ 
+    </li>
+    <li class="itemize">
+    <!--l. 49--><p class="noindent" >2002 
+        <dl class="enumerate"><dt class="enumerate">
+     <object data="presentation-60.svg" width="12.85179 " height="10.77768 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object></dt><dd 
+class="enumerate">
+        <!--l. 49--><p class="noindent" ><tspan font-family="cmss" font-size="10">Agrawal,</tspan>
+        <tspan font-family="cmss" font-size="10">Kayal</tspan>
+        <tspan font-family="cmss" font-size="10">and</tspan>
+        <tspan font-family="cmss" font-size="10">Saxena</tspan>
+        <tspan font-family="cmss" font-size="10">gave</tspan>
+        <tspan font-family="cmss" font-size="10">a</tspan>
+        <tspan font-family="cmss" font-size="10">deterministic</tspan>
+        <tspan font-family="cmss" font-size="10">polynomial-time</tspan>
+        <tspan font-family="cmss" font-size="10">algorithm</tspan>
+        <tspan font-family="cmss" font-size="10">for</tspan>
+        <tspan font-family="cmss" font-size="10">primality.</tspan></dd></dl>
+    </li></ul>
+<!--l. 49--><p class="noindent" ><g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> 
+</g> <g visibility="hidden">
+ </g>                                                                  
+                                                                 
+</div> <div class="slide">
+                                                                 
+                                                                 
+<span 
+class="colorbox" id="colorbox9"><tspan font-family="cmss" font-size="12">History</tspan>                                                            </span>
+<h2 class="frametitle"></h2>
+    <ul class="itemize1">
+    <li class="itemize">
+    <!--l. 49--><p class="noindent" >1977 
+        <dl class="enumerate"><dt class="enumerate">
+     <object data="presentation-63.svg" width="12.85179 " height="10.77768 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object></dt><dd 
+class="enumerate">
+        <!--l. 49--><p class="noindent" ><tspan font-family="cmss" font-size="10">Solovay</tspan>
+        <tspan font-family="cmss" font-size="10">and</tspan>
+        <tspan font-family="cmss" font-size="10">Strassen</tspan>
+        <tspan font-family="cmss" font-size="10">gave</tspan>
+        <tspan font-family="cmss" font-size="10">a</tspan>
+        <tspan font-family="cmss" font-size="10">new</tspan>
+        <tspan font-family="cmss" font-size="10">kind</tspan>
+        <tspan font-family="cmss" font-size="10">of</tspan>
+        <tspan font-family="cmss" font-size="10">algorithm</tspan>
+        <tspan font-family="cmss" font-size="10">for</tspan>
+        <tspan font-family="cmss" font-size="10">primality</tspan>
+        <tspan font-family="cmss" font-size="10">which</tspan>
+        <tspan font-family="cmss" font-size="10">uses</tspan>
+        <tspan font-family="cmss" font-size="10">flipped</tspan>
+        <tspan font-family="cmss" font-size="10">coins</tspan>
+        <tspan font-family="cmss" font-size="10">to</tspan>
+        <tspan font-family="cmss" font-size="10">help</tspan>
+        <tspan font-family="cmss" font-size="10">search</tspan>
+        <tspan font-family="cmss" font-size="10">for</tspan>
+        <tspan font-family="cmss" font-size="10">counterexample.</tspan><g visibility="hidden">
+ </g> 
+        </dd><dt class="enumerate">
+     <object data="presentation-65.svg" width="12.85179 " height="10.77768 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object></dt><dd 
+class="enumerate">
+        <!--l. 49--><p class="noindent" ><tspan font-family="cmss" font-size="10">Gill</tspan>
+        <tspan font-family="cmss" font-size="10">defined</tspan>
+        <tspan font-family="cmss" font-size="10">the</tspan>
+        <tspan font-family="cmss" font-size="10">class</tspan>
+        <tspan font-family="cmssbx" font-size="10">BPP</tspan>
+        <tspan font-family="cmss" font-size="10">to</tspan>
+        <tspan font-family="cmss" font-size="10">capture</tspan>
+        <tspan font-family="cmss" font-size="10">this</tspan>
+        <tspan font-family="cmss" font-size="10">new</tspan>
+        <tspan font-family="cmss" font-size="10">notion.</tspan>
+        <tspan font-family="cmss" font-size="10">Adleman</tspan>
+        <tspan font-family="cmss" font-size="10">and</tspan>
+        <tspan font-family="cmss" font-size="10">Manders</tspan>
+        <tspan font-family="cmss" font-size="10">defined</tspan>
+        <tspan font-family="cmss" font-size="10">the</tspan>
+        <tspan font-family="cmss" font-size="10">class</tspan>
+        <tspan font-family="cmssbx" font-size="10">R</tspan>
+        <tspan font-family="cmss" font-size="10">that</tspan>
+        <tspan font-family="cmss" font-size="10">represented</tspan>
+        <tspan font-family="cmss" font-size="10">the</tspan>
+        <tspan font-family="cmss" font-size="10">set</tspan>
+        <tspan font-family="cmss" font-size="10">of</tspan>
+        <tspan font-family="cmss" font-size="10">problems</tspan>
+        <tspan font-family="cmss" font-size="10">with</tspan>
+        <tspan font-family="cmss" font-size="10">one-sided</tspan>
+        <tspan font-family="cmss" font-size="10">randomness,</tspan>
+        <tspan font-family="cmss" font-size="10">and</tspan>
+        <tspan font-family="cmss" font-size="10">they</tspan>
+        <tspan font-family="cmss" font-size="10">put</tspan>
+        <tspan font-family="cmss" font-size="10">Solovay</tspan>
+        <tspan font-family="cmss" font-size="10">and</tspan>
+        <tspan font-family="cmss" font-size="10">Strassen&#8217;s</tspan>
+        <tspan font-family="cmss" font-size="10">algorithm</tspan>
+        <tspan font-family="cmss" font-size="10">in</tspan>
+        <tspan font-family="cmssbx" font-size="10">R</tspan><tspan font-family="cmss" font-size="10">.</tspan><g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> 
+        </dd><dt class="enumerate">
+     <object data="presentation-67.svg" width="12.85179 " height="10.77768 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object></dt><dd 
+class="enumerate">
+        <!--l. 49--><p class="noindent" ><tspan font-family="cmss" font-size="10">Babai</tspan>
+        <tspan font-family="cmss" font-size="10">introduced</tspan>
+        <tspan font-family="cmss" font-size="10">the</tspan>
+        <tspan font-family="cmss" font-size="10">concept</tspan>
+        <tspan font-family="cmss" font-size="10">of</tspan>
+        <tspan font-family="cmss" font-size="10">a</tspan>
+        <tspan font-family="cmss" font-size="10">&#8220;Las</tspan>
+        <tspan font-family="cmss" font-size="10">Vegas&#8221;</tspan>
+        <tspan font-family="cmss" font-size="10">algorithm.</tspan><tspan font-family="cmssbx" font-size="10">ZPP</tspan>
+        <tspan font-family="cmss" font-size="10">is</tspan>
+        <tspan font-family="cmss" font-size="10">equivalent</tspan>
+        <tspan font-family="cmss" font-size="10">to</tspan>
+        <tspan font-family="cmss" font-size="10">the</tspan>
+        <tspan font-family="cmss" font-size="10">&#8221;Las</tspan>
+        <tspan font-family="cmss" font-size="10">Vegas&#8221;</tspan>
+        <tspan font-family="cmss" font-size="10">algorithm</tspan>
+        <tspan font-family="cmss" font-size="10">with</tspan>
+        <tspan font-family="cmss" font-size="10">both</tspan>
+        <tspan font-family="cmss" font-size="10">positive</tspan>
+        <tspan font-family="cmss" font-size="10">and</tspan>
+        <tspan font-family="cmss" font-size="10">negative</tspan>
+        <tspan font-family="cmss" font-size="10">instances</tspan>
+        <tspan font-family="cmss" font-size="10">in</tspan>
+        <tspan font-family="cmssbx" font-size="10">R</tspan><tspan font-family="cmss" font-size="10">.</tspan></dd></dl>
+    <!--l. 49--><p class="noindent" ><g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> 
+    <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> 
+    </li>
+    <li class="itemize">
+    <!--l. 49--><p class="noindent" >1983 
+        <dl class="enumerate"><dt class="enumerate">
+     <object data="presentation-70.svg" width="12.85179 " height="10.77768 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object></dt><dd 
+class="enumerate">
+        <!--l. 49--><p class="noindent" ><tspan font-family="cmss" font-size="10">Sipser</tspan>
+        <tspan font-family="cmss" font-size="10">showed</tspan>
+        <tspan font-family="cmss" font-size="10">that</tspan>
+        <tspan font-family="cmss" font-size="10">BPP</tspan>
+        <tspan font-family="cmss" font-size="10">is</tspan>
+        <tspan font-family="cmss" font-size="10">contained</tspan>
+        <tspan font-family="cmss" font-size="10">in</tspan>
+        <tspan font-family="cmss" font-size="10">the</tspan>
+        <tspan font-family="cmss" font-size="10">polynomial</tspan>
+        <tspan font-family="cmss" font-size="10">time</tspan>
+        <tspan font-family="cmss" font-size="10">hierarchy.</tspan></dd></dl>
+    <!--l. 49--><p class="noindent" ><g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> 
+    </li>
+    <li class="itemize">
+    <!--l. 49--><p class="noindent" >2002 
+        <dl class="enumerate"><dt class="enumerate">
+     <object data="presentation-73.svg" width="12.85179 " height="10.77768 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object></dt><dd 
+class="enumerate">
+        <!--l. 49--><p class="noindent" ><tspan font-family="cmss" font-size="10">Agrawal,</tspan>
+        <tspan font-family="cmss" font-size="10">Kayal</tspan>
+        <tspan font-family="cmss" font-size="10">and</tspan>
+        <tspan font-family="cmss" font-size="10">Saxena</tspan>
+        <tspan font-family="cmss" font-size="10">gave</tspan>
+        <tspan font-family="cmss" font-size="10">a</tspan>
+        <tspan font-family="cmss" font-size="10">deterministic</tspan>
+        <tspan font-family="cmss" font-size="10">polynomial-time</tspan>
+        <tspan font-family="cmss" font-size="10">algorithm</tspan>
+        <tspan font-family="cmss" font-size="10">for</tspan>
+        <tspan font-family="cmss" font-size="10">primality.</tspan></dd></dl>
+    </li></ul>
+<!--l. 49--><p class="noindent" ><g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> 
+<g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g>                                                                  
+                                                                 
+</div>
+                                                                 
+                                                                 
+<a 
+ id="x1-28r2"></a>
+<a 
+ id="Outline0.2"></a>
+                                                                 
+                                                                 
+<div class="slide"> <span 
+class="colorbox" id="colorbox10"> <tspan font-family="cmss" font-size="12">Probabilistic</tspan>
+  <tspan font-family="cmss" font-size="12">Turing</tspan>
+  <tspan font-family="cmss" font-size="12">Machines</tspan>                                                                </span>
+<h2 class="frametitle"></h2>
+<!--l. 59--><p class="noindent" >A <tspan font-family="cmssbx" font-size="10">probabilistic Turing machine </tspan><tspan font-family="mathkerncmssi" font-size="10">M </tspan>is a type of nondeterministic Turing
+machine in which each nondeterministic step is called a <tspan font-family="cmssbx" font-size="10">coin-flip step </tspan>and has
+two legal next moves. We assign a probability to each branch <tspan font-family="mathkerncmssi" font-size="10">b </tspan>of <tspan font-family="mathkerncmssi" font-size="10">M</tspan>&#8217;s
+computation on input <tspan font-family="mathkerncmssi" font-size="10">w </tspan>as follows. Define the probability of branch <tspan font-family="mathkerncmssi" font-size="10">b </tspan>to
+be
+<div class="math-display" >
+<img 
+src="presentation0x.png" alt="Pr [b] = 2-k
+" class="math-display" ></div>
+<!--l. 59--><p class="noindent" >where <tspan font-family="mathkerncmssi" font-size="10">k </tspan>is the number of coin-flip steps that occur on branch <tspan font-family="mathkerncmssi" font-size="10">b</tspan>. Define the
+probability that <tspan font-family="mathkerncmssi" font-size="10">M </tspan>accepts <tspan font-family="mathkerncmssi" font-size="10">w </tspan>to be
+<div class="math-display" >
+<img 
+src="presentation1x.png" alt="                        &#x2211;
+Pr[M accepts w] =                  Pr[b ].
+                  b is an accepting branch
+" class="math-display" ></div>                                                                
+                                                                 
+</div>
+                                                                 
+                                                                 
+<div class="slide"> <span 
+class="colorbox" id="colorbox11"> <tspan font-family="cmss" font-size="12">Definition</tspan>
+  <tspan font-family="cmss" font-size="12">of</tspan>
+  <tspan font-family="cmss" font-size="12">PP</tspan>                                                                        </span>
+<h2 class="frametitle"></h2>A language <tspan font-family="mathkerncmssi" font-size="10">L </tspan>is in <tspan font-family="mathkerncmssi" font-size="10">PP </tspan>if and only if there exists a probabilistic Turing machine
+<tspan font-family="mathkerncmssi" font-size="10">M</tspan>, such that 
+      <dl class="enumerate"><dt class="enumerate">
+ <object data="presentation-75.svg" width="13.97769 " height="11.70653 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object> </dt><dd 
+class="enumerate">
+          <!--l. 71--><p class="noindent" ><tspan font-family="mathkerncmssi" font-size="10">M</tspan>
+      runs
+      for
+      polynomial
+      time
+      on
+      all
+      inputs
+      </dd><dt class="enumerate">
+ <object data="presentation-77.svg" width="13.97769 " height="11.70653 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object> </dt><dd 
+class="enumerate">
+          <!--l. 71--><p class="noindent" >For
+      all
+      <tspan font-family="mathkerncmssi" font-size="10">x</tspan>
+      in
+      <tspan font-family="mathkerncmssi" font-size="10">L</tspan>,
+      <tspan font-family="mathkerncmssi" font-size="10">M</tspan>
+      outputs
+      1
+      with
+      probability
+      strictly
+      greater
+      than
+      1<tspan font-family="cmmi" font-size="10">&#x2215;</tspan>2
+      </dd><dt class="enumerate">
+ <object data="presentation-79.svg" width="13.97769 " height="11.70653 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object> </dt><dd 
+class="enumerate">
+          <!--l. 71--><p class="noindent" >For
+      all
+      <tspan font-family="mathkerncmssi" font-size="10">x</tspan>
+      not
+      in
+      <tspan font-family="mathkerncmssi" font-size="10">L</tspan>,
+      <tspan font-family="mathkerncmssi" font-size="10">M</tspan>
+      outputs
+      1
+      with
+      probability
+      less
+      than
+      or
+      equal
+      to
+      1<tspan font-family="cmmi" font-size="10">&#x2215;</tspan>2.</dd></dl>
+<!--l. 71--><p class="noindent" >
+<div class="math-display" >
+<img 
+src="presentation2x.png" alt="x &#x2208; L &#x21D0; &#x21D2;  {y &#x2208; {0,1}p(|x|) : M (x,y) = 1 } &#x2265; 1&#x22C5;2p(|x|)
+                                          2
+" class="math-display" ></div>                                                                
+                                                                 
+</div>
+                                                                 
+                                                                 
+<div class="slide"> <span 
+class="colorbox" id="colorbox12"> <tspan font-family="cmss" font-size="12">Complexity</tspan>
+  <tspan font-family="cmss" font-size="12">Classes</tspan>                                                                   </span>
+<h2 class="frametitle"></h2>Probabilistic Polynomial time (PP)
+<a 
+ id="x1-32r1"></a>
+<div class="definition"><g visibility="hidden">
+ </g> 
+<object data="presentation-80.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage"><tspan font-family="cmss" font-size="12">Definition</tspan>                                                                           </div><object data="presentation-82.svg" width="457.39198 " height="8.99997 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object>
+<object data="presentation-89.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage">PP
+is
+the
+class
+of
+decision
+problems
+solvable
+by
+a
+probabilistic
+Turing
+machine
+in
+polynomial
+time,
+with
+an
+error
+probability
+of
+less
+than
+<tspan font-family="cmssbx" font-size="10">1/2</tspan>
+for
+all
+instances.                                                                                  </div>
+<g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> 
+</div></div>
+<!--l. 82--><p class="noindent" >
+Bounded-error Probabilistic Polynomial time (BPP)
+<a 
+ id="x1-33r2"></a>
+<div class="definition"><g visibility="hidden">
+ </g> 
+<object data="presentation-90.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage"><tspan font-family="cmss" font-size="12">Definition</tspan>                                                                           </div><object data="presentation-92.svg" width="457.39198 " height="8.99997 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object>
+<object data="presentation-99.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage">BPP
+is
+the
+class
+of
+decision
+problems
+solvable
+by
+a
+probabilistic
+Turing
+machine
+in
+polynomial
+time,
+with
+an
+error
+probability
+of
+less
+than
+<tspan font-family="cmssbx" font-size="10">1/3</tspan>
+for
+all
+instances.                                                                                  </div>
+<g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> 
+</div></div>
+<!--l. 82--><p class="noindent" >                                                                
+                                                                 
+</div>
+                                                                 
+                                                                 
+<div class="slide"> <span 
+class="colorbox" id="colorbox13"> <tspan font-family="cmss" font-size="12">Complexity</tspan>
+  <tspan font-family="cmss" font-size="12">Classes</tspan>
+  <tspan font-family="cmss" font-size="12">Relationship</tspan>                                                             </span>
+<h2 class="frametitle"></h2><div  
+class="centerline">                                   <img 
+src="PSPACE.png" alt="PIC"  
+width="200" height="200" >                                             </div>
+                                                                 
+                                                                 
+</div>
+                                                                 
+                                                                 
+<a 
+ id="x1-34r3"></a>
+<a 
+ id="Outline0.3"></a>
+                                                                 
+                                                                 
+<div class="slide"> <span 
+class="colorbox" id="colorbox14"> <tspan font-family="cmss" font-size="12">Theorem</tspan>
+  <tspan font-family="cmss" font-size="12">1</tspan>                                                                          </span>
+<h2 class="frametitle"></h2>
+<a 
+ id="x1-35r3"></a>
+<div class="theorem"><g visibility="hidden">
+ </g> 
+<object data="presentation-100.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage"><tspan font-family="cmss" font-size="12">Theorem</tspan>                                                                            </div>
+<object data="presentation-102.svg" width="457.39198 " height="8.99997 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object>
+<object data="presentation-109.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage"><tspan font-family="cmsy" font-size="10"><img 
+src="cmsy10-42.png" alt="B" class="10-109x-x-42" /><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /></tspan><tspan font-family="cmsy" font-size="10">&#x2286;</tspan><tspan font-family="cmsy" font-size="10"><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /></tspan><tspan font-family="cmsy" font-size="10">&#x2286; </tspan><tspan font-family="mathkerncmssi" font-size="10">PSPACE</tspan>                                                                </div>
+<g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> 
+</div></div>
+<!--l. 100--><p class="noindent" >
+<div class="block"><g visibility="hidden">
+ </g> 
+<object data="presentation-110.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage"><tspan font-family="cmss" font-size="12">Proof.</tspan>                                                                                </div><object data="presentation-112.svg" width="457.39198 " height="8.99997 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object>
+<object data="presentation-119.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage">The
+first
+inclusion
+follows
+from
+definition.
+It
+is
+left
+for
+the
+reader
+to
+show
+the
+second
+inclusion
+by
+considering
+a
+PPT
+Turing
+machine
+<tspan font-family="mathkerncmssi" font-size="10">M</tspan>
+that
+can
+solve
+a
+reduced
+problem
+(which
+one?).
+Thus,
+<tspan font-family="mathkerncmssi" font-size="10">PP </tspan><tspan font-family="cmsy" font-size="10">&#x2286; </tspan><tspan font-family="mathkerncmssi" font-size="10">PSPACE</tspan>.                                                                       __</div>
+<g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> 
+</div></div>
+<!--l. 100--><p class="noindent" ><g visibility="hidden">
+ <tspan font-family="cmssi" font-size="10">Hint: MAJSAT</tspan>
+</g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g>                                                                 
+                                                                 
+</div> <div class="slide">
+                                                                 
+                                                                 
+<span 
+class="colorbox" id="colorbox15"><tspan font-family="cmss" font-size="12">Theorem</tspan>
+  <tspan font-family="cmss" font-size="12">1</tspan>                                                                  </span>
+<h2 class="frametitle"></h2>
+<a 
+ id="x1-36r3"></a>
+<div class="theorem"><g visibility="hidden">
+ </g> 
+<object data="presentation-120.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage"><tspan font-family="cmss" font-size="12">Theorem</tspan>                                                                            </div>
+<object data="presentation-122.svg" width="457.39198 " height="8.99997 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object>
+<object data="presentation-129.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage"><tspan font-family="cmsy" font-size="10"><img 
+src="cmsy10-42.png" alt="B" class="10-109x-x-42" /><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /></tspan><tspan font-family="cmsy" font-size="10">&#x2286;</tspan><tspan font-family="cmsy" font-size="10"><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /></tspan><tspan font-family="cmsy" font-size="10">&#x2286; </tspan><tspan font-family="mathkerncmssi" font-size="10">PSPACE</tspan>                                                                </div>
+<g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> 
+</div></div>
+<!--l. 100--><p class="noindent" >
+<div class="block"><g visibility="hidden">
+ </g> 
+<object data="presentation-130.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage"><tspan font-family="cmss" font-size="12">Proof.</tspan>                                                                                </div>
+<object data="presentation-132.svg" width="457.39198 " height="8.99997 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object>
+<object data="presentation-139.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage">The
+first
+inclusion
+follows
+from
+definition.
+It
+is
+left
+for
+the
+reader
+to
+show
+the
+second
+inclusion
+by
+considering
+a
+PPT
+Turing
+machine
+<tspan font-family="mathkerncmssi" font-size="10">M</tspan>
+that
+can
+solve
+a
+reduced
+problem
+(which
+one?).
+Thus,
+<tspan font-family="mathkerncmssi" font-size="10">PP </tspan><tspan font-family="cmsy" font-size="10">&#x2286; </tspan><tspan font-family="mathkerncmssi" font-size="10">PSPACE</tspan>.                                                                       __</div>
+<g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> 
+</div></div>
+<!--l. 100--><p class="noindent" ><g visibility="hidden">
+ </g> <tspan font-family="cmssi" font-size="10">Hint: MAJSAT</tspan>
+<g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g>                                                                  
+                                                                 
+</div>
+                                                                 
+                                                                 
+<div class="slide"> <span 
+class="colorbox" id="colorbox16"> <tspan font-family="cmss" font-size="12">Theorem</tspan>
+  <tspan font-family="cmss" font-size="12">2</tspan>                                                                          </span>
+<h2 class="frametitle"></h2>
+<a 
+ id="x1-37r4"></a>
+<div class="theorem"><g visibility="hidden">
+ </g> 
+<object data="presentation-140.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage"><tspan font-family="cmss" font-size="12">Theorem</tspan>                                                                            </div>
+<object data="presentation-142.svg" width="457.39198 " height="8.99997 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object>
+<object data="presentation-149.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage"><tspan font-family="cmsy" font-size="10"><img 
+src="cmsy10-4e.png" alt="N" class="10-109x-x-4e" /> <img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /></tspan><tspan font-family="cmsy" font-size="10">&#x2286;</tspan><tspan font-family="cmsy" font-size="10"><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /></tspan>                                   </div>
+<g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> 
+</div></div>
+<!--l. 115--><p class="noindent" >
+<a 
+ id="x1-38r5"></a>
+<div class="definition"><g visibility="hidden">
+ </g> 
+<object data="presentation-150.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage"><tspan font-family="cmss" font-size="12">Definition</tspan>                                                                           </div><object data="presentation-152.svg" width="457.39198 " height="8.99997 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object>
+<object data="presentation-159.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage">From
+Sipser,
+a
+<tspan font-family="cmssbx" font-size="10">witness</tspan>
+is
+a
+number
+that
+is
+used
+in
+our
+algorithm
+to
+accept
+or
+reject
+a
+proposed
+solution.
+In
+other
+words,
+it
+acts
+like
+a
+check
+in
+our
+process.                                                                                    </div>
+<g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> 
+</div></div>
+<!--l. 115--><p class="noindent" >                                                                
+                                                                 
+</div>
+                                                                 
+                                                                 
+<div class="slide"> <span 
+class="colorbox" id="colorbox17"> <tspan font-family="cmss" font-size="12">Theorem</tspan>
+  <tspan font-family="cmss" font-size="12">2</tspan>                                                                          </span>
+<h2 class="frametitle"></h2>
+<a 
+ id="x1-39r6"></a>
+<div class="theorem"><g visibility="hidden">
+ </g> 
+<object data="presentation-160.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage"><tspan font-family="cmss" font-size="12">Theorem</tspan>                                                                            </div>
+<object data="presentation-162.svg" width="457.39198 " height="8.99997 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object>
+<object data="presentation-169.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage"><tspan font-family="cmsy" font-size="10"><img 
+src="cmsy10-4e.png" alt="N" class="10-109x-x-4e" /> <img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /></tspan><tspan font-family="cmsy" font-size="10">&#x2286;</tspan><tspan font-family="cmsy" font-size="10"><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /></tspan>                                   </div>
+<g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> 
+</div></div>
+<!--l. 132--><p class="noindent" >
+<div class="block"><g visibility="hidden">
+ </g> 
+<object data="presentation-170.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage"><tspan font-family="cmss" font-size="12">Proof.</tspan>                                                                                </div><object data="presentation-172.svg" width="457.39198 " height="8.99997 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object>
+<object data="presentation-185.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage">  Let <tspan font-family="mathkerncmssi" font-size="10">L </tspan><tspan font-family="cmsy" font-size="10">&#x2208;</tspan><tspan font-family="cmsy" font-size="10"><img 
+src="cmsy10-4e.png" alt="N" class="10-109x-x-4e" /><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /></tspan> with witnesses of size <tspan font-family="mathkerncmssi" font-size="10">p</tspan>(<tspan font-family="cmsy" font-size="10">|</tspan><tspan font-family="mathkerncmssi" font-size="10">x</tspan><tspan font-family="cmsy" font-size="10">|</tspan>). We give a <tspan font-family="cmsy" font-size="10"><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /></tspan> algorithm for <tspan font-family="mathkerncmssi" font-size="10">L </tspan>on
+input <tspan font-family="mathkerncmssi" font-size="10">x</tspan>: 
+      <dl class="enumerate"><dt class="enumerate">
+ <object data="presentation-174.svg" width="13.97769 " height="11.70653 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object> </dt><dd 
+class="enumerate">
+          <!--l. 132--><p class="noindent" >accept
+      with
+      probability
+      <img 
+src="presentation3x.png" alt="12"  class="frac" align="middle"> <tspan font-family="cmsy" font-size="10">-</tspan><img 
+src="presentation4x.png" alt="-p(|x|)
+2-4---"  class="frac" align="middle">
+        </dd><dt class="enumerate">
+ <object data="presentation-176.svg" width="13.97769 " height="11.70653 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object> </dt><dd 
+class="enumerate">
+          <!--l. 132--><p class="noindent" >otherwise,
+      choose
+      a
+      string
+      <tspan font-family="mathkerncmssi" font-size="10">w </tspan><tspan font-family="cmsy" font-size="10">&#x2208;{</tspan>0<tspan font-family="cmmi" font-size="10">,</tspan>1<tspan font-family="cmsy" font-size="10">}</tspan><sup><tspan font-family="mathkerncmssi" font-size="8">p</tspan><tspan font-family="cmss" font-size="8">(</tspan><tspan font-family="cmsy" font-size="8">|</tspan><tspan font-family="mathkerncmssi" font-size="8">x</tspan><tspan font-family="cmsy" font-size="8">|</tspan><tspan font-family="cmss" font-size="8">)</tspan></sup>
+        at
+      random
+      </dd><dt class="enumerate">
+ <object data="presentation-178.svg" width="13.97769 " height="11.70653 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object> </dt><dd 
+class="enumerate">
+          <!--l. 132--><p class="noindent" >accept
+      iff
+      <tspan font-family="mathkerncmssi" font-size="10">w</tspan>
+      is
+      a
+      witness
+      for
+      input
+      <tspan font-family="mathkerncmssi" font-size="10">x</tspan></dd></dl>
+<!--l. 132--><p class="noindent" >(to be cont.)                                                                              </div>
+<g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> 
+</div></div>                                                                
+                                                                 
+</div>
+                                                                 
+                                                                 
+<div class="slide"> <span 
+class="colorbox" id="colorbox18"> <tspan font-family="cmss" font-size="12">Theorem</tspan>
+  <tspan font-family="cmss" font-size="12">2</tspan>                                                                          </span>
+<h2 class="frametitle"></h2>
+<a 
+ id="x1-43r7"></a>
+<div class="theorem"><g visibility="hidden">
+ </g> 
+<object data="presentation-186.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage"><tspan font-family="cmss" font-size="12">Theorem</tspan>                                                                            </div>
+<object data="presentation-188.svg" width="457.39198 " height="8.99997 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object>
+<object data="presentation-195.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage"><tspan font-family="cmsy" font-size="10"><img 
+src="cmsy10-4e.png" alt="N" class="10-109x-x-4e" /> <img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /></tspan><tspan font-family="cmsy" font-size="10">&#x2286;</tspan><tspan font-family="cmsy" font-size="10"><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /></tspan>                                   </div>
+<g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> 
+</div></div>
+<!--l. 146--><p class="noindent" >
+<div class="block"><g visibility="hidden">
+ </g> 
+<object data="presentation-196.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage"><tspan font-family="cmss" font-size="12">Proof.</tspan>                                                                                </div><object data="presentation-198.svg" width="457.39198 " height="8.99997 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object>
+<object data="presentation-205.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage">(cont.)
+Thus,
+if
+<tspan font-family="mathkerncmssi" font-size="10">x</tspan><img 
+src="presentation5x.png" alt="&#x2215;&#x2208;"  class="notin" ><tspan font-family="mathkerncmssi" font-size="10">L</tspan>,
+then
+the
+probability
+that
+the
+above
+algorithm
+accepts
+is
+less
+than
+<img 
+src="presentation6x.png" alt="1
+2"  class="frac" align="middle">.
+If
+<tspan font-family="mathkerncmssi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">&#x2208; </tspan><tspan font-family="mathkerncmssi" font-size="10">L</tspan>,
+then
+there
+exists
+at
+least
+one
+witness
+such
+that
+the
+probability
+of
+acceptance
+is
+<div class="math-display" >
+<img 
+src="presentation7x.png" alt="1   2- p(|x|)   2-p(|x|)   1
+--- -------+  -------&#x003E; -.
+2      4        2      2
+" class="math-display" ></div>
+                                                                              __</div>
+<g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> 
+</div></div>                                                                
+                                                                 
+</div>
+                                                                 
+                                                                 
+<div class="slide"> <span 
+class="colorbox" id="colorbox19"> <tspan font-family="cmss" font-size="12">Theorem</tspan>
+  <tspan font-family="cmss" font-size="12">3:</tspan>
+  <tspan font-family="cmss" font-size="12">Preliminaries</tspan>                                                            </span>
+<h2 class="frametitle"></h2>First,
+<a 
+ id="x1-44r8"></a>
+<div class="definition"><g visibility="hidden">
+ </g> 
+<object data="presentation-206.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage"><tspan font-family="cmss" font-size="12">Definition</tspan>                                                                           </div><object data="presentation-208.svg" width="457.39198 " height="8.99997 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object>
+<object data="presentation-215.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage">&#x03A3;<sub><tspan font-family="cmss" font-size="8">0</tspan> </sub><sup><tspan font-family="mathkerncmssi" font-size="8">P</tspan></sup> = &#x03A0;<sub><tspan font-family="cmss" font-size="8">0</tspan></sub><sup><tspan font-family="mathkerncmssi" font-size="8">P</tspan></sup> = <tspan font-family="mathkerncmssi" font-size="10">P</tspan><br />
+&#x03A3;<sub><tspan font-family="mathkerncmssi" font-size="8">k</tspan><tspan font-family="cmss" font-size="8">+1</tspan></sub><sup><tspan font-family="mathkerncmssi" font-size="8">P</tspan></sup> := <tspan font-family="cmsy" font-size="10">&#x2203;</tspan><sup><tspan font-family="mathkerncmssi" font-size="8">P</tspan></sup>&#x03A3;<sub><tspan font-family="mathkerncmssi" font-size="8">k</tspan></sub><sup><tspan font-family="mathkerncmssi" font-size="8">P</tspan></sup><br />
+&#x03A0;<sub><tspan font-family="mathkerncmssi" font-size="8">k</tspan><tspan font-family="cmss" font-size="8">+1</tspan></sub><sup><tspan font-family="mathkerncmssi" font-size="8">P</tspan></sup> := <tspan font-family="cmsy" font-size="10">&#x2200;</tspan><sup><tspan font-family="mathkerncmssi" font-size="8">P</tspan></sup>&#x03A0;<sub><tspan font-family="mathkerncmssi" font-size="8">k</tspan></sub><sup><tspan font-family="mathkerncmssi" font-size="8">P</tspan></sup><br />
+where
+<!--l. 162--><p class="noindent" ><tspan font-family="cmsy" font-size="10">&#x2203;</tspan><sup><tspan font-family="mathkerncmssi" font-size="8">P</tspan></sup><tspan font-family="mathkerncmssi" font-size="10">L </tspan>:= <tspan font-family="cmsy" font-size="10">{</tspan><tspan font-family="mathkerncmssi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">&#x2208;{</tspan>0<tspan font-family="cmmi" font-size="10">,</tspan>1<tspan font-family="cmsy" font-size="10">}</tspan><sup><tspan font-family="cmsy" font-size="8">*</tspan></sup><tspan font-family="cmsy" font-size="10">&#x2223;</tspan><tspan font-family="cmsy" font-size="10">&#x2203;</tspan><tspan font-family="mathkerncmssi" font-size="10">w </tspan><tspan font-family="cmsy" font-size="10">&#x2208;{</tspan>0<tspan font-family="cmmi" font-size="10">,</tspan>1<tspan font-family="cmsy" font-size="10">}</tspan><sup><tspan font-family="cmsy" font-size="8">&#x2264;</tspan><tspan font-family="mathkerncmssi" font-size="8">p</tspan><tspan font-family="cmss" font-size="8">(</tspan><tspan font-family="cmsy" font-size="8">|</tspan><tspan font-family="mathkerncmssi" font-size="8">x</tspan><tspan font-family="cmsy" font-size="8">|</tspan><tspan font-family="cmss" font-size="8">)</tspan></sup> such that  <tspan font-family="cmmi" font-size="10">&#x003C; </tspan><tspan font-family="mathkerncmssi" font-size="10">x</tspan><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="mathkerncmssi" font-size="10">w </tspan><tspan font-family="cmmi" font-size="10">&#x003E;</tspan><tspan font-family="cmsy" font-size="10">&#x2208; </tspan><tspan font-family="mathkerncmssi" font-size="10">L</tspan><tspan font-family="cmsy" font-size="10">}</tspan><br />
+<tspan font-family="cmsy" font-size="10">&#x2200;</tspan><sup><tspan font-family="mathkerncmssi" font-size="8">P</tspan></sup><tspan font-family="mathkerncmssi" font-size="10">L </tspan>:= <tspan font-family="cmsy" font-size="10">{</tspan><tspan font-family="mathkerncmssi" font-size="10">x </tspan><tspan font-family="cmsy" font-size="10">&#x2208;{</tspan>0<tspan font-family="cmmi" font-size="10">,</tspan>1<tspan font-family="cmsy" font-size="10">}</tspan><sup><tspan font-family="cmsy" font-size="8">*</tspan></sup><tspan font-family="cmsy" font-size="10">&#x2223;</tspan><tspan font-family="cmsy" font-size="10">&#x2200;</tspan><tspan font-family="mathkerncmssi" font-size="10">w </tspan><tspan font-family="cmsy" font-size="10">&#x2208;{</tspan>0<tspan font-family="cmmi" font-size="10">,</tspan>1<tspan font-family="cmsy" font-size="10">}</tspan><sup><tspan font-family="cmsy" font-size="8">&#x2264;</tspan><tspan font-family="mathkerncmssi" font-size="8">p</tspan><tspan font-family="cmss" font-size="8">(</tspan><tspan font-family="cmsy" font-size="8">|</tspan><tspan font-family="mathkerncmssi" font-size="8">x</tspan><tspan font-family="cmsy" font-size="8">|</tspan><tspan font-family="cmss" font-size="8">)</tspan></sup> such that  <tspan font-family="cmmi" font-size="10">&#x003C; </tspan><tspan font-family="mathkerncmssi" font-size="10">x</tspan><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="mathkerncmssi" font-size="10">w </tspan><tspan font-family="cmmi" font-size="10">&#x003E;</tspan><tspan font-family="cmsy" font-size="10">&#x2208; </tspan><tspan font-family="mathkerncmssi" font-size="10">L</tspan><tspan font-family="cmsy" font-size="10">}</tspan>      </div>
+<g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> 
+</div></div>
+<!--l. 162--><p class="noindent" >
+Notice that &#x03A3;<sub><tspan font-family="cmss" font-size="8">1</tspan></sub><sup><tspan font-family="mathkerncmssi" font-size="8">P</tspan></sup> = <tspan font-family="mathkerncmssi" font-size="10">NP</tspan>, and &#x03A0;<sub><tspan font-family="cmss" font-size="8">1</tspan></sub><sup><tspan font-family="mathkerncmssi" font-size="8">P</tspan></sup> = <tspan font-family="mathkerncmssi" font-size="10">co </tspan><tspan font-family="cmsy" font-size="10">- </tspan><tspan font-family="mathkerncmssi" font-size="10">NP</tspan>.                        
+                                                                 
+</div>
+                                                                 
+                                                                 
+<div class="slide"> <span 
+class="colorbox" id="colorbox20"> <tspan font-family="cmss" font-size="12">Theorem</tspan>
+  <tspan font-family="cmss" font-size="12">3:</tspan>
+  <tspan font-family="cmss" font-size="12">Preliminaries</tspan>                                                            </span>
+<h2 class="frametitle"></h2>There exists a natural hierarchy in <tspan font-family="mathkerncmssi" font-size="10">PSPACE</tspan>.
+<a 
+ id="x1-45r9"></a>
+<div class="definition"><g visibility="hidden">
+ </g> 
+<object data="presentation-216.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage"><tspan font-family="cmss" font-size="12">Definition</tspan>                                                                           </div><object data="presentation-218.svg" width="457.39198 " height="8.99997 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object>
+<object data="presentation-225.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage">The
+<tspan font-family="cmssbx" font-size="10">polynomial</tspan>
+<tspan font-family="cmssbx" font-size="10">time</tspan>
+<tspan font-family="cmssbx" font-size="10">hierarchy</tspan>
+is
+a
+collection
+of
+classes
+defined
+by
+<div class="math-display" >
+<img 
+src="presentation8x.png" alt="       &#x22C3;        &#x22C3;
+PH  =    &#x03A3;iP =    &#x03A0;iP.
+       i         i
+" class="math-display" ></div>                                                                               </div>
+<g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> 
+</div></div>
+<!--l. 172--><p class="noindent" >
+<g visibility="hidden">
+ 
+</g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g>                                                                 
+                                                                 
+</div> <div class="slide">
+                                                                 
+                                                                 
+<span 
+class="colorbox" id="colorbox21"><tspan font-family="cmss" font-size="12">Theorem</tspan>
+  <tspan font-family="cmss" font-size="12">3:</tspan>
+  <tspan font-family="cmss" font-size="12">Preliminaries</tspan>                                                      </span>
+<h2 class="frametitle"></h2>There exists a natural hierarchy in <tspan font-family="mathkerncmssi" font-size="10">PSPACE</tspan>.
+<a 
+ id="x1-46r9"></a>
+<div class="definition"><g visibility="hidden">
+ </g> 
+<object data="presentation-226.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage"><tspan font-family="cmss" font-size="12">Definition</tspan>                                                                           </div>
+<object data="presentation-228.svg" width="457.39198 " height="8.99997 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object>
+<object data="presentation-235.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage">The
+<tspan font-family="cmssbx" font-size="10">polynomial</tspan>
+<tspan font-family="cmssbx" font-size="10">time</tspan>
+<tspan font-family="cmssbx" font-size="10">hierarchy</tspan>
+is
+a
+collection
+of
+classes
+defined
+by
+<div class="math-display" >
+<img 
+src="presentation9x.png" alt="      &#x22C3;        &#x22C3;
+PH  =    &#x03A3;iP =    &#x03A0;iP.
+       i        i
+" class="math-display" ></div>                                                                               </div>
+<g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> 
+</div></div>
+<!--l. 172--><p class="noindent" >
+<g visibility="hidden">
+ </g> 
+<g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g>                                                                  
+                                                                 
+</div>
+                                                                 
+                                                                 
+<div class="slide"> <span 
+class="colorbox" id="colorbox22"> <tspan font-family="cmss" font-size="12">Theorem</tspan>
+  <tspan font-family="cmss" font-size="12">3:</tspan>
+  <tspan font-family="cmss" font-size="12">Toda&#8217;s</tspan>
+  <tspan font-family="cmss" font-size="12">Theorem</tspan>                                                                 </span>
+<h2 class="frametitle"></h2>
+<a 
+ id="x1-47r10"></a>
+<div class="theorem"><g visibility="hidden">
+ </g> 
+<object data="presentation-236.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage"><tspan font-family="cmss" font-size="12">Theorem</tspan>                                                                            </div>
+<object data="presentation-238.svg" width="457.39198 " height="8.99997 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object>
+<object data="presentation-245.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage"><tspan font-family="cmsy" font-size="10"><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /></tspan>
+<tspan font-family="cmssi" font-size="10">is</tspan>
+<tspan font-family="cmssi" font-size="10">as</tspan>
+<tspan font-family="cmssi" font-size="10">hard</tspan>
+<tspan font-family="cmssi" font-size="10">as</tspan>
+<tspan font-family="cmssi" font-size="10">the</tspan>
+<tspan font-family="cmssi" font-size="10">polynomial</tspan>
+<tspan font-family="cmssi" font-size="10">time</tspan>
+<tspan font-family="cmssi" font-size="10">hierarchy.</tspan>                                                                                  </div>
+<g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> 
+</div></div>
+<!--l. 184--><p class="noindent" >
+<g visibility="hidden">
+ Since #<tspan font-family="cmsy" font-size="10"><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /> </tspan>is equivalent to <tspan font-family="cmsy" font-size="10"><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /></tspan>,
+<a 
+ id="x1-48r11"></a>
+<div class="theorem"><g visibility="hidden">
+ </g> 
+<object data="presentation-246.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage"><tspan font-family="cmss" font-size="12">Theorem</tspan>                                                                            </div><object data="presentation-248.svg" width="457.39198 " height="8.99997 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object>
+<object data="presentation-255.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage">#<tspan font-family="cmsy" font-size="10"><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /></tspan>
+<tspan font-family="cmssi" font-size="10">(the</tspan>
+<tspan font-family="cmssi" font-size="10">class</tspan>
+<tspan font-family="cmssi" font-size="10">of</tspan>
+<tspan font-family="cmssi" font-size="10">counting</tspan>
+<tspan font-family="cmssi" font-size="10">problems)</tspan>
+<tspan font-family="cmssi" font-size="10">is</tspan>
+<tspan font-family="cmssi" font-size="10">as</tspan>
+<tspan font-family="cmssi" font-size="10">hard</tspan>
+<tspan font-family="cmssi" font-size="10">as</tspan>
+<tspan font-family="cmssi" font-size="10">the</tspan>
+<tspan font-family="cmssi" font-size="10">polynomial</tspan>
+<tspan font-family="cmssi" font-size="10">time</tspan>
+<tspan font-family="cmssi" font-size="10">hierarchy.</tspan>                                                                                  </div>
+<g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> 
+</div></div>
+<!--l. 184--><p class="noindent" >
+</g> <g visibility="hidden">
+ Thus, for every problem in <tspan font-family="cmsy" font-size="10"><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /><img 
+src="cmsy10-48.png" alt="H" class="10-109x-x-48" /></tspan> there exists a deterministic, polynomial time
+reduction to a counting problem.
+</g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g>                                                                 
+                                                                 
+</div> <div class="slide">
+                                                                 
+                                                                 
+<span 
+class="colorbox" id="colorbox23"><tspan font-family="cmss" font-size="12">Theorem</tspan>
+  <tspan font-family="cmss" font-size="12">3:</tspan>
+  <tspan font-family="cmss" font-size="12">Toda&#8217;s</tspan>
+  <tspan font-family="cmss" font-size="12">Theorem</tspan>                                                          </span>
+<h2 class="frametitle"></h2>
+<a 
+ id="x1-49r10"></a>
+<div class="theorem"><g visibility="hidden">
+ </g> 
+<object data="presentation-256.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage"><tspan font-family="cmss" font-size="12">Theorem</tspan>                                                                            </div>
+<object data="presentation-258.svg" width="457.39198 " height="8.99997 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object>
+<object data="presentation-265.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage"><tspan font-family="cmsy" font-size="10"><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /></tspan>
+<tspan font-family="cmssi" font-size="10">is</tspan>
+<tspan font-family="cmssi" font-size="10">as</tspan>
+<tspan font-family="cmssi" font-size="10">hard</tspan>
+<tspan font-family="cmssi" font-size="10">as</tspan>
+<tspan font-family="cmssi" font-size="10">the</tspan>
+<tspan font-family="cmssi" font-size="10">polynomial</tspan>
+<tspan font-family="cmssi" font-size="10">time</tspan>
+<tspan font-family="cmssi" font-size="10">hierarchy.</tspan>                                                                                  </div>
+<g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> 
+</div></div>
+<!--l. 184--><p class="noindent" >
+<g visibility="hidden">
+ </g> Since #<tspan font-family="cmsy" font-size="10"><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /> </tspan>is equivalent to <tspan font-family="cmsy" font-size="10"><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /></tspan>,
+<a 
+ id="x1-50r11"></a>
+<div class="theorem"><g visibility="hidden">
+ </g> 
+<object data="presentation-266.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage"><tspan font-family="cmss" font-size="12">Theorem</tspan>                                                                            </div>
+<object data="presentation-268.svg" width="457.39198 " height="8.99997 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object>
+<object data="presentation-275.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage">#<tspan font-family="cmsy" font-size="10"><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /></tspan>
+<tspan font-family="cmssi" font-size="10">(the</tspan>
+<tspan font-family="cmssi" font-size="10">class</tspan>
+<tspan font-family="cmssi" font-size="10">of</tspan>
+<tspan font-family="cmssi" font-size="10">counting</tspan>
+<tspan font-family="cmssi" font-size="10">problems)</tspan>
+<tspan font-family="cmssi" font-size="10">is</tspan>
+<tspan font-family="cmssi" font-size="10">as</tspan>
+<tspan font-family="cmssi" font-size="10">hard</tspan>
+<tspan font-family="cmssi" font-size="10">as</tspan>
+<tspan font-family="cmssi" font-size="10">the</tspan>
+<tspan font-family="cmssi" font-size="10">polynomial</tspan>
+<tspan font-family="cmssi" font-size="10">time</tspan>
+<tspan font-family="cmssi" font-size="10">hierarchy.</tspan>                                                                                  </div>
+<g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> 
+</div></div>
+<!--l. 184--><p class="noindent" >
+<g visibility="hidden">
+ </g> <g visibility="hidden">
+ Thus, for every problem in <tspan font-family="cmsy" font-size="10"><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /><img 
+src="cmsy10-48.png" alt="H" class="10-109x-x-48" /></tspan> there exists a deterministic, polynomial time
+reduction to a counting problem.
+</g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g>                                                                  
+                                                                 
+</div> <div class="slide">
+                                                                 
+                                                                 
+<span 
+class="colorbox" id="colorbox24"><tspan font-family="cmss" font-size="12">Theorem</tspan>
+  <tspan font-family="cmss" font-size="12">3:</tspan>
+  <tspan font-family="cmss" font-size="12">Toda&#8217;s</tspan>
+  <tspan font-family="cmss" font-size="12">Theorem</tspan>                                                          </span>
+<h2 class="frametitle"></h2>
+<a 
+ id="x1-51r10"></a>
+<div class="theorem"><g visibility="hidden">
+ </g> 
+<object data="presentation-276.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage"><tspan font-family="cmss" font-size="12">Theorem</tspan>                                                                            </div>
+<object data="presentation-278.svg" width="457.39198 " height="8.99997 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object>
+<object data="presentation-285.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage"><tspan font-family="cmsy" font-size="10"><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /></tspan>
+<tspan font-family="cmssi" font-size="10">is</tspan>
+<tspan font-family="cmssi" font-size="10">as</tspan>
+<tspan font-family="cmssi" font-size="10">hard</tspan>
+<tspan font-family="cmssi" font-size="10">as</tspan>
+<tspan font-family="cmssi" font-size="10">the</tspan>
+<tspan font-family="cmssi" font-size="10">polynomial</tspan>
+<tspan font-family="cmssi" font-size="10">time</tspan>
+<tspan font-family="cmssi" font-size="10">hierarchy.</tspan>                                                                                  </div>
+<g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> 
+</div></div>
+<!--l. 184--><p class="noindent" >
+<g visibility="hidden">
+ </g> Since #<tspan font-family="cmsy" font-size="10"><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /> </tspan>is equivalent to <tspan font-family="cmsy" font-size="10"><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /></tspan>,
+<a 
+ id="x1-52r11"></a>
+<div class="theorem"><g visibility="hidden">
+ </g> 
+<object data="presentation-286.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage"><tspan font-family="cmss" font-size="12">Theorem</tspan>                                                                            </div>
+<object data="presentation-288.svg" width="457.39198 " height="8.99997 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object>
+<object data="presentation-295.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage">#<tspan font-family="cmsy" font-size="10"><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /></tspan>
+<tspan font-family="cmssi" font-size="10">(the</tspan>
+<tspan font-family="cmssi" font-size="10">class</tspan>
+<tspan font-family="cmssi" font-size="10">of</tspan>
+<tspan font-family="cmssi" font-size="10">counting</tspan>
+<tspan font-family="cmssi" font-size="10">problems)</tspan>
+<tspan font-family="cmssi" font-size="10">is</tspan>
+<tspan font-family="cmssi" font-size="10">as</tspan>
+<tspan font-family="cmssi" font-size="10">hard</tspan>
+<tspan font-family="cmssi" font-size="10">as</tspan>
+<tspan font-family="cmssi" font-size="10">the</tspan>
+<tspan font-family="cmssi" font-size="10">polynomial</tspan>
+<tspan font-family="cmssi" font-size="10">time</tspan>
+<tspan font-family="cmssi" font-size="10">hierarchy.</tspan>                                                                                  </div>
+<g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> 
+</div></div>
+<!--l. 184--><p class="noindent" >
+<g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> Thus, for every problem in <tspan font-family="cmsy" font-size="10"><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /><img 
+src="cmsy10-48.png" alt="H" class="10-109x-x-48" /></tspan> there exists a deterministic, polynomial time
+reduction to a counting problem.
+<g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g>                                                                  
+                                                                 
+</div>
+                                                                 
+                                                                 
+<a 
+ id="x1-53r4"></a>
+<a 
+ id="Outline0.4"></a>
+                                                                 
+                                                                 
+<div class="slide"> <span 
+class="colorbox" id="colorbox25"> <tspan font-family="cmss" font-size="12">Example</tspan>
+  <tspan font-family="cmss" font-size="12">1:</tspan>
+  <tspan font-family="cmss" font-size="12">Boolean</tspan>
+  <tspan font-family="cmss" font-size="12">Satisfiability</tspan>
+  <tspan font-family="cmss" font-size="12">(SAT)</tspan>                                                                    </span>
+<h2 class="frametitle"></h2>Given a boolean formula <tspan font-family="mathkerncmssi" font-size="10">F</tspan>(<tspan font-family="mathkerncmssi" font-size="10">x</tspan><sub><tspan font-family="cmss" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="mathkerncmssi" font-size="10">x</tspan><sub><tspan font-family="cmss" font-size="8">2</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="mathkerncmssi" font-size="10">&#x2026;</tspan><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="mathkerncmssi" font-size="10">x</tspan><sub><tspan font-family="mathkerncmssi" font-size="8">n</tspan></sub>), can <tspan font-family="mathkerncmssi" font-size="10">F </tspan>evaluate to 1 (true)?
+<a 
+ id="x1-54r12"></a>
+<div class="example"><g visibility="hidden">
+ </g> 
+<object data="presentation-296.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage"><tspan font-family="cmss" font-size="12">Example</tspan>                                                                             </div><object data="presentation-298.svg" width="457.39198 " height="8.99997 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object>
+<object data="presentation-305.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage">(<tspan font-family="mathkerncmssi" font-size="10">x</tspan><sub><tspan font-family="cmss" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">&#x2227; </tspan><tspan font-family="mathkerncmssi" font-size="10">x</tspan><sub><tspan font-family="cmss" font-size="8">2</tspan></sub>) <tspan font-family="cmsy" font-size="10">&#x2228;¬</tspan><tspan font-family="mathkerncmssi" font-size="10">x</tspan><sub><tspan font-family="cmss" font-size="8">3</tspan></sub>
+is
+a
+boolean
+formula.
+(1,1,0)
+is
+a
+solution.                                                                                   </div>
+<g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> 
+</div></div>
+<!--l. 200--><p class="noindent" >
+<g visibility="hidden">
+ 
+      <ul class="itemize1">
+      <li class="itemize">
+      <!--l. 200--><p class="noindent" >the
+      first
+      proven
+      <tspan font-family="cmsy" font-size="10"><img 
+src="cmsy10-4e.png" alt="N" class="10-109x-x-4e" /><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /></tspan>-complete
+      problem</g> <g visibility="hidden">
+ 
+      </li>
+      <li class="itemize">
+      <!--l. 200--><p class="noindent" >from
+      theorem
+      2,
+      in
+      <tspan font-family="cmsy" font-size="10"><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /></tspan>.
+      </li>
+      <li class="itemize">
+      <!--l. 200--><p class="noindent" ><tspan font-family="cmssbx" font-size="10">Exercise</tspan>:
+      find
+      a
+      sufficient
+      algorithm
+      to
+      solve
+      this
+      problem?</li></ul>
+<!--l. 200--><p class="noindent" ><g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> 
+</g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g>                                                                 
+                                                                 
+</div> <div class="slide">
+                                                                 
+                                                                 
+<span 
+class="colorbox" id="colorbox26"><tspan font-family="cmss" font-size="12">Example</tspan>
+  <tspan font-family="cmss" font-size="12">1:</tspan>
+  <tspan font-family="cmss" font-size="12">Boolean</tspan>
+  <tspan font-family="cmss" font-size="12">Satisfiability</tspan>
+  <tspan font-family="cmss" font-size="12">(SAT)</tspan>                                                             </span>
+<h2 class="frametitle"></h2>Given a boolean formula <tspan font-family="mathkerncmssi" font-size="10">F</tspan>(<tspan font-family="mathkerncmssi" font-size="10">x</tspan><sub><tspan font-family="cmss" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="mathkerncmssi" font-size="10">x</tspan><sub><tspan font-family="cmss" font-size="8">2</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="mathkerncmssi" font-size="10">&#x2026;</tspan><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="mathkerncmssi" font-size="10">x</tspan><sub><tspan font-family="mathkerncmssi" font-size="8">n</tspan></sub>), can <tspan font-family="mathkerncmssi" font-size="10">F </tspan>evaluate to 1 (true)?
+<a 
+ id="x1-55r12"></a>
+<div class="example"><g visibility="hidden">
+ </g> 
+<object data="presentation-309.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage"><tspan font-family="cmss" font-size="12">Example</tspan>                                                                             </div>
+<object data="presentation-311.svg" width="457.39198 " height="8.99997 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object>
+<object data="presentation-318.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage">(<tspan font-family="mathkerncmssi" font-size="10">x</tspan><sub><tspan font-family="cmss" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">&#x2227; </tspan><tspan font-family="mathkerncmssi" font-size="10">x</tspan><sub><tspan font-family="cmss" font-size="8">2</tspan></sub>) <tspan font-family="cmsy" font-size="10">&#x2228;¬</tspan><tspan font-family="mathkerncmssi" font-size="10">x</tspan><sub><tspan font-family="cmss" font-size="8">3</tspan></sub>
+is
+a
+boolean
+formula.
+(1,1,0)
+is
+a
+solution.                                                                                   </div>
+<g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> 
+</div></div>
+<!--l. 200--><p class="noindent" >
+<g visibility="hidden">
+ </g> 
+    <ul class="itemize1">
+    <li class="itemize">
+    <!--l. 200--><p class="noindent" >the
+    first
+    proven
+    <tspan font-family="cmsy" font-size="10"><img 
+src="cmsy10-4e.png" alt="N" class="10-109x-x-4e" /><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /></tspan>-complete
+    problem<g visibility="hidden">
+ </g> <g visibility="hidden">
+ 
+    </li>
+    <li class="itemize">
+    <!--l. 200--><p class="noindent" >from
+    theorem
+    2,
+    in
+    <tspan font-family="cmsy" font-size="10"><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /></tspan>.
+    </li>
+    <li class="itemize">
+    <!--l. 200--><p class="noindent" ><tspan font-family="cmssbx" font-size="10">Exercise</tspan>:
+    find
+    a
+    sufficient
+    algorithm
+    to
+    solve
+    this
+    problem?</li></ul>
+<!--l. 200--><p class="noindent" ><g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> 
+</g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g>                                                                  
+                                                                 
+</div> <div class="slide">
+                                                                 
+                                                                 
+<span 
+class="colorbox" id="colorbox27"><tspan font-family="cmss" font-size="12">Example</tspan>
+  <tspan font-family="cmss" font-size="12">1:</tspan>
+  <tspan font-family="cmss" font-size="12">Boolean</tspan>
+  <tspan font-family="cmss" font-size="12">Satisfiability</tspan>
+  <tspan font-family="cmss" font-size="12">(SAT)</tspan>                                                             </span>
+<h2 class="frametitle"></h2>Given a boolean formula <tspan font-family="mathkerncmssi" font-size="10">F</tspan>(<tspan font-family="mathkerncmssi" font-size="10">x</tspan><sub><tspan font-family="cmss" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="mathkerncmssi" font-size="10">x</tspan><sub><tspan font-family="cmss" font-size="8">2</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="mathkerncmssi" font-size="10">&#x2026;</tspan><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="mathkerncmssi" font-size="10">x</tspan><sub><tspan font-family="mathkerncmssi" font-size="8">n</tspan></sub>), can <tspan font-family="mathkerncmssi" font-size="10">F </tspan>evaluate to 1 (true)?
+<a 
+ id="x1-56r12"></a>
+<div class="example"><g visibility="hidden">
+ </g> 
+<object data="presentation-322.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage"><tspan font-family="cmss" font-size="12">Example</tspan>                                                                             </div>
+<object data="presentation-324.svg" width="457.39198 " height="8.99997 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object>
+<object data="presentation-331.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage">(<tspan font-family="mathkerncmssi" font-size="10">x</tspan><sub><tspan font-family="cmss" font-size="8">1</tspan></sub> <tspan font-family="cmsy" font-size="10">&#x2227; </tspan><tspan font-family="mathkerncmssi" font-size="10">x</tspan><sub><tspan font-family="cmss" font-size="8">2</tspan></sub>) <tspan font-family="cmsy" font-size="10">&#x2228;¬</tspan><tspan font-family="mathkerncmssi" font-size="10">x</tspan><sub><tspan font-family="cmss" font-size="8">3</tspan></sub>
+is
+a
+boolean
+formula.
+(1,1,0)
+is
+a
+solution.                                                                                   </div>
+<g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> 
+</div></div>
+<!--l. 200--><p class="noindent" >
+<g visibility="hidden">
+ </g> 
+    <ul class="itemize1">
+    <li class="itemize">
+    <!--l. 200--><p class="noindent" >the
+    first
+    proven
+    <tspan font-family="cmsy" font-size="10"><img 
+src="cmsy10-4e.png" alt="N" class="10-109x-x-4e" /><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /></tspan>-complete
+    problem<g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> 
+    </li>
+    <li class="itemize">
+    <!--l. 200--><p class="noindent" >from
+    theorem
+    2,
+    in
+    <tspan font-family="cmsy" font-size="10"><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /></tspan>.
+    </li>
+    <li class="itemize">
+    <!--l. 200--><p class="noindent" ><tspan font-family="cmssbx" font-size="10">Exercise</tspan>:
+    find
+    a
+    sufficient
+    algorithm
+    to
+    solve
+    this
+    problem?</li></ul>
+<!--l. 200--><p class="noindent" ><g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> 
+<g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g>                                                                  
+                                                                 
+</div>
+                                                                 
+                                                                 
+<div class="slide"> <span 
+class="colorbox" id="colorbox28"> <tspan font-family="cmss" font-size="12">Example</tspan>
+  <tspan font-family="cmss" font-size="12">2</tspan>                                                                          </span>
+<h2 class="frametitle"></h2><tspan font-family="cmssbx" font-size="10">MAJSAT </tspan>is a special case of SAT in which you are given a boolean formula <tspan font-family="mathkerncmssi" font-size="10">F</tspan>.
+The result of the formula must be 1 if more than half of all assignments
+<tspan font-family="mathkerncmssi" font-size="10">x</tspan><sub><tspan font-family="cmss" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="mathkerncmssi" font-size="10">x</tspan><sub><tspan font-family="cmss" font-size="8">2</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="mathkerncmssi" font-size="10">&#x2026;</tspan><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="mathkerncmssi" font-size="10">x</tspan><sub><tspan font-family="mathkerncmssi" font-size="8">n</tspan></sub> make <tspan font-family="mathkerncmssi" font-size="10">F </tspan>evaluate to 1 and 0 otherwise.<g visibility="hidden">
+ 
+<a 
+ id="x1-57r13"></a>
+<div class="theorem"><g visibility="hidden">
+ </g> 
+<object data="presentation-335.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage"><tspan font-family="cmss" font-size="12">Theorem</tspan>                                                                            </div><object data="presentation-337.svg" width="457.39198 " height="8.99997 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object>
+<object data="presentation-344.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage"><tspan font-family="cmssi" font-size="10">MAJSAT</tspan>
+<tspan font-family="cmssi" font-size="10">is</tspan>
+<tspan font-family="cmsy" font-size="10"><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /></tspan><tspan font-family="cmssi" font-size="10">-complete.</tspan>                                                                            </div>
+<g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> 
+</div></div>
+<!--l. 212--><p class="noindent" >
+Proof uses many-to-one Turing reduction.
+</g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g>                                                                 
+                                                                 
+</div> <div class="slide">
+                                                                 
+                                                                 
+<span 
+class="colorbox" id="colorbox29"><tspan font-family="cmss" font-size="12">Example</tspan>
+  <tspan font-family="cmss" font-size="12">2</tspan>                                                                  </span>
+<h2 class="frametitle"></h2><tspan font-family="cmssbx" font-size="10">MAJSAT </tspan>is a special case of SAT in which you are given a boolean formula <tspan font-family="mathkerncmssi" font-size="10">F</tspan>.
+The result of the formula must be 1 if more than half of all assignments
+<tspan font-family="mathkerncmssi" font-size="10">x</tspan><sub><tspan font-family="cmss" font-size="8">1</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="mathkerncmssi" font-size="10">x</tspan><sub><tspan font-family="cmss" font-size="8">2</tspan></sub><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="mathkerncmssi" font-size="10">&#x2026;</tspan><tspan font-family="cmmi" font-size="10">,</tspan><tspan font-family="mathkerncmssi" font-size="10">x</tspan><sub><tspan font-family="mathkerncmssi" font-size="8">n</tspan></sub> make <tspan font-family="mathkerncmssi" font-size="10">F </tspan>evaluate to 1 and 0 otherwise.<g visibility="hidden">
+ </g> 
+<a 
+ id="x1-58r13"></a>
+<div class="theorem"><g visibility="hidden">
+ </g> 
+<object data="presentation-345.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage"><tspan font-family="cmss" font-size="12">Theorem</tspan>                                                                            </div>
+<object data="presentation-347.svg" width="457.39198 " height="8.99997 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object>
+<object data="presentation-354.svg" width="1.0 " height="2.33333 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object><div class="minipage"><tspan font-family="cmssi" font-size="10">MAJSAT</tspan>
+<tspan font-family="cmssi" font-size="10">is</tspan>
+<tspan font-family="cmsy" font-size="10"><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /><img 
+src="cmsy10-50.png" alt="P" class="10-109x-x-50" /></tspan><tspan font-family="cmssi" font-size="10">-complete.</tspan>                                                                            </div>
+<g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> 
+</div></div>
+<!--l. 212--><p class="noindent" >
+Proof uses many-to-one Turing reduction.
+<g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g> <g visibility="hidden">
+ </g>                                                                  
+                                                                 
+</div>
+                                                                 
+                                                                 
+<div class="slide"> <span 
+class="colorbox" id="colorbox30"> <tspan font-family="cmss" font-size="12">References</tspan>                                                              </span>
+<h2 class="frametitle"></h2>
+     <dl class="enumerate"><dt class="enumerate">
+ <object data="presentation-356.svg" width="13.97769 " height="11.70653 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object> </dt><dd 
+class="enumerate">
+          <!--l. 226--><p class="noindent" >L.
+      Fortnow,
+      and
+      S.
+      Homer.
+      &#8220;A
+      Short
+      History
+      of
+      Computational
+      Complexity
+      -
+      Computer
+      Science,&#8221;
+      <tspan font-family="cmssi" font-size="10">Computational</tspan>
+      <tspan font-family="cmssi" font-size="10">Complexity</tspan>
+      <tspan font-family="cmssi" font-size="10">Conference</tspan>
+      <tspan font-family="cmssi" font-size="10">(CCC)</tspan>,
+      2003.
+      Available:
+      https://people.cs.uchicago.edu/&#x00A0;fortnow/beatcs/column80.pdf.
+      </dd><dt class="enumerate">
+ <object data="presentation-358.svg" width="13.97769 " height="11.70653 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object> </dt><dd 
+class="enumerate">
+          <!--l. 226--><p class="noindent" >J.
+      Katz,
+      &#8221;Notes
+      on
+      Complexity
+      Theory
+      Handout
+      7,&#8221;
+      <tspan font-family="cmssi" font-size="10">The</tspan>
+      <tspan font-family="cmssi" font-size="10">University</tspan>
+      <tspan font-family="cmssi" font-size="10">of</tspan>
+      <tspan font-family="cmssi" font-size="10">Maryland</tspan>,
+      2005.
+      Available:
+      https://www.cs.umd.edu/&#x00A0;jkatz/complexity/f05/lecture7.pdf
+      </dd><dt class="enumerate">
+ <object data="presentation-360.svg" width="13.97769 " height="11.70653 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object> </dt><dd 
+class="enumerate">
+          <!--l. 226--><p class="noindent" >E.
+      Allender,
+      M.
+      Loui,
+      K.
+      Regan,
+      &#8221;Other
+      Complexity
+      Classes
+      and
+      Measures,&#8221;
+      <tspan font-family="cmssi" font-size="10">CRC</tspan>
+      <tspan font-family="cmssi" font-size="10">Handbook</tspan>
+      <tspan font-family="cmssi" font-size="10">on</tspan>
+      <tspan font-family="cmssi" font-size="10">Algorithms</tspan>
+      <tspan font-family="cmssi" font-size="10">and</tspan>
+      <tspan font-family="cmssi" font-size="10">Theory</tspan>
+      <tspan font-family="cmssi" font-size="10">of</tspan>
+      <tspan font-family="cmssi" font-size="10">Computation</tspan>s,
+      Ch.
+      29,
+      January
+      2007.
+      Available:
+      https://cse.buffalo.edu/&#x00A0;regan/papers/pdf/ALRch29.pdf
+      </dd><dt class="enumerate">
+ <object data="presentation-362.svg" width="13.97769 " height="11.70653 " type="image/svg+xml"><p>SVG-Viewer needed.</p></object> </dt><dd 
+class="enumerate">
+          <!--l. 226--><p class="noindent" >S.
+      Toda,
+      &#8221;PP
+      is
+      as
+      Hard
+      as
+      the
+      Polynomial-Time
+      Hierarchy,&#8221;
+      <tspan font-family="cmssi" font-size="10">Siam</tspan>
+      <tspan font-family="cmssi" font-size="10">Journal</tspan>
+      <tspan font-family="cmssi" font-size="10">on</tspan>
+      <tspan font-family="cmssi" font-size="10">Computing</tspan>,
+      Vol.
+      20,
+      No.
+      5,
+      October
+      1991.
+      Available:
+      https://epubs.siam.org/doi/pdf/10.1137/0220053</dd></dl>                
+                                                                 
+</div>
+                                                                 
+                                                                 
+                                                                 
+                                                                 
+ 
+</body></html> 
+
+                                                                 
+                                                                 
+                                                                 
+
+

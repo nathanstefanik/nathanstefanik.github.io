@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?> 
+<?xml-stylesheet href="presentation.css" type="text/css"?> 
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="5.15863pt" height="5.15863pt" viewBox="0.0 0.0 5.15863 5.15863 "> 
+<g transform="translate(0, 5.15863 ) scale(1,-1) translate(0,0.0 )"> 
+ <radialGradient id="pgfsh53" fx="0.3244" fy="0.71463" >
+ <stop offset="0.0" stop-color=" #e1e1f4 "/>
+ <stop offset="0.31218" stop-color=" #6666c6 "/>
+ <stop offset="0.62437" stop-color=" #23237d "/>
+ <stop offset="0.85852" stop-color=" #191959 "/>
+ <stop offset="1.00656" stop-color=" #eaeaf3 "/>
+ </radialGradient>
+ <circle cx="2.57932" cy="2.57932" r="2.57932" style="fill:url(#pgfsh53); stroke:none"/>
+   </g> 
+</svg> 

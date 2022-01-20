@@ -1,0 +1,843 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  
+  "http://www.w3.org/TR/html4/loose.dtd">  
+<html > 
+<head><title>Abelian Varieties</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)"> 
+<meta name="originator" content="TeX4ht (https://tug.org/tex4ht/)"> 
+<!-- html --> 
+<meta name="src" content="main.tex"> 
+<link rel="stylesheet" type="text/css" href="main.css"> 
+</head><body>
+  <nav>  
+    <ul>  
+      <li><a href="../../../index.html"> Home </a></li>  
+      <li><a href="../../blog.html"> Blog </a></li>
+      <li><a href="../../projects.html"> Projects </a></li>
+    </ul>  
+  </nav> 
+
+   <div class="maketitle">
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
+
+<h2 class="titleHead">Abelian Varieties</h2>
+ <div class="author" ><span 
+class="cmr-12">Nathan Stefanik</span></div><br />
+<div class="date" ></div>
+   </div>
+   <h3 class="sectionHead"><span class="titlemark">1   </span> <a 
+ id="x1-10001"></a>Introduction</h3>
+<!--l. 87--><p class="noindent" >Abelian varieties over algebraic number fields are indispensible tools in algebraic geometry and number
+theory. In this report, I give a brief introduction of abelian varieties and offer some deeper topics of
+interest.
+<!--l. 137--><p class="noindent" >
+   <h3 class="sectionHead"><span class="titlemark">2   </span> <a 
+ id="x1-20002"></a>Abelian Varieties</h3>
+<!--l. 139--><p class="noindent" >Abelian varieties have the special property that their points form a group in such a way that the maps defining the
+group structure are given by morphisms. To give a proper definition of an abelian variety, we reintroduce a familiar
+definition of a group.
+   <div class="newtheorem">
+<!--l. 143--><p class="noindent" ><span class="head">
+<a 
+ id="x1-2001r1"></a>
+<span 
+class="cmbx-10">Definition 1.</span>  </span>A <span 
+class="cmbx-10">group </span>consists of a set <span 
+class="cmmi-10">G </span>together with maps <span 
+class="cmmi-10">m </span>: <span 
+class="cmmi-10">G </span><span 
+class="cmsy-10">&#x00D7; </span><span 
+class="cmmi-10">G </span><span 
+class="cmsy-10">&#x2192; </span><span 
+class="cmmi-10">G </span>(the group law),
+<span 
+class="cmmi-10">i </span>: <span 
+class="cmmi-10">G </span><span 
+class="cmsy-10">&#x2192; </span><span 
+class="cmmi-10">G </span>(the inverse), and an identity element <span 
+class="cmmi-10">e </span><span 
+class="cmsy-10">&#x2208; </span><span 
+class="cmmi-10">G </span>such that we have the following eqalities of
+maps:
+     <ol  class="enumerate1" >
+<li 
+  class="enumerate" id="x1-2003x1">
+     <!--l. 148--><p class="noindent" >(Associativity) <span 
+class="cmmi-10">m </span><span 
+class="cmsy-10">&#x2218; </span>(<span 
+class="cmmi-10">m </span><span 
+class="cmsy-10">&#x00D7; </span><span 
+class="cmmi-10">id</span><sub><span 
+class="cmmi-7">G</span></sub>) = <span 
+class="cmmi-10">m </span><span 
+class="cmsy-10">&#x2218; </span>(<span 
+class="cmmi-10">id</span><sub><span 
+class="cmmi-7">G</span></sub> <span 
+class="cmsy-10">&#x00D7; </span><span 
+class="cmmi-10">m</span>) : <span 
+class="cmmi-10">G </span><span 
+class="cmsy-10">&#x00D7; </span><span 
+class="cmmi-10">G </span><span 
+class="cmsy-10">&#x00D7; </span><span 
+class="cmmi-10">G </span><span 
+class="cmsy-10">&#x2192; </span><span 
+class="cmmi-10">G</span>.
+     </li>
+<li 
+  class="enumerate" id="x1-2005x2">
+     <!--l. 149--><p class="noindent" >(Identity) <span 
+class="cmmi-10">m </span><span 
+class="cmsy-10">&#x2218; </span>(<span 
+class="cmmi-10">e </span><span 
+class="cmsy-10">&#x00D7; </span><span 
+class="cmmi-10">id</span><sub><span 
+class="cmmi-7">G</span></sub>) = <span 
+class="cmmi-10">j</span><sub><span 
+class="cmr-7">1</span></sub> : <span 
+class="cmsy-10">{</span><span 
+class="cmmi-10">e</span><span 
+class="cmsy-10">}&#x00D7; </span><span 
+class="cmmi-10">G </span><span 
+class="cmsy-10">&#x2192; </span><span 
+class="cmmi-10">G </span>and <span 
+class="cmmi-10">m </span><span 
+class="cmsy-10">&#x2218; </span>(<span 
+class="cmmi-10">id</span><sub><span 
+class="cmmi-7">G</span></sub> <span 
+class="cmsy-10">&#x00D7; </span><span 
+class="cmmi-10">e</span>) = <span 
+class="cmmi-10">j</span><sub><span 
+class="cmr-7">2</span></sub> : <span 
+class="cmmi-10">G </span><span 
+class="cmsy-10">&#x00D7;{</span><span 
+class="cmmi-10">e</span><span 
+class="cmsy-10">}&#x2192; </span><span 
+class="cmmi-10">G</span>.
+     <!--l. 151--><p class="noindent" ><span 
+class="cmmi-10">j</span><sub><span 
+class="cmr-7">1</span></sub>  and <span 
+class="cmmi-10">j</span><sub><span 
+class="cmr-7">2</span></sub>  are the canonical identifications <span 
+class="cmsy-10">{</span><span 
+class="cmmi-10">e</span><span 
+class="cmsy-10">}&#x00D7; </span><span 
+class="cmmi-10">G</span><img 
+src="main0x.svg" alt="~
+&#x2192;"  class="" > <span 
+class="cmmi-10">G </span>and <span 
+class="cmmi-10">G </span><span 
+class="cmsy-10">&#x00D7;{</span><span 
+class="cmmi-10">e</span><span 
+class="cmsy-10">}</span><img 
+src="main1x.svg" alt="~
+&#x2192;"  class="" > <span 
+class="cmmi-10">G</span>, respectively. <span 
+class="cmmi-10">e </span>is the
+     inclusion map <span 
+class="cmsy-10">{</span><span 
+class="cmmi-10">e</span><span 
+class="cmsy-10">}</span><img 
+src="main2x.svg" alt="`&#x2192;"  class="hookrightarrow" ><span 
+class="cmmi-10">G</span>.
+     </li>
+<li 
+  class="enumerate" id="x1-2007x3">
+                                                                                         
+                                                                                         
+     <!--l. 154--><p class="noindent" >(Left and Right Inverse) <span 
+class="cmmi-10">e </span><span 
+class="cmsy-10">&#x2218; </span><span 
+class="cmmi-10">&#x03C0; </span>= <span 
+class="cmmi-10">m </span><span 
+class="cmsy-10">&#x2218; </span>(<span 
+class="cmmi-10">id</span><sub><span 
+class="cmmi-7">G</span></sub> <span 
+class="cmsy-10">&#x00D7; </span><span 
+class="cmmi-10">i</span>) <span 
+class="cmsy-10">&#x2218; </span>&#x0394;<sub><span 
+class="cmmi-7">G</span></sub> = <span 
+class="cmmi-10">m </span><span 
+class="cmsy-10">&#x2218; </span>(<span 
+class="cmmi-10">i </span><span 
+class="cmsy-10">&#x00D7; </span><span 
+class="cmmi-10">id</span><sub><span 
+class="cmmi-7">G</span></sub>) <span 
+class="cmsy-10">&#x2218; </span>&#x0394;<sub><span 
+class="cmmi-7">G</span></sub> : <span 
+class="cmmi-10">G </span><span 
+class="cmsy-10">&#x2192; </span><span 
+class="cmmi-10">G</span>.
+     <!--l. 156--><p class="noindent" ><span 
+class="cmmi-10">&#x03C0; </span>: <span 
+class="cmmi-10">G </span><span 
+class="cmsy-10">&#x2192;{</span><span 
+class="cmmi-10">e</span><span 
+class="cmsy-10">} </span>is the constant map and &#x0394;<sub><span 
+class="cmmi-7">G</span></sub> : <span 
+class="cmmi-10">G </span><span 
+class="cmsy-10">&#x2192; </span><span 
+class="cmmi-10">G </span><span 
+class="cmsy-10">&#x00D7; </span><span 
+class="cmmi-10">G </span>is the diagonal map.</li></ol>
+   </div>
+<!--l. 158--><p class="indent" >
+<!--l. 160--><p class="indent" >   Then, we define a group variety in a similar fashion.
+   <div class="newtheorem">
+<!--l. 162--><p class="noindent" ><span class="head">
+<a 
+ id="x1-2008r2"></a>
+<span 
+class="cmbx-10">Definition 2.</span>  </span>A <span 
+class="cmbx-10">group variety </span>over a field <span 
+class="cmmi-10">k </span>is a <span 
+class="cmmi-10">k</span>-variety <span 
+class="cmmi-10">X </span>together with <span 
+class="cmmi-10">k</span>-morphisms <span 
+class="cmmi-10">m </span>: <span 
+class="cmmi-10">X </span><span 
+class="cmsy-10">&#x00D7; </span><span 
+class="cmmi-10">X </span><span 
+class="cmsy-10">&#x2192; </span><span 
+class="cmmi-10">X </span>(the
+group law), <span 
+class="cmmi-10">i </span>: <span 
+class="cmmi-10">X </span><span 
+class="cmsy-10">&#x2192; </span><span 
+class="cmmi-10">X </span>(the inverse), and a <span 
+class="cmmi-10">k</span>-rational point <span 
+class="cmmi-10">e </span><span 
+class="cmsy-10">&#x2208; </span><span 
+class="cmmi-10">X</span>(<span 
+class="cmmi-10">k</span>) (the identity element) such that we have the
+following equalities of morphisms.
+     <ol  class="enumerate1" >
+<li 
+  class="enumerate" id="x1-2010x1">
+     <!--l. 167--><p class="noindent" >(Associativity) <span 
+class="cmmi-10">m </span><span 
+class="cmsy-10">&#x2218; </span>(<span 
+class="cmmi-10">m </span><span 
+class="cmsy-10">&#x00D7; </span><span 
+class="cmmi-10">id</span><sub><span 
+class="cmmi-7">X</span></sub>) = <span 
+class="cmmi-10">m </span><span 
+class="cmsy-10">&#x2218; </span>(<span 
+class="cmmi-10">id</span><sub><span 
+class="cmmi-7">X</span></sub><span 
+class="cmmi-10">G </span><span 
+class="cmsy-10">&#x00D7; </span><span 
+class="cmmi-10">m</span>) : <span 
+class="cmmi-10">X </span><span 
+class="cmsy-10">&#x00D7; </span><span 
+class="cmmi-10">X </span><span 
+class="cmsy-10">&#x00D7; </span><span 
+class="cmmi-10">X </span><span 
+class="cmsy-10">&#x2192; </span><span 
+class="cmmi-10">X</span>.
+     </li>
+<li 
+  class="enumerate" id="x1-2012x2">
+     <!--l. 168--><p class="noindent" >(Identity) <span 
+class="cmmi-10">m </span><span 
+class="cmsy-10">&#x2218; </span>(<span 
+class="cmmi-10">e </span><span 
+class="cmsy-10">&#x00D7; </span><span 
+class="cmmi-10">id</span><sub><span 
+class="cmmi-7">X</span></sub>) = <span 
+class="cmmi-10">j</span><sub><span 
+class="cmr-7">1</span></sub> : Spec(<span 
+class="cmmi-10">k</span>) <span 
+class="cmsy-10">&#x00D7; </span><span 
+class="cmmi-10">X </span><span 
+class="cmsy-10">&#x2192; </span><span 
+class="cmmi-10">X </span>and <span 
+class="cmmi-10">m </span><span 
+class="cmsy-10">&#x2218; </span>(<span 
+class="cmmi-10">id</span><sub><span 
+class="cmmi-7">X</span></sub> <span 
+class="cmsy-10">&#x00D7; </span><span 
+class="cmmi-10">e</span>) = <span 
+class="cmmi-10">j</span><sub><span 
+class="cmr-7">2</span></sub> : <span 
+class="cmmi-10">X </span><span 
+class="cmsy-10">&#x00D7;</span> Spec(<span 
+class="cmmi-10">k</span>) <span 
+class="cmsy-10">&#x2192; </span><span 
+class="cmmi-10">X</span>.
+     <!--l. 170--><p class="noindent" ><span 
+class="cmmi-10">j</span><sub><span 
+class="cmr-7">1</span></sub> and <span 
+class="cmmi-10">j</span><sub><span 
+class="cmr-7">2</span></sub> are the canonical identifications Spec(<span 
+class="cmmi-10">k</span>) <span 
+class="cmsy-10">&#x00D7; </span><span 
+class="cmmi-10">X</span><img 
+src="main3x.svg" alt="~
+&#x2192;"  class="" > <span 
+class="cmmi-10">X </span>and <span 
+class="cmmi-10">X </span><span 
+class="cmsy-10">&#x00D7;</span> Spec(<span 
+class="cmmi-10">k</span>)<img 
+src="main4x.svg" alt="~
+&#x2192;"  class="" > <span 
+class="cmmi-10">X</span>, respectively.
+     </li>
+<li 
+  class="enumerate" id="x1-2014x3">
+     <!--l. 172--><p class="noindent" >(Left and Right Inverse) <span 
+class="cmmi-10">e </span><span 
+class="cmsy-10">&#x2218; </span><span 
+class="cmmi-10">&#x03C0; </span>= <span 
+class="cmmi-10">m </span><span 
+class="cmsy-10">&#x2218; </span>(<span 
+class="cmmi-10">id</span><sub><span 
+class="cmmi-7">X</span></sub> <span 
+class="cmsy-10">&#x00D7; </span><span 
+class="cmmi-10">i</span>) <span 
+class="cmsy-10">&#x2218; </span>&#x0394;<sub><span 
+class="cmmi-7">X&#x2215;k</span></sub> = <span 
+class="cmmi-10">m </span><span 
+class="cmsy-10">&#x2218; </span>(<span 
+class="cmmi-10">i </span><span 
+class="cmsy-10">&#x00D7; </span><span 
+class="cmmi-10">id</span><sub><span 
+class="cmmi-7">X</span></sub>) <span 
+class="cmsy-10">&#x2218; </span>&#x0394;<sub><span 
+class="cmmi-7">X&#x2215;k</span></sub> : <span 
+class="cmmi-10">X </span><span 
+class="cmsy-10">&#x2192; </span><span 
+class="cmmi-10">X</span>.
+     <!--l. 174--><p class="noindent" ><span 
+class="cmmi-10">&#x03C0; </span>: <span 
+class="cmmi-10">X </span><span 
+class="cmsy-10">&#x2192;</span> Spec(<span 
+class="cmmi-10">k</span>) is the structure morphism.</li></ol>
+<!--l. 176--><p class="noindent" >[<a 
+ id="x1-2015"></a><a 
+href="#cite.0@moonen">GM</a>]
+   </div>
+<!--l. 177--><p class="indent" >
+   <div class="newtheorem">
+<!--l. 179--><p class="noindent" ><span class="head">
+<a 
+ id="x1-2016r3"></a>
+<span 
+class="cmbx-10">Definition 3.</span>  </span>An <span 
+class="cmbx-10">abelian variety </span><span 
+class="cmmi-10">X </span>is a group variety that is complete. In other words, <span 
+class="cmmi-10">X </span>is a group
+variety with the property that for any variety <span 
+class="cmmi-10">Y </span>, the projection <span 
+class="cmmi-10">X </span><span 
+class="cmsy-10">&#x00D7; </span><span 
+class="cmmi-10">Y </span><span 
+class="cmsy-10">&#x2192; </span><span 
+class="cmmi-10">Y </span>is a closed morphism.
+   </div>
+<!--l. 182--><p class="indent" >
+   <div class="newtheorem">
+<!--l. 184--><p class="noindent" ><span class="head">
+<span 
+class="cmti-10">Remark.</span>  </span>A group variety is complete if it is a projective variety.
+                                                                                         
+                                                                                         
+   </div>
+<!--l. 186--><p class="indent" >
+<!--l. 188--><p class="indent" >   We are hoping these abelian varieties are commutative. We will prove this by way of the rigidity
+lemma.
+   <div class="newtheorem">
+<!--l. 190--><p class="noindent" ><span class="head">
+<a 
+ id="x1-2017r4"></a>
+<span 
+class="cmbx-10">Lemma 4 </span>(Rigidity Lemma)<span 
+class="cmbx-10">.</span>  </span><span 
+class="cmti-10">Let </span><span 
+class="cmmi-10">X </span><span 
+class="cmti-10">be a complete variety, </span><span 
+class="cmmi-10">Y  </span><span 
+class="cmti-10">and </span><span 
+class="cmmi-10">Z </span><span 
+class="cmti-10">any varieties, and </span><span 
+class="cmmi-10">f </span>: <span 
+class="cmmi-10">X </span><span 
+class="cmsy-10">&#x00D7; </span><span 
+class="cmmi-10">Y  </span><span 
+class="cmsy-10">&#x2192; </span><span 
+class="cmmi-10">Z</span>
+<span 
+class="cmti-10">a morphism such that for some </span><span 
+class="cmmi-10">y</span><sub><span 
+class="cmr-7">0</span></sub> <span 
+class="cmsy-10">&#x2208; </span><span 
+class="cmmi-10">Y,f</span>(<span 
+class="cmmi-10">X </span><span 
+class="cmsy-10">&#x00D7;{</span><span 
+class="cmmi-10">y</span><sub><span 
+class="cmr-7">0</span></sub><span 
+class="cmsy-10">}</span>) <span 
+class="cmti-10">is a single point </span><span 
+class="cmmi-10">z</span><sub><span 
+class="cmr-7">0</span></sub> <span 
+class="cmti-10">of </span><span 
+class="cmmi-10">Z</span><span 
+class="cmti-10">. Then, there is a morphism</span>
+<span 
+class="cmmi-10">g </span>: <span 
+class="cmmi-10">Y </span><span 
+class="cmsy-10">&#x2192; </span><span 
+class="cmmi-10">Z </span><span 
+class="cmti-10">such that if </span><span 
+class="cmmi-10">p</span><sub><span 
+class="cmr-7">2</span></sub> : <span 
+class="cmmi-10">X </span><span 
+class="cmsy-10">&#x00D7; </span><span 
+class="cmmi-10">Y </span><span 
+class="cmsy-10">&#x2192; </span><span 
+class="cmmi-10">Y </span><span 
+class="cmti-10">is the projection, </span><span 
+class="cmmi-10">f </span>= <span 
+class="cmmi-10">g </span><span 
+class="cmsy-10">&#x2218; </span><span 
+class="cmmi-10">p</span><sub><span 
+class="cmr-7">2</span></sub><span 
+class="cmti-10">. [</span><a 
+ id="x1-2018"></a><a 
+href="#cite.0@mumford"><span 
+class="cmti-10">Mum85</span></a><span 
+class="cmti-10">]</span>
+   </div>
+<!--l. 194--><p class="indent" >
+   <div class="proof">
+<!--l. 197--><p class="indent" >   <span class="head">
+<span 
+class="cmti-10">Proof.</span> </span>For any point <span 
+class="cmmi-10">x</span><sub><span 
+class="cmr-7">0</span></sub> <span 
+class="cmsy-10">&#x2208; </span><span 
+class="cmmi-10">X</span>, define <span 
+class="cmmi-10">g </span>: <span 
+class="cmmi-10">Y </span><span 
+class="cmsy-10">&#x2192; </span><span 
+class="cmmi-10">Z </span>by <span 
+class="cmmi-10">g</span>(<span 
+class="cmmi-10">y</span>) = <span 
+class="cmmi-10">f</span>(<span 
+class="cmmi-10">x</span><sub><span 
+class="cmr-7">0</span></sub><span 
+class="cmmi-10">,y</span>). Let <span 
+class="cmmi-10">U </span>be an affine open neighborhood of
+<span 
+class="cmmi-10">z</span><sub><span 
+class="cmr-7">0</span></sub> in <span 
+class="cmmi-10">Z</span>, <span 
+class="cmmi-10">F </span>= <span 
+class="cmmi-10">Z </span><span 
+class="cmsy-10">-</span><span 
+class="cmmi-10">U</span>, and <span 
+class="cmmi-10">G </span>= <span 
+class="cmmi-10">p</span><sub><span 
+class="cmr-7">2</span></sub>(<span 
+class="cmmi-10">f</span><sup><span 
+class="cmsy-7">-</span><span 
+class="cmr-7">1</span></sup>(<span 
+class="cmmi-10">F</span>)). Then, <span 
+class="cmmi-10">G </span>is closed in <span 
+class="cmmi-10">Y </span>since <span 
+class="cmmi-10">X </span>is complete, so <span 
+class="cmmi-10">p</span><sub><span 
+class="cmr-7">2</span></sub> is a closed map.
+Since <span 
+class="cmmi-10">y</span><sub><span 
+class="cmr-7">0</span></sub><img 
+src="main5x.svg" alt="&#x2215;&#x2208;"  class="notin" ><span 
+class="cmmi-10">G</span>, <span 
+class="cmmi-10">Y </span><span 
+class="cmsy-10">-</span><span 
+class="cmmi-10">G </span>= <span 
+class="cmmi-10">V </span>is non-empty open subset of <span 
+class="cmmi-10">Y </span>. For each <span 
+class="cmmi-10">y </span><span 
+class="cmsy-10">&#x2208; </span><span 
+class="cmmi-10">V </span>, the complete variety <span 
+class="cmmi-10">X </span><span 
+class="cmsy-10">&#x00D7;{</span><span 
+class="cmmi-10">y</span><span 
+class="cmsy-10">} </span>gets
+mapped by <span 
+class="cmmi-10">f </span>into the affine variety <span 
+class="cmmi-10">U</span>, and so it gets mapped into a single point of <span 
+class="cmmi-10">U</span>. Therefore, for any
+<span 
+class="cmmi-10">x </span><span 
+class="cmsy-10">&#x2208; </span><span 
+class="cmmi-10">X,y </span><span 
+class="cmsy-10">&#x2208; </span><span 
+class="cmmi-10">V,f</span>(<span 
+class="cmmi-10">x,y</span>) = <span 
+class="cmmi-10">f</span>(<span 
+class="cmmi-10">x</span><sub><span 
+class="cmr-7">0</span></sub><span 
+class="cmmi-10">,y</span>) = <span 
+class="cmmi-10">g </span><span 
+class="cmsy-10">&#x2218; </span><span 
+class="cmmi-10">p</span><sub><span 
+class="cmr-7">2</span></sub>(<span 
+class="cmmi-10">x,y</span>).                                                                               __
+   </div>
+   <div class="newtheorem">
+<!--l. 204--><p class="noindent" ><span class="head">
+<a 
+ id="x1-2019r5"></a>
+<span 
+class="cmbx-10">Corollary 5.</span>  </span><span 
+class="cmti-10">If </span><span 
+class="cmmi-10">X </span><span 
+class="cmti-10">and </span><span 
+class="cmmi-10">Y  </span><span 
+class="cmti-10">are abelian varieties and </span><span 
+class="cmmi-10">f </span>: <span 
+class="cmmi-10">X </span><span 
+class="cmsy-10">&#x2192; </span><span 
+class="cmmi-10">Y  </span><span 
+class="cmti-10">is any morphism, </span><span 
+class="cmmi-10">f</span>(<span 
+class="cmmi-10">x</span>) = <span 
+class="cmmi-10">h</span>(<span 
+class="cmmi-10">x</span>) + <span 
+class="cmmi-10">a </span><span 
+class="cmti-10">where </span><span 
+class="cmmi-10">h</span>
+<span 
+class="cmti-10">is a homomorphism of </span><span 
+class="cmmi-10">X </span><span 
+class="cmti-10">into </span><span 
+class="cmmi-10">Y </span><span 
+class="cmti-10">and </span><span 
+class="cmmi-10">a </span><span 
+class="cmsy-10">&#x2208; </span><span 
+class="cmmi-10">Y </span><span 
+class="cmti-10">.</span>
+   </div>
+<!--l. 207--><p class="indent" >
+   <div class="proof">
+<!--l. 210--><p class="indent" >   <span class="head">
+<span 
+class="cmti-10">Proof.</span> </span>Let <span 
+class="cmmi-10">f </span>= <span 
+class="cmmi-10">f </span><span 
+class="cmsy-10">- </span><span 
+class="cmmi-10">f</span>(0) and assume that <span 
+class="cmmi-10">f</span>(0) = 0. Consider the morphism <span 
+class="cmmi-10">&#x03D5; </span>: <span 
+class="cmmi-10">X </span><span 
+class="cmsy-10">&#x00D7; </span><span 
+class="cmmi-10">X </span><span 
+class="cmsy-10">&#x2192; </span><span 
+class="cmmi-10">Y  </span>defined by
+<span 
+class="cmmi-10">&#x03D5;</span>(<span 
+class="cmmi-10">x,y</span>) = <span 
+class="cmmi-10">f</span>(<span 
+class="cmmi-10">x</span>+<span 
+class="cmmi-10">y</span>)<span 
+class="cmsy-10">-</span><span 
+class="cmmi-10">f</span>(<span 
+class="cmmi-10">y</span>)<span 
+class="cmsy-10">-</span><span 
+class="cmmi-10">f</span>(<span 
+class="cmmi-10">x</span>). Then, <span 
+class="cmmi-10">&#x03D5;</span>(<span 
+class="cmmi-10">X </span><span 
+class="cmsy-10">&#x00D7;{</span>0<span 
+class="cmsy-10">}</span>) = <span 
+class="cmmi-10">&#x03D5;</span>(<span 
+class="cmsy-10">{</span>0<span 
+class="cmsy-10">}&#x00D7;</span><span 
+class="cmmi-10">X</span>) = 0. By the rigidity lemma, <span 
+class="cmmi-10">&#x03D5; </span>is equivalent
+to 0 on <span 
+class="cmmi-10">X </span><span 
+class="cmsy-10">&#x00D7; </span><span 
+class="cmmi-10">X</span>, and so <span 
+class="cmmi-10">f </span>must be a homomorphism.                                                                      __
+   </div>
+   <div class="newtheorem">
+<!--l. 215--><p class="noindent" ><span class="head">
+<a 
+ id="x1-2020r6"></a>
+<span 
+class="cmbx-10">Corollary 6.</span>  </span><span 
+class="cmmi-10">X </span><span 
+class="cmti-10">is a commutative group.</span>
+                                                                                         
+                                                                                         
+   </div>
+<!--l. 217--><p class="indent" >
+   <div class="proof">
+<!--l. 220--><p class="indent" >   <span class="head">
+<span 
+class="cmti-10">Proof.</span> </span>The morphism of <span 
+class="cmmi-10">X </span>into itself mapping each element onto its inverse is a homomorphism by Corollary
+1. For <span 
+class="cmmi-10">x,y </span><span 
+class="cmsy-10">&#x2208; </span><span 
+class="cmmi-10">X,</span>(<span 
+class="cmmi-10">xy</span>)<sup><span 
+class="cmsy-7">-</span><span 
+class="cmr-7">1</span></sup> = <span 
+class="cmmi-10">x</span><sup><span 
+class="cmsy-7">-</span><span 
+class="cmr-7">1</span></sup><span 
+class="cmmi-10">y</span><sup><span 
+class="cmsy-7">-</span><span 
+class="cmr-7">1</span></sup> = <span 
+class="cmmi-10">y</span><sup><span 
+class="cmsy-7">-</span><span 
+class="cmr-7">1</span></sup><span 
+class="cmmi-10">x</span><sup><span 
+class="cmsy-7">-</span><span 
+class="cmr-7">1</span></sup>.                                                                                 __
+   </div>
+<!--l. 224--><p class="indent" >   Now, we have the tools to prove the following theorem (although I omit the proof here. See page 45 of
+[<a 
+ id="x1-2021"></a><a 
+href="#cite.0@mumford">Mum85</a>].)
+   <div class="newtheorem">
+<!--l. 226--><p class="noindent" ><span class="head">
+<a 
+ id="x1-2022r7"></a>
+<span 
+class="cmbx-10">Theorem 7.</span>  </span><span 
+class="cmti-10">Let </span><span 
+class="cmmi-10">X </span><span 
+class="cmti-10">be a complete variety, </span><span 
+class="cmmi-10">e </span><span 
+class="cmsy-10">&#x2208; </span><span 
+class="cmmi-10">X </span><span 
+class="cmti-10">a point, and</span>
+   <div class="math-display" >
+<img 
+src="main6x.svg" alt="m : X &#x00D7; X &#x2192; X
+" class="math-display" ></div>
+<!--l. 229--><p class="indent" >   <span 
+class="cmti-10">a morphism such taht </span><span 
+class="cmmi-10">m</span>(<span 
+class="cmmi-10">x,e</span>) = <span 
+class="cmmi-10">m</span>(<span 
+class="cmmi-10">e,x</span>) = <span 
+class="cmmi-10">x </span><span 
+class="cmti-10">for all </span><span 
+class="cmmi-10">x </span><span 
+class="cmsy-10">&#x2208; </span><span 
+class="cmmi-10">X</span><span 
+class="cmti-10">. Then, </span><span 
+class="cmmi-10">X </span><span 
+class="cmti-10">is an abelian variety with group law</span>
+<span 
+class="cmmi-10">m </span><span 
+class="cmti-10">and identity </span><span 
+class="cmmi-10">e</span><span 
+class="cmti-10">.</span>
+   </div>
+<!--l. 231--><p class="indent" >
+<!--l. 233--><p class="indent" >   From here, it is natural to study divisors on abelian varieties for the purpose of showing that abelian varieties are
+indeed projective. Some important tools for this result are the theorem of the square and the see-saw principle (see
+chapter 2 of [<a 
+ id="x1-2023"></a><a 
+href="#cite.0@moonen">GM</a>]). Rather than diving deeper into the theory, let&#8217;s look at a classic example of an abelian
+variety.
+<!--l. 238--><p class="noindent" >
+   <h3 class="sectionHead"><span class="titlemark">3   </span> <a 
+ id="x1-30003"></a>Elliptic Curves</h3>
+   <div  
+class="centerline">                                                                    <img 
+src="Screenshot_20211217_124859.png" alt="PIC"  
+width="312" height="313" >                                                                    </div>
+<!--l. 243--><p class="indent" >   As Hartshorne puts it, &#8221;the theory of elliptic curves is varied and rich, and provides a good example of the
+profound connections between abstract algebraic geometry, complex analysis, and number theory,&#8221; [<a 
+ id="x1-3001"></a><a 
+href="#cite.0@hartshorne">Har77</a>]. In this
+section, we show that elliptic curves are abelian varieties by deriving the rational maps (through Sage) that define
+the group law.
+                                                                                         
+                                                                                         
+<!--l. 248--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">3.1   </span> <a 
+ id="x1-40003.1"></a>The Group Law for Elliptic Curves</h4>
+<!--l. 250--><p class="noindent" >The group law for an elliptic curve defined by a Weierstrass equation is given by the following rule
+[<a 
+ id="x1-4001"></a><a 
+href="#cite.0@mit">Sut21</a>]:
+<!--l. 252--><p class="indent" >
+   <div class="math-display" >
+<img 
+src="main7x.svg" alt="Three points on a line sum to zero, which is the point at infinity.
+" class="math-display" ></div>
+<!--l. 254--><p class="indent" >   For projective curves in Weierstrass form <span 
+class="cmmi-10">E </span>: <span 
+class="cmmi-10">y</span><sup><span 
+class="cmr-7">2</span></sup><span 
+class="cmmi-10">z </span>= <span 
+class="cmmi-10">x</span><sup><span 
+class="cmr-7">3</span></sup> + <span 
+class="cmmi-10">Axz</span><sup><span 
+class="cmr-7">2</span></sup> + <span 
+class="cmmi-10">Bz</span><sup><span 
+class="cmr-7">3</span></sup>, we will take our distinguished point to be
+<span 
+class="cmmi-10">O </span>= (0 : 1 : 0). Then, every point <span 
+class="cmmi-10">P </span>= (<span 
+class="cmmi-10">x</span><sub><span 
+class="cmr-7">0</span></sub> : <span 
+class="cmmi-10">y</span><sub><span 
+class="cmr-7">0</span></sub> : 1) that&#8217;s not the distinguished point on the curve has a nonzero
+<span 
+class="cmmi-10">z</span>-coordinate (scaled to 1). We find another point <span 
+class="cmmi-10">Q </span>= (<span 
+class="cmmi-10">x</span><sub><span 
+class="cmr-7">0</span></sub> : <span 
+class="cmsy-10">-</span><span 
+class="cmmi-10">y</span><sub><span 
+class="cmr-7">0</span></sub> : 1) on the curve for which the line through
+<span 
+class="cmmi-10">P </span>and <span 
+class="cmmi-10">Q </span>is defined by <span 
+class="cmmi-10">x </span>= <span 
+class="cmmi-10">x</span><sub><span 
+class="cmr-7">0</span></sub><span 
+class="cmmi-10">z</span>. <span 
+class="cmmi-10">O </span>also lies on the line, we have three points <span 
+class="cmmi-10">P,Q,O </span>that lie on a
+line:
+   <div class="math-display" >
+<img 
+src="main8x.svg" alt="P + Q + O = P + Q = O =&#x21D2;  Q = - P
+" class="math-display" ></div>
+<!--l. 260--><p class="indent" >   Now, we check for the properties defined earlier.
+     <ol  class="enumerate1" >
+<li 
+  class="enumerate" id="x1-4003x1">
+     <!--l. 262--><p class="noindent" >(Associativity) See <a 
+href="https://cocalc.com/share/public_paths/a6a1c2b188bd61d94c3dd3bfd5aa73722e8bd38b" >Andrew Sutherland&#8217;s Sage notebook</a> for the algebraic proof.
+     </li>
+<li 
+  class="enumerate" id="x1-4005x2">
+     <!--l. 265--><p class="noindent" >(Identity) <span 
+class="cmmi-10">O </span>is the identity element. Take any non-distinguished point <span 
+class="cmmi-10">P</span>. Then, the line between <span 
+class="cmmi-10">O</span>
+     and <span 
+class="cmmi-10">P </span>intersects the curve at <span 
+class="cmsy-10">-</span><span 
+class="cmmi-10">P</span>: <span 
+class="cmmi-10">O </span>+ <span 
+class="cmmi-10">P </span>+ (<span 
+class="cmsy-10">-</span><span 
+class="cmmi-10">P</span>) = <span 
+class="cmmi-10">O</span>. Thus, <span 
+class="cmmi-10">O </span>+ <span 
+class="cmmi-10">P </span>= <span 
+class="cmmi-10">P</span>.
+     </li>
+<li 
+  class="enumerate" id="x1-4007x3">
+     <!--l. 267--><p class="noindent" >(Inverse) See above. For a point <span 
+class="cmmi-10">P </span>on the curve, <span 
+class="cmsy-10">-</span><span 
+class="cmmi-10">P </span>is its inverse.</li></ol>
+   <div class="newtheorem">
+<!--l. 270--><p class="noindent" ><span class="head">
+<a 
+ id="x1-4008r8"></a>
+                                                                                         
+                                                                                         
+<span 
+class="cmbx-10">Theorem 8.</span>  </span><span 
+class="cmti-10">Every one-dimensional abelian variety is an elliptic curve.</span>
+   </div>
+<!--l. 272--><p class="indent" >
+<!--l. 274--><p class="indent" >   I leave the proof for the reader. One must show that projective curves have genus 1, and the group operation on
+the abelian variety is the same as the one induced by the group law, taking the identity element as the distinguished
+point.
+<!--l. 296--><p class="noindent" >
+   <h3 class="sectionHead"><span class="titlemark">4   </span> <a 
+ id="x1-50004"></a>Further Reading</h3>
+<!--l. 298--><p class="noindent" >I have left off a portion on the algebraic theoy of abelian varieties concerning cohomology groups and the theorem of
+the cube. For this, I would read [<a 
+ id="x1-5001"></a><a 
+href="#cite.0@mumford">Mum85</a>].
+<!--l. 302--><p class="indent" >   There are plenty of directions to go following this material (after studying the above). The following are natural
+ideas to explore:
+     <ul class="itemize1">
+     <li class="itemize">
+     <!--l. 306--><p class="noindent" >complex tori and their equivalence to abelian varieties
+     </li>
+     <li class="itemize">
+     <!--l. 307--><p class="noindent" >dual abelian varieties
+     </li>
+     <li class="itemize">
+     <!--l. 308--><p class="noindent" >Jacobian variety
+     </li>
+     <li class="itemize">
+     <!--l. 309--><p class="noindent" >moduli spaces of abelian varieties
+     </li>
+     <li class="itemize">
+     <!--l. 310--><p class="noindent" >complex multiplication of abelian varieties
+     </li>
+     <li class="itemize">
+     <!--l. 311--><p class="noindent" >elliptic modular curves
+     </li>
+     <li class="itemize">
+     <!--l. 312--><p class="noindent" >shimura varieties</li></ul>
+                                                                                         
+                                                                                         
+<!--l. 349--><p class="noindent" >
+   <h3 class="sectionHead"><a 
+ id="x1-60004"></a>References</h3>
+<!--l. 349--><p class="noindent" >
+         <dl class="thebibliography"><dt id="X0-moonen" class="thebibliography">
+[GM]     </dt><dd 
+id="bib-1" class="thebibliography">
+         <!--l. 349--><p class="noindent" ><a 
+ id="cite.0@moonen"></a>Gerard  van  der  Geer  and  Ben  Moonen.  <span 
+class="cmti-10">Abelian  Varieties</span>.  Preliminary  Version  of  the  First
+         Chapters. <span 
+class="cmcsc-10"><span 
+class="small-caps">u</span><span 
+class="small-caps">r</span><span 
+class="small-caps">l</span></span>:     <a 
+href="https://www.math.ru.nl/~bmoonen/research.html#bookabvar" class="url" ><span 
+class="cmtt-10">https://www.math.ru.nl/</span><span 
+class="cmtt-10">~</span><span 
+class="cmtt-10">bmoonen/research.html#bookabvar</span></a>.
+         </dd><dt id="X0-hartshorne" class="thebibliography">
+[Har77]   </dt><dd 
+id="bib-2" class="thebibliography">
+         <!--l. 349--><p class="noindent" ><a 
+ id="cite.0@hartshorne"></a>Robin Hartshorne. <span 
+class="cmti-10">Algebraic Geometry</span>. Springer-Verlag Graduate Texts in Mathematics 52, 1977.
+         </dd><dt id="X0-mumford" class="thebibliography">
+[Mum85]  </dt><dd 
+id="bib-3" class="thebibliography">
+         <!--l. 349--><p class="noindent" ><a 
+ id="cite.0@mumford"></a>David Mumford. <span 
+class="cmti-10">Algebraic Varieties</span>. Oxford University Press, 1985.
+         </dd><dt id="X0-mit" class="thebibliography">
+[Sut21]   </dt><dd 
+id="bib-4" class="thebibliography">
+         <!--l. 349--><p class="noindent" ><a 
+ id="cite.0@mit"></a>Andrew  Sutherland.  <span 
+class="cmti-10">18.783  Elliptic  Curves</span>.  Massachusetts  Institute  of  Technology:  MIT
+         OpenCourseWare. License: Creative Commons BY-NC-SA, 2021.</dd></dl>
+    
+</body></html> 
+
+                                                                                         
+                                                                                         
+                                                                                         
+
+

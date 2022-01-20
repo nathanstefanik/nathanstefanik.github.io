@@ -1,0 +1,1714 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  
+  "http://www.w3.org/TR/html4/loose.dtd">  
+<html > 
+<head><title>An Introduction to Characteristic Classes</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)"> 
+<meta name="originator" content="TeX4ht (https://tug.org/tex4ht/)"> 
+<!-- html --> 
+<meta name="src" content="main.tex"> 
+<link rel="stylesheet" type="text/css" href="main.css"> 
+</head><body 
+>
+  <nav>  
+    <ul>  
+      <li><a href="../../../index.html"> Home </a></li>  
+      <li><a href="../../blog.html"> Blog </a></li>
+      <li><a href="../../projects.html"> Projects </a></li>
+    </ul>  
+  </nav> 
+
+</nav>
+
+  <div class="maketitle">
+  <h2 class="titleHead">
+AN INTRODUCTION TO CHARACTERISTIC CLASSES
+  </h2>
+  <div class="authors"><span class="author" >
+<span 
+class="cmr-9">NATHAN STEFANIK AND</span><span 
+class="cmr-9">&#x00A0;AMAAN MARFATIA</span>
+  </span></div>
+<div class="submaketitle">
+</div>
+  </div>
+  <h3 class="sectionHead"><span class="titlemark">1. </span> <a 
+ id="x1-10001"></a>Introduction</h3>
+<!--l. 41--><p class="noindent" >                                                                                         <br 
+class="newline" />In algebraic topology, we wish to use tools from abstract algebra to help us classify topological spaces up
+to homomorphism by way of algebraic invariants. One way to do this is through chracteristic classes. In
+this paper, we will give a basic roadmap to an axiomatic approach to Stiefel-Whitney classes. We will first
+study vector bundles and then cohomology groups which will then be combined to discover characteristic
+classes. After giving some applications and examples, mainly about Stiefel-Whitney numbers, we
+hope to motivate the study of other characteristic classes such as the Chern or Pontrjagin
+classes.
+  <h3 class="sectionHead"><span class="titlemark">2. </span> <a 
+ id="x1-20002"></a>Vector Bundles</h3>
+<!--l. 47--><p class="noindent" >                                                                                         <br 
+class="newline" />Vector bundles are important to the study of topological spaces as they give a precise idea about families
+of vector spaces parametrized by some other space. Through their applications, we can find deeper
+properties about the spaces themselves and also maps between spaces. (maybe something on finitely
+generated projective modules)
+  <div class="newtheorem">
+<!--l. 51--><p class="noindent" ><span class="head">
+<a 
+ id="x1-2001r1"></a>
+<span 
+class="cmbx-10x-x-109">Definition 1.</span>  </span><span 
+class="cmti-10x-x-109">A </span><span 
+class="cmbxti-10x-x-109">real vector bundle </span><span 
+class="cmmi-10x-x-109">&#x03BE; </span><span 
+class="cmti-10x-x-109">over </span><span 
+class="cmmi-10x-x-109">B </span><span 
+class="cmti-10x-x-109">consists of the following:</span>
+         <ol  class="enumerate1" >
+<li 
+  class="enumerate" id="x1-2002x1">
+       <!--l. 54--><p class="indent" >    <span 
+class="cmti-10x-x-109">A topological space </span><span 
+class="cmmi-10x-x-109">E </span>= <span 
+class="cmmi-10x-x-109">E</span>(<span 
+class="cmmi-10x-x-109">&#x03BE;</span>) <span 
+class="cmti-10x-x-109">called the total space;</span>
+         </li>
+<li 
+  class="enumerate" id="x1-2003x1">
+       <!--l. 55--><p class="indent" >    <span 
+class="cmti-10x-x-109">A continuous map </span><span 
+class="cmmi-10x-x-109">&#x03C0; </span>: <span 
+class="cmmi-10x-x-109">E </span><span 
+class="cmsy-10x-x-109">&#x2192; </span><span 
+class="cmmi-10x-x-109">B </span><span 
+class="cmti-10x-x-109">called the projection map;</span>
+
+         </li>
+<li 
+  class="enumerate" id="x1-2004x1">
+       <!--l. 56--><p class="indent" >    <span 
+class="cmti-10x-x-109">For each </span><span 
+class="cmmi-10x-x-109">b </span><span 
+class="cmsy-10x-x-109">&#x2208; </span><span 
+class="cmmi-10x-x-109">B</span><span 
+class="cmti-10x-x-109">, the structure of a vector space over the real numbers in the set </span><span 
+class="cmmi-10x-x-109">&#x03C0;</span><sup><span 
+class="cmsy-8">-</span><span 
+class="cmr-8">1</span></sup>(<span 
+class="cmmi-10x-x-109">b</span>)<span 
+class="cmti-10x-x-109">.</span></li></ol>
+  </div>
+<!--l. 58--><p class="indent" >
+<!--l. 60--><p class="indent" >  We can think of vector bundles visually as some bridging structure defined by the projection map from
+one space to another. To help digest this definition, let us give some simple examples starting off with the
+trivial bundle.
+  <div class="newtheorem">
+<!--l. 62--><p class="noindent" ><span class="head">
+<a 
+ id="x1-2005r1"></a>
+<span 
+class="cmbx-10x-x-109">Example 1.</span>  </span><span 
+class="cmti-10x-x-109">The trivial bundle with total space </span><span 
+class="cmmi-10x-x-109">B </span><span 
+class="cmsy-10x-x-109">&#x00D7; </span><span 
+class="msbm-10x-x-109">&#x211D;</span><sup><span 
+class="cmmi-8">n</span></sup><span 
+class="cmti-10x-x-109">, with projection map </span><span 
+class="cmmi-10x-x-109">&#x03C0;</span>(<span 
+class="cmmi-10x-x-109">b,x</span>) = <span 
+class="cmmi-10x-x-109">b</span><span 
+class="cmti-10x-x-109">, and with</span>
+<span 
+class="cmti-10x-x-109">the vector space structures in the fibers defined by</span>
+  <div class="math-display" >
+<img 
+src="main0x.png" alt="t(b,x )+ t (b,x ) = (b,t x + t x ),
+1    1    2    2       1 1   2 2
+" class="math-display" ></div>
+<!--l. 65--><p class="indent" >  <span 
+class="cmti-10x-x-109">will be denoted by </span><span 
+class="cmmi-10x-x-109">&#x03F5;</span><sub><span 
+class="cmmi-8">B</span></sub><sup><span 
+class="cmmi-8">n</span></sup><span 
+class="cmti-10x-x-109">.</span>
+  </div>
+<!--l. 66--><p class="indent" >
+  <div class="newtheorem">
+<!--l. 68--><p class="noindent" ><span class="head">
+<a 
+ id="x1-2006r2"></a>
+<span 
+class="cmbx-10x-x-109">Example 2.</span>  </span><span 
+class="cmti-10x-x-109">The tangent bundle </span><span 
+class="cmmi-10x-x-109">&#x03C4;</span><sub><span 
+class="cmmi-8">M</span></sub> <span 
+class="cmti-10x-x-109">of a smooth manifold </span><span 
+class="cmmi-10x-x-109">M </span><span 
+class="cmti-10x-x-109">has the total space </span><span 
+class="cmmi-10x-x-109">DM </span><span 
+class="cmti-10x-x-109">consisting of</span>
+<span 
+class="cmti-10x-x-109">all pairs </span>(<span 
+class="cmmi-10x-x-109">x,v</span>) <span 
+class="cmti-10x-x-109">with </span><span 
+class="cmmi-10x-x-109">x </span><span 
+class="cmsy-10x-x-109">&#x2208; </span><span 
+class="cmmi-10x-x-109">M </span><span 
+class="cmti-10x-x-109">and </span><span 
+class="cmmi-10x-x-109">v </span><span 
+class="cmti-10x-x-109">tangent to </span><span 
+class="cmmi-10x-x-109">M </span><span 
+class="cmti-10x-x-109">at </span><span 
+class="cmmi-10x-x-109">x</span><span 
+class="cmti-10x-x-109">. The projection map is defined by </span><span 
+class="cmmi-10x-x-109">&#x03C0;</span>(<span 
+class="cmmi-10x-x-109">x,v</span>) = <span 
+class="cmmi-10x-x-109">x</span>
+<span 
+class="cmti-10x-x-109">and the vector space structure in </span><span 
+class="cmmi-10x-x-109">&#x03C0;</span><sup><span 
+class="cmsy-8">-</span><span 
+class="cmr-8">1</span></sup>(<span 
+class="cmmi-10x-x-109">x</span>) <span 
+class="cmti-10x-x-109">is defined by</span>
+  <div class="math-display" >
+<img 
+src="main1x.png" alt="t1(x,v1)+  t2(x,v2) = (x, t1v1 + t2v2).
+" class="math-display" ></div>
+<!--l. 71--><p class="indent" >  <span 
+class="cmti-10x-x-109">vector fields are sections of vector bundles</span>
+  </div>
+<!--l. 72--><p class="indent" >
+  <div class="newtheorem">
+<!--l. 81--><p class="noindent" ><span class="head">
+<a 
+ id="x1-2007r3"></a>
+<span 
+class="cmbx-10x-x-109">Example 3.</span>  </span><span 
+class="cmti-10x-x-109">The normal bundle of a smooth manifold </span><span 
+class="cmmi-10x-x-109">M </span><span 
+class="cmsy-10x-x-109">&#x2282; </span><span 
+class="msbm-10x-x-109">&#x211D;</span><sup><span 
+class="cmmi-8">n</span></sup> <span 
+class="cmti-10x-x-109">has the total space </span><span 
+class="cmmi-10x-x-109">E </span><span 
+class="cmsy-10x-x-109">&#x2282; </span><span 
+class="cmmi-10x-x-109">M </span><span 
+class="cmsy-10x-x-109">&#x00D7; </span><span 
+class="msbm-10x-x-109">&#x211D;</span><sup><span 
+class="cmmi-8">n</span></sup><span 
+class="cmti-10x-x-109">,</span>
+<span 
+class="cmti-10x-x-109">which is the set of all pairs </span>(<span 
+class="cmmi-10x-x-109">x,v</span>) <span 
+class="cmti-10x-x-109">such that </span><span 
+class="cmmi-10x-x-109">v </span><span 
+class="cmti-10x-x-109">is orthogonal to the tangent space </span><span 
+class="cmmi-10x-x-109">DM</span><sub><span 
+class="cmmi-8">X</span></sub><span 
+class="cmti-10x-x-109">. The projection</span>
+<span 
+class="cmti-10x-x-109">map and the vector space structure is similarly defined as the tangent bundle.</span>
+  </div>
+<!--l. 83--><p class="indent" >
+<!--l. 85--><p class="indent" >  Below is a hand-drawing from Milnor-Stasheff [<span 
+class="cmbx-10x-x-109">MilnorStasheff</span>] to help visualize these
+examples.
+  <div  
+class="centerline">                                                              <img 
+src="images/vectorbundleexamples.png" alt="PIC"  
+width="398" height="398" >                                                              </div>
+<!--l. 89--><p class="indent" >  There is much to learn about vector bundles, but for the sake of this paper, we will give only a fraction
+of the important definitions.
+  <div class="newtheorem">
+<!--l. 91--><p class="noindent" ><span class="head">
+<a 
+ id="x1-2008r2"></a>
+<span 
+class="cmbx-10x-x-109">Definition 2.</span>  </span><span 
+class="cmti-10x-x-109">Two vector bundles, </span><span 
+class="cmmi-10x-x-109">&#x03BE; </span><span 
+class="cmti-10x-x-109">and </span><span 
+class="cmmi-10x-x-109">&#x03B7;</span><span 
+class="cmti-10x-x-109">, are isomorphic </span><span 
+class="cmmi-10x-x-109">&#x03BE;</span><img 
+src="main2x.png" alt="~="  class="cong" ><span 
+class="cmmi-10x-x-109">&#x03B7; </span><span 
+class="cmti-10x-x-109">if there exists a homeomorphism</span>
+  <div class="math-display" >
+<img 
+src="main3x.png" alt="f : E (&#x03BE;) &#x2192; E(&#x03B7;)
+" class="math-display" ></div>
+<!--l. 94--><p class="indent" >  <span 
+class="cmti-10x-x-109">between  the  total  spaces  which  maps  each  vector  space  </span><span 
+class="cmmi-10x-x-109">F</span><sub><span 
+class="cmmi-8">b</span></sub>(<span 
+class="cmmi-10x-x-109">&#x03BE;</span>)  <span 
+class="cmti-10x-x-109">isomorphically  onto  the</span>
+<span 
+class="cmti-10x-x-109">corresponding vector space </span><span 
+class="cmmi-10x-x-109">F</span><sub><span 
+class="cmmi-8">b</span></sub>(<span 
+class="cmmi-10x-x-109">&#x03B7;</span>)<span 
+class="cmti-10x-x-109">.</span>
+  </div>
+<!--l. 95--><p class="indent" >
+  <div class="newtheorem">
+<!--l. 97--><p class="noindent" ><span class="head">
+<a 
+ id="x1-2009r1"></a>
+
+<span 
+class="cmbx-10x-x-109">Theorem 1.</span>  </span><span 
+class="cmti-10x-x-109">The bundle </span><span 
+class="cmmi-10x-x-109">&#x03B3;</span><sub><span 
+class="cmmi-8">n</span></sub><sup><span 
+class="cmr-8">1</span></sup> <span 
+class="cmti-10x-x-109">over </span><span 
+class="cmmi-10x-x-109">P</span><sup><span 
+class="cmmi-8">n</span></sup> <span 
+class="cmti-10x-x-109">is not trivial, for </span><span 
+class="cmmi-10x-x-109">n </span><span 
+class="cmsy-10x-x-109">&#x2265; </span>1<span 
+class="cmti-10x-x-109">.</span>
+  </div>
+<!--l. 99--><p class="indent" >
+<!--l. 101--><p class="indent" >  To prove this theorem, we first require the notion of a cross-section.
+  <div class="newtheorem">
+<!--l. 103--><p class="noindent" ><span class="head">
+<a 
+ id="x1-2010r3"></a>
+<span 
+class="cmbx-10x-x-109">Definition 3.</span>  </span><span 
+class="cmti-10x-x-109">A </span><span 
+class="cmbxti-10x-x-109">cross-section </span><span 
+class="cmti-10x-x-109">of a vector bundle </span><span 
+class="cmmi-10x-x-109">&#x03BE; </span><span 
+class="cmti-10x-x-109">with base space </span><span 
+class="cmmi-10x-x-109">B </span><span 
+class="cmti-10x-x-109">is a continuous function</span>
+  <div class="math-display" >
+<img 
+src="main4x.png" alt="s : B &#x2192; E (&#x03BE;)
+" class="math-display" ></div>
+<!--l. 106--><p class="indent" >  <span 
+class="cmti-10x-x-109">which takes each </span><span 
+class="cmmi-10x-x-109">b </span><span 
+class="cmsy-10x-x-109">&#x2208; </span><span 
+class="cmmi-10x-x-109">B </span><span 
+class="cmti-10x-x-109">into the corresponding fiber </span><span 
+class="cmmi-10x-x-109">F</span><sub><span 
+class="cmmi-8">b</span></sub>(<span 
+class="cmmi-10x-x-109">&#x03BE;</span>)<span 
+class="cmti-10x-x-109">. A common example is the cross-section</span>
+<span 
+class="cmti-10x-x-109">of the tangent bundle of a smooth manifold </span><span 
+class="cmmi-10x-x-109">M</span><span 
+class="cmti-10x-x-109">, which is usually called a vector field on </span><span 
+class="cmmi-10x-x-109">M</span><span 
+class="cmti-10x-x-109">.</span>
+  </div>
+<!--l. 108--><p class="indent" >
+  <div class="newtheorem">
+<!--l. 110--><p class="noindent" ><span class="head">
+<a 
+ id="x1-2011r4"></a>
+<span 
+class="cmbx-10x-x-109">Definition 4.</span>  </span><span 
+class="cmti-10x-x-109">A cross-section is </span><span 
+class="cmbxti-10x-x-109">nowhere zero </span><span 
+class="cmti-10x-x-109">if </span><span 
+class="cmmi-10x-x-109">s</span>(<span 
+class="cmmi-10x-x-109">b</span>) <span 
+class="cmti-10x-x-109">is a non-zero vector of </span><span 
+class="cmmi-10x-x-109">F</span><sub><span 
+class="cmmi-8">b</span></sub>(<span 
+class="cmmi-10x-x-109">&#x03BE;</span>) <span 
+class="cmti-10x-x-109">for each </span><span 
+class="cmmi-10x-x-109">b</span><span 
+class="cmti-10x-x-109">.</span>
+<span 
+class="cmti-10x-x-109">The cross-sections </span><span 
+class="cmmi-10x-x-109">s</span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-10x-x-109">,</span><span 
+class="cmmi-10x-x-109">&#x2026;</span><span 
+class="cmmi-10x-x-109">,s</span><sub><span 
+class="cmmi-8">n</span></sub> <span 
+class="cmti-10x-x-109">are </span><span 
+class="cmbxti-10x-x-109">nowhere dependent </span><span 
+class="cmti-10x-x-109">if for each </span><span 
+class="cmmi-10x-x-109">b </span><span 
+class="cmsy-10x-x-109">&#x2208; </span><span 
+class="cmmi-10x-x-109">B</span><span 
+class="cmti-10x-x-109">, the vectors </span><span 
+class="cmmi-10x-x-109">s</span><sub><span 
+class="cmr-8">1</span></sub>(<span 
+class="cmmi-10x-x-109">b</span>)<span 
+class="cmmi-10x-x-109">,</span><span 
+class="cmmi-10x-x-109">&#x2026;</span><span 
+class="cmmi-10x-x-109">,s</span><sub><span 
+class="cmmi-8">n</span></sub>(<span 
+class="cmmi-10x-x-109">b</span>)
+<span 
+class="cmti-10x-x-109">are linearly independent.</span>
+  </div>
+<!--l. 112--><p class="indent" >
+  <div class="proof">
+<!--l. 115--><p class="indent" >  <span class="head">
+<span 
+class="cmti-10x-x-109">Proof.</span> </span>Since a trivial <span 
+class="msbm-10x-x-109">&#x211D;</span><sup><span 
+class="cmr-8">1</span></sup>-bundle has a cross-section that is nowhere zero, we wish to show that <span 
+class="cmmi-10x-x-109">&#x03B3;</span><sub><span 
+class="cmmi-8">n</span></sub><sup><span 
+class="cmr-8">1</span></sup>
+has no such cross-section. Let
+
+  <div class="math-display" >
+<img 
+src="main5x.png" alt="s : Pn &#x2192; E (&#x03B3;1)
+            n
+" class="math-display" ></div>
+<!--l. 117--><p class="indent" >  be any cross-section, and consider the composition
+  <div class="math-display" >
+<img 
+src="main6x.png" alt="  n     n   n    1
+S   &#x2192; P  &#x2192;   E (&#x03B3;n)
+" class="math-display" ></div>
+<!--l. 119--><p class="indent" >  carrying each point <span 
+class="cmmi-10x-x-109">x </span><span 
+class="cmsy-10x-x-109">&#x2208; </span><span 
+class="cmmi-10x-x-109">S</span><sup><span 
+class="cmmi-8">n</span></sup> to some pair
+  <div class="math-display" >
+<img 
+src="main7x.png" alt="                   1
+({±x },t(x )x ) &#x2208; E (&#x03B3;n ).
+" class="math-display" ></div>
+<!--l. 121--><p class="indent" >  <span 
+class="cmmi-10x-x-109">t</span>(<span 
+class="cmmi-10x-x-109">x</span>) is a continuous real-valued function of <span 
+class="cmmi-10x-x-109">x </span>with the property that <span 
+class="cmmi-10x-x-109">t</span>(<span 
+class="cmsy-10x-x-109">-</span><span 
+class="cmmi-10x-x-109">x</span>) = <span 
+class="cmsy-10x-x-109">-</span><span 
+class="cmmi-10x-x-109">t</span>(<span 
+class="cmmi-10x-x-109">x</span>). Since <span 
+class="cmmi-10x-x-109">S</span><sup><span 
+class="cmmi-8">n</span></sup>
+is connected, by the intermediate value theorem <span 
+class="cmmi-10x-x-109">t</span>(<span 
+class="cmmi-10x-x-109">x</span><sub><span 
+class="cmr-8">0</span></sub>) = 0 for some point <span 
+class="cmmi-10x-x-109">x</span><sub><span 
+class="cmr-8">0</span></sub>. Thus, <span 
+class="cmmi-10x-x-109">s</span>(<span 
+class="cmsy-10x-x-109">{±</span><span 
+class="cmmi-10x-x-109">x</span><sub><span 
+class="cmr-8">0</span></sub><span 
+class="cmsy-10x-x-109">}</span>) =
+(<span 
+class="cmsy-10x-x-109">{±</span><span 
+class="cmmi-10x-x-109">x</span><sub><span 
+class="cmr-8">0</span></sub><span 
+class="cmsy-10x-x-109">}</span><span 
+class="cmmi-10x-x-109">,</span>0), and so <span 
+class="cmmi-10x-x-109">&#x03B3;</span><sub><span 
+class="cmmi-8">n</span></sub><sup><span 
+class="cmr-8">1</span></sup> is not trivial. <span class="qed"><span 
+class="msam-10x-x-109">&#x25A1;</span></span>
+  </div>
+<!--l. 125--><p class="indent" >  Now, we further motivate the importance of vector bundles with some significant results.
+  <div class="newtheorem">
+<!--l. 127--><p class="noindent" ><span class="head">
+<a 
+ id="x1-2012r2"></a>
+<span 
+class="cmbx-10x-x-109">Theorem 2.</span>  </span><span 
+class="cmti-10x-x-109">An </span><span 
+class="msbm-10x-x-109">&#x211D;</span><sup><span 
+class="cmmi-8">n</span></sup> <span 
+class="cmti-10x-x-109">bundle </span><span 
+class="cmmi-10x-x-109">&#x03BE; </span><span 
+class="cmti-10x-x-109">is trivial if and only if </span><span 
+class="cmmi-10x-x-109">&#x03BE; </span><span 
+class="cmti-10x-x-109">admits </span><span 
+class="cmmi-10x-x-109">n </span><span 
+class="cmti-10x-x-109">cross-sections </span><span 
+class="cmmi-10x-x-109">s</span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-10x-x-109">,</span><span 
+class="cmmi-10x-x-109">&#x2026;</span><span 
+class="cmmi-10x-x-109">,s</span><sub><span 
+class="cmmi-8">n</span></sub> <span 
+class="cmti-10x-x-109">which are</span>
+<span 
+class="cmti-10x-x-109">nowhere dependent.</span>
+  </div>
+<!--l. 129--><p class="indent" >
+  <div class="newtheorem">
+
+<!--l. 131--><p class="noindent" ><span class="head">
+<a 
+ id="x1-2013r1"></a>
+<span 
+class="cmbx-10x-x-109">Lemma 1.</span>  </span><span 
+class="cmti-10x-x-109">Let </span><span 
+class="cmmi-10x-x-109">&#x03BE; </span><span 
+class="cmti-10x-x-109">and </span><span 
+class="cmmi-10x-x-109">&#x03B7; </span><span 
+class="cmti-10x-x-109">be vector bundles over </span><span 
+class="cmmi-10x-x-109">B </span><span 
+class="cmti-10x-x-109">and let </span><span 
+class="cmmi-10x-x-109">f </span>: <span 
+class="cmmi-10x-x-109">E</span>(<span 
+class="cmmi-10x-x-109">&#x03BE;</span>) <span 
+class="cmsy-10x-x-109">&#x2192; </span><span 
+class="cmmi-10x-x-109">E</span>(<span 
+class="cmmi-10x-x-109">&#x03B7;</span>) <span 
+class="cmti-10x-x-109">be a continuous function</span>
+<span 
+class="cmti-10x-x-109">which maps each vector space </span><span 
+class="cmmi-10x-x-109">F</span><sub><span 
+class="cmmi-8">b</span></sub>(<span 
+class="cmmi-10x-x-109">&#x03BE;</span>) <span 
+class="cmti-10x-x-109">isomorphically onto the corresponding vector space </span><span 
+class="cmmi-10x-x-109">F</span><sub><span 
+class="cmmi-8">b</span></sub>(<span 
+class="cmmi-10x-x-109">&#x03B7;</span>)<span 
+class="cmti-10x-x-109">. Then</span>
+<span 
+class="cmmi-10x-x-109">f </span><span 
+class="cmti-10x-x-109">is necessarily a homeomorphism. Hence </span><span 
+class="cmmi-10x-x-109">&#x03BE; </span><span 
+class="cmti-10x-x-109">is isomorphic to </span><span 
+class="cmmi-10x-x-109">&#x03B7;</span><span 
+class="cmti-10x-x-109">.</span>
+  </div>
+<!--l. 133--><p class="indent" >
+  <h3 class="sectionHead"><span class="titlemark">3. </span> <a 
+ id="x1-30003"></a>Cohomology</h3>
+<!--l. 276--><p class="noindent" >                                                                                         <br 
+class="newline" />With a great phonetic similarity to homology, cohomology groups also share similar axioms to homology
+groups. However, the benefit of computing cohomology groups is that the natural &#8221;cup&#8221; product of
+cohomology groups provides an additional algebraic structure that can be more useful. Let us first begin
+with some definitions.
+  <div class="newtheorem">
+<!--l. 279--><p class="noindent" ><span class="head">
+<a 
+ id="x1-3001r5"></a>
+<span 
+class="cmbx-10x-x-109">Definition 5.</span>  </span><span 
+class="cmti-10x-x-109">Given groups </span>(<span 
+class="cmmi-10x-x-109">A,</span><span 
+class="cmsy-10x-x-109">&#x2218;</span>) <span 
+class="cmti-10x-x-109">and </span>(<span 
+class="cmmi-10x-x-109">B,</span><span 
+class="cmsy-10x-x-109">&#x22C5;</span>)<span 
+class="cmti-10x-x-109">, a </span><span 
+class="cmbxti-10x-x-109">group homomorphism </span><span 
+class="cmti-10x-x-109">is a function </span><span 
+class="cmmi-10x-x-109">h </span>: <span 
+class="cmmi-10x-x-109">A </span><span 
+class="cmsy-10x-x-109">&#x2192; </span><span 
+class="cmmi-10x-x-109">B</span>
+<span 
+class="cmti-10x-x-109">such that for all </span><span 
+class="cmmi-10x-x-109">x,y </span><span 
+class="cmsy-10x-x-109">&#x2208; </span><span 
+class="cmmi-10x-x-109">A</span><span 
+class="cmti-10x-x-109">, </span><span 
+class="cmmi-10x-x-109">h</span>(<span 
+class="cmmi-10x-x-109">x </span><span 
+class="cmsy-10x-x-109">&#x2218; </span><span 
+class="cmmi-10x-x-109">y</span>) = <span 
+class="cmmi-10x-x-109">h</span>(<span 
+class="cmmi-10x-x-109">x</span>) <span 
+class="cmsy-10x-x-109">&#x22C5; </span><span 
+class="cmmi-10x-x-109">h</span>(<span 
+class="cmmi-10x-x-109">y</span>)<span 
+class="cmti-10x-x-109">.</span>
+  </div>
+<!--l. 281--><p class="indent" >
+<!--l. 283--><p class="indent" >  The building blocks for these homology and cohomology groups lies in connecting spaces through
+homomorphisms in two similar, yet distinct manners.
+  <div class="newtheorem">
+<!--l. 285--><p class="noindent" ><span class="head">
+<a 
+ id="x1-3002r6"></a>
+<span 
+class="cmbx-10x-x-109">Definition 6.</span>  </span><span 
+class="cmti-10x-x-109">A </span><span 
+class="cmbxti-10x-x-109">chain complex </span>(<span 
+class="cmmi-10x-x-109">A</span><sub><span 
+class="cmsy-8">&#x2219;</span></sub><span 
+class="cmmi-10x-x-109">,d</span><sub><span 
+class="cmsy-8">&#x2219;</span></sub>) <span 
+class="cmti-10x-x-109">is a sequence of abelian groups or modules</span> <span 
+class="cmmi-10x-x-109">&#x2026;</span><span 
+class="cmmi-10x-x-109">,A</span><sub><span 
+class="cmr-8">0</span></sub><span 
+class="cmmi-10x-x-109">,A</span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-10x-x-109">,</span><span 
+class="cmmi-10x-x-109">&#x2026;</span>
+<span 
+class="cmti-10x-x-109">connected by group homomorphisms (called </span><span 
+class="cmbxti-10x-x-109">boundary operators </span><span 
+class="cmti-10x-x-109">or </span><span 
+class="cmbxti-10x-x-109">differentials</span><span 
+class="cmti-10x-x-109">) </span><span 
+class="cmmi-10x-x-109">d</span><sub><span 
+class="cmmi-8">n</span></sub> : <span 
+class="cmmi-10x-x-109">A</span><sub><span 
+class="cmmi-8">n</span></sub> <span 
+class="cmsy-10x-x-109">&#x2192;</span>
+<span 
+class="cmmi-10x-x-109">A</span><sub><span 
+class="cmmi-8">n</span><span 
+class="cmsy-8">-</span><span 
+class="cmr-8">1</span></sub> <span 
+class="cmti-10x-x-109">such that the compositions of any two maps is the zero map (</span><span 
+class="cmmi-10x-x-109">d</span><sub><span 
+class="cmmi-8">n</span></sub> <span 
+class="cmsy-10x-x-109">&#x2218; </span><span 
+class="cmmi-10x-x-109">d</span><sub><span 
+class="cmmi-8">n</span><span 
+class="cmr-8">+1</span></sub> = 0<span 
+class="cmti-10x-x-109">).</span>
+  <div class="math-display" >
+<img 
+src="main8x.png" alt="    dn-1       dn     dn+1
+&#x22C5;&#x22C5;&#x22C5;&#x2190; ---  An-1 &#x2190;-  An &#x2190;--- &#x22C5;&#x22C5;&#x22C5;
+" class="math-display" ></div>
+
+  </div>
+<!--l. 288--><p class="indent" >
+  <div class="newtheorem">
+<!--l. 290--><p class="noindent" ><span class="head">
+<a 
+ id="x1-3003r4"></a>
+<span 
+class="cmbx-10x-x-109">Example 4.</span>  </span><span 
+class="cmmi-10x-x-109">A</span><sub><span 
+class="cmr-8">1</span></sub> = (<span 
+class="msbm-10x-x-109">&#x2124;</span><span 
+class="cmmi-10x-x-109">,</span>+) <span 
+class="cmti-10x-x-109">is the group of integers under addition</span><br 
+class="newline" /><span 
+class="cmmi-10x-x-109">A</span><sub><span 
+class="cmr-8">0</span></sub> = (<span 
+class="msbm-10x-x-109">&#x2124;</span><span 
+class="cmmi-10x-x-109">&#x2215;</span>2<span 
+class="msbm-10x-x-109">&#x2124;</span><span 
+class="cmmi-10x-x-109">,</span>+) <span 
+class="cmti-10x-x-109">is the cyclic group of integers mod </span>2 <span 
+class="cmti-10x-x-109">under addition</span><br 
+class="newline" /><span 
+class="cmmi-10x-x-109">A</span><sub><span 
+class="cmmi-8">n</span></sub> = 0 <span 
+class="cmti-10x-x-109">is the zero group for all </span><span 
+class="cmmi-10x-x-109">n </span><span 
+class="cmsy-10x-x-109">&#x2044;&#x2208;{</span>0<span 
+class="cmmi-10x-x-109">,</span>1<span 
+class="cmsy-10x-x-109">}</span><span 
+class="cmti-10x-x-109">. </span><span 
+class="cmmi-10x-x-109">d</span><sub><span 
+class="cmr-8">1</span></sub>(<span 
+class="cmmi-10x-x-109">x</span>) = <span 
+class="cmmi-10x-x-109">x </span>(mod 2)<br 
+class="newline" /><span 
+class="cmmi-10x-x-109">d</span><sub><span 
+class="cmmi-8">n</span></sub>(<span 
+class="cmmi-10x-x-109">x</span>) = 0 <span 
+class="cmti-10x-x-109">for all </span><span 
+class="cmmi-10x-x-109">n</span><span 
+class="cmmi-10x-x-109">&#x2260;</span>1<br 
+class="newline" />
+  <div class="math-display" >
+<img 
+src="main9x.png" alt="                       mod 2
+&#x22C5;&#x22C5;&#x22C5;0 &#x2190;  0 &#x2190; (&#x2124;&#x2215;2&#x2124;, +) &#x2190;----- (&#x2124;, +) &#x2190; 0 &#x2190;  0&#x22C5;&#x22C5;&#x22C5;
+" class="math-display" ></div>
+  </div>
+<!--l. 297--><p class="indent" >
+<!--l. 299--><p class="indent" >  Since <span 
+class="cmmi-10x-x-109">d</span><sub><span 
+class="cmr-8">2</span></sub> <span 
+class="cmsy-10x-x-109">&#x2218; </span><span 
+class="cmmi-10x-x-109">d</span><sub><span 
+class="cmr-8">1</span></sub>(<span 
+class="cmmi-10x-x-109">x</span>) = <span 
+class="cmmi-10x-x-109">d</span><sub><span 
+class="cmr-8">1</span></sub>(0) = 0, and <span 
+class="cmmi-10x-x-109">d</span><sub><span 
+class="cmmi-8">n</span></sub> <span 
+class="cmsy-10x-x-109">&#x2218; </span><span 
+class="cmmi-10x-x-109">d</span><sub><span 
+class="cmmi-8">n</span><span 
+class="cmr-8">+1</span></sub> = 0 by inspection for all other <span 
+class="cmmi-10x-x-109">n</span>, this is clearly a chain
+complex.
+<!--l. 301--><p class="indent" >  The dual of a chain complex is appropriately named the cochain complex.
+  <div class="newtheorem">
+<!--l. 303--><p class="noindent" ><span class="head">
+<a 
+ id="x1-3004r7"></a>
+<span 
+class="cmbx-10x-x-109">Definition 7.</span>  </span><span 
+class="cmti-10x-x-109">A </span><span 
+class="cmbxti-10x-x-109">cochain complex </span>(<span 
+class="cmmi-10x-x-109">A</span><sup><span 
+class="cmsy-8">&#x2219;</span></sup><span 
+class="cmmi-10x-x-109">,d</span><sup><span 
+class="cmsy-8">&#x2219;</span></sup>) <span 
+class="cmti-10x-x-109">is a sequence of abelian groups or modules</span> <span 
+class="cmmi-10x-x-109">&#x2026;</span><span 
+class="cmmi-10x-x-109">,A</span><sup><span 
+class="cmr-8">0</span></sup><span 
+class="cmmi-10x-x-109">,A</span><sup><span 
+class="cmr-8">1</span></sup><span 
+class="cmmi-10x-x-109">,</span><span 
+class="cmmi-10x-x-109">&#x2026;</span>
+<span 
+class="cmti-10x-x-109">connected by homomorphisms </span><span 
+class="cmmi-10x-x-109">d</span><sup><span 
+class="cmmi-8">n</span></sup> : <span 
+class="cmmi-10x-x-109">A</span><sup><span 
+class="cmmi-8">n</span></sup> <span 
+class="cmsy-10x-x-109">&#x2192; </span><span 
+class="cmmi-10x-x-109">A</span><sup><span 
+class="cmmi-8">n</span><span 
+class="cmr-8">+1</span></sup> <span 
+class="cmti-10x-x-109">such that the compositions of any two maps is the</span>
+<span 
+class="cmti-10x-x-109">zero map (</span><span 
+class="cmmi-10x-x-109">d</span><sup><span 
+class="cmmi-8">n</span><span 
+class="cmr-8">+1</span></sup> <span 
+class="cmsy-10x-x-109">&#x2218; </span><span 
+class="cmmi-10x-x-109">d</span><sup><span 
+class="cmmi-8">n</span></sup> = 0<span 
+class="cmti-10x-x-109">).</span>
+  <div class="math-display" >
+<img 
+src="main10x.png" alt="    dn- 1  n dn   n+1 dn+1
+&#x22C5;&#x22C5;&#x22C5;---&#x2192;  A  -&#x2192;  A    ---&#x2192; &#x22C5;&#x22C5;&#x22C5;
+" class="math-display" ></div>
+
+  </div>
+<!--l. 306--><p class="indent" >
+  <div class="newtheorem">
+<!--l. 308--><p class="noindent" ><span class="head">
+<a 
+ id="x1-3005r5"></a>
+<span 
+class="cmbx-10x-x-109">Example 5.</span>  </span><span 
+class="cmti-10x-x-109">For any </span><span 
+class="cmmi-10x-x-109">p </span><span 
+class="cmsy-10x-x-109">&#x2208; </span><span 
+class="msbm-10x-x-109">&#x2124;</span><sup><span 
+class="cmsy-8">&#x2265;</span><span 
+class="cmr-8">2</span></sup><br 
+class="newline" /><span 
+class="cmmi-10x-x-109">A</span><sup><span 
+class="cmr-8">0</span></sup> = (<span 
+class="msbm-10x-x-109">&#x2124;</span><span 
+class="cmmi-10x-x-109">,</span>+)<br 
+class="newline" /><span 
+class="cmmi-10x-x-109">A</span><sup><span 
+class="cmr-8">1</span></sup> = (<span 
+class="msbm-10x-x-109">&#x2124;</span><span 
+class="cmmi-10x-x-109">,</span>+)<br 
+class="newline" /><span 
+class="cmmi-10x-x-109">A</span><sup><span 
+class="cmr-8">2</span></sup> = (<span 
+class="msbm-10x-x-109">&#x2124;</span><span 
+class="cmmi-10x-x-109">&#x2215;p</span><span 
+class="msbm-10x-x-109">&#x2124;</span><span 
+class="cmmi-10x-x-109">,</span>+)<br 
+class="newline" /><span 
+class="cmmi-10x-x-109">A</span><sup><span 
+class="cmmi-8">n</span></sup> = 0 <span 
+class="cmti-10x-x-109">for all </span><span 
+class="cmmi-10x-x-109">n </span><span 
+class="cmsy-10x-x-109">&#x2044;&#x2208;{</span>0<span 
+class="cmmi-10x-x-109">,</span>1<span 
+class="cmmi-10x-x-109">,</span>2<span 
+class="cmsy-10x-x-109">}</span><br 
+class="newline" /><span 
+class="cmmi-10x-x-109">d</span><sup><span 
+class="cmr-8">0</span></sup>(<span 
+class="cmmi-10x-x-109">x</span>) = <span 
+class="cmmi-10x-x-109">p </span><span 
+class="cmsy-10x-x-109">&#x00D7; </span><span 
+class="cmmi-10x-x-109">x</span><br 
+class="newline" /><span 
+class="cmmi-10x-x-109">d</span><sup><span 
+class="cmr-8">1</span></sup>(<span 
+class="cmmi-10x-x-109">x</span>) = <span 
+class="cmmi-10x-x-109">x </span>(mod <span 
+class="cmmi-10x-x-109">p</span>)<br 
+class="newline" /><span 
+class="cmmi-10x-x-109">d</span><sup><span 
+class="cmmi-8">n</span></sup>(<span 
+class="cmmi-10x-x-109">x</span>) = 0 <span 
+class="cmti-10x-x-109">for all </span><span 
+class="cmmi-10x-x-109">n </span><span 
+class="cmsy-10x-x-109">&#x2044;&#x2208;{</span>0<span 
+class="cmmi-10x-x-109">,</span>1<span 
+class="cmsy-10x-x-109">}</span><br 
+class="newline" />
+  <div class="math-display" >
+<img 
+src="main11x.png" alt="                  &#x00D7;p          mod p
+&#x22C5;&#x22C5;&#x22C5;0 &#x2192; 0 &#x2192; (&#x2124;, +) --&#x2192; (&#x2124;, +) -----&#x2192;  (&#x2124; &#x2215;p&#x2124;,+ ) &#x2192; 0 &#x2192; 0 &#x2192; &#x22C5;&#x22C5;&#x22C5;
+" class="math-display" ></div>
+  </div>
+<!--l. 318--><p class="indent" >
+  <div class="newtheorem">
+<!--l. 320--><p class="noindent" ><span class="head">
+<a 
+ id="x1-3006r1"></a>
+<span 
+class="cmbx-10x-x-109">Remark 1.</span>  </span><span 
+class="cmti-10x-x-109">Here are some clarifying remarks about (co)chain complexes:</span>
+         <ul class="itemize1">
+       <li class="itemize">
+       <!--l. 323--><p class="indent" >   <span 
+class="cmti-10x-x-109">They are infinitely long in both directions. If you call a (co)chain complex finitely long,</span>
+       <span 
+class="cmti-10x-x-109">then you are suggesting that everything that comes before and after in the chain is the zero</span>
+       <span 
+class="cmti-10x-x-109">group.</span>
+         </li>
+       <li class="itemize">
+       <!--l. 324--><p class="indent" >   <span 
+class="cmti-10x-x-109">As a consequence, they have no beginning or end unless you are not counting the infinitely</span>
+       <span 
+class="cmti-10x-x-109">long chains of zero groups that come before or after.</span>
+
+         </li>
+       <li class="itemize">
+       <!--l. 325--><p class="indent" >   <span 
+class="cmti-10x-x-109">(Co)chain groups don&#8217;t need to have the zero group at all! They can be infinitely long and</span>
+       <span 
+class="cmti-10x-x-109">just have non-zero groups that extend in both directions.</span></li></ul>
+  </div>
+<!--l. 327--><p class="indent" >
+  <h3 class="sectionHead"><span class="titlemark">4. </span> <a 
+ id="x1-40004"></a>Cohomology Groups</h3>
+<!--l. 331--><p class="noindent" >                                                                                         <br 
+class="newline" />Now, we show how these groups can be computed in order to study topological spaces.
+  <div class="newtheorem">
+<!--l. 334--><p class="noindent" ><span class="head">
+<a 
+ id="x1-4001r8"></a>
+<span 
+class="cmbx-10x-x-109">Definition 8.</span>  </span><span 
+class="cmti-10x-x-109">The </span><span 
+class="cmbxti-10x-x-109">nth homology group </span><span 
+class="cmti-10x-x-109">of a chain complex denoted </span><span 
+class="cmmi-10x-x-109">H</span><sub><span 
+class="cmmi-8">n</span></sub><span 
+class="cmti-10x-x-109">, is</span>
+  <div class="math-display" >
+<img 
+src="main12x.png" alt="H  =  -kerdn--
+  n   im  dn+1
+" class="math-display" ></div>
+  </div>
+<!--l. 337--><p class="indent" >
+  <div class="newtheorem">
+<!--l. 339--><p class="noindent" ><span class="head">
+<a 
+ id="x1-4002r9"></a>
+<span 
+class="cmbx-10x-x-109">Definition 9.</span>  </span><span 
+class="cmti-10x-x-109">The </span><span 
+class="cmbxti-10x-x-109">nth cohomology group </span><span 
+class="cmti-10x-x-109">of a cochain complex denoted </span><span 
+class="cmmi-10x-x-109">H</span><sup><span 
+class="cmmi-8">n</span></sup><span 
+class="cmti-10x-x-109">, is</span>
+  <div class="math-display" >
+<img 
+src="main13x.png" alt="  n    kerdn
+H  =  im--dn-1-
+" class="math-display" ></div>
+  </div>
+<!--l. 342--><p class="indent" >
+  <div class="newtheorem">
+<!--l. 344--><p class="noindent" ><span class="head">
+<a 
+ id="x1-4003r6"></a>
+<span 
+class="cmbx-10x-x-109">Example 6.</span>  </span><span 
+class="cmti-10x-x-109">Using the cochain complex example from above, we see that the kernel of </span><span 
+class="cmmi-10x-x-109">d</span><sup><span 
+class="cmr-8">1</span></sup>(<span 
+class="cmmi-10x-x-109">x</span>) = <span 
+class="cmmi-10x-x-109">x</span>
+(mod <span 
+class="cmmi-10x-x-109">p</span>) <span 
+class="cmti-10x-x-109">is just the set </span><span 
+class="cmmi-10x-x-109">p</span><span 
+class="msbm-10x-x-109">&#x2124; </span><span 
+class="cmsy-10x-x-109">&#x2282; </span><span 
+class="msbm-10x-x-109">&#x2124;</span><span 
+class="cmti-10x-x-109">. The image of </span><span 
+class="cmmi-10x-x-109">d</span><sup><span 
+class="cmr-8">1</span></sup>(<span 
+class="cmmi-10x-x-109">x</span>) = <span 
+class="cmmi-10x-x-109">px </span><span 
+class="cmti-10x-x-109">is </span><span 
+class="cmmi-10x-x-109">p</span><span 
+class="msbm-10x-x-109">&#x2124;</span><span 
+class="cmti-10x-x-109">. That means the quotient group </span><span 
+class="cmmi-10x-x-109">H</span><sup><span 
+class="cmr-8">1</span></sup>
+<span 
+class="cmti-10x-x-109">is</span>
+  <div class="math-display" >
+<img 
+src="main14x.png" alt="H1 = ker-d1=  p&#x2124;-= p&#x2124;
+     im  d0   p&#x2124;
+" class="math-display" ></div>
+  </div>
+<!--l. 347--><p class="indent" >
+  <div class="newtheorem">
+<!--l. 351--><p class="noindent" ><span class="head">
+<a 
+ id="x1-4004r10"></a>
+<span 
+class="cmbx-10x-x-109">Definition 10.</span>  </span><span 
+class="cmti-10x-x-109">The  </span><span 
+class="cmbxti-10x-x-109">standard  n-simplex  </span><span 
+class="cmti-10x-x-109">is  the  convex  set  </span>&#x0394;<sup><span 
+class="cmmi-8">n</span></sup>   <span 
+class="cmsy-10x-x-109">&#x2282; </span><span 
+class="msbm-10x-x-109">&#x211D;</span><sup><span 
+class="cmmi-8">n</span><span 
+class="cmr-8">+1</span></sup>  <span 
+class="cmti-10x-x-109">consisting  of  all</span>
+(<span 
+class="cmmi-10x-x-109">n </span>+ 1)<span 
+class="cmti-10x-x-109">-tuples </span>(<span 
+class="cmmi-10x-x-109">t</span><sub><span 
+class="cmr-8">0</span></sub><span 
+class="cmmi-10x-x-109">,</span><span 
+class="cmmi-10x-x-109">&#x2026;</span><span 
+class="cmmi-10x-x-109">,t</span><sub><span 
+class="cmmi-8">n</span></sub>) <span 
+class="cmti-10x-x-109">of real numbers with</span>
+  <div class="math-display" >
+<img 
+src="main15x.png" alt="ti &#x2265; 0 and t0 + t1 + &#x22C5;&#x22C5;&#x22C5;+ tn = 1.
+" class="math-display" ></div>
+
+  </div>
+<!--l. 354--><p class="indent" >
+<!--l. 356--><p class="indent" >  Simplices show up quite often in the study of geometric structures, and their visualizations are very
+friendly.
+  <div class="newtheorem">
+<!--l. 358--><p class="noindent" ><span class="head">
+<a 
+ id="x1-4005r7"></a>
+<span 
+class="cmbx-10x-x-109">Example 7.</span>  </span><span 
+class="cmti-10x-x-109">The </span>0<span 
+class="cmti-10x-x-109">-simplex consists of just the one point </span><span 
+class="cmmi-10x-x-109">x </span>= 0 <span 
+class="cmti-10x-x-109">on the real number line </span><span 
+class="msbm-10x-x-109">&#x211D;</span><sup><span 
+class="cmr-8">1</span></sup><span 
+class="cmti-10x-x-109">.</span>
+  </div>
+<!--l. 360--><p class="indent" >
+  <div class="newtheorem">
+<!--l. 362--><p class="noindent" ><span class="head">
+<a 
+ id="x1-4006r8"></a>
+<span 
+class="cmbx-10x-x-109">Example 8.</span>  </span><span 
+class="cmti-10x-x-109">The </span>1<span 
+class="cmti-10x-x-109">-simplex consists of the line segment connecting the points </span>(1<span 
+class="cmmi-10x-x-109">,</span>0)  <span 
+class="cmti-10x-x-109">and </span>(0<span 
+class="cmmi-10x-x-109">,</span>1)
+<span 
+class="cmti-10x-x-109">including the endpoints.</span>
+  </div>
+<!--l. 364--><p class="indent" >
+<!--l. 366--><p class="indent" >  Now, let us build some fundamental concepts for characteristic classes.
+  <div class="newtheorem">
+<!--l. 368--><p class="noindent" ><span class="head">
+<a 
+ id="x1-4007r11"></a>
+<span 
+class="cmbx-10x-x-109">Definition 11.</span>  </span><span 
+class="cmti-10x-x-109">A </span><span 
+class="cmbxti-10x-x-109">singular n-simplex </span><span 
+class="cmti-10x-x-109">in a topological space </span><span 
+class="cmmi-10x-x-109">X </span><span 
+class="cmti-10x-x-109">is a continuous map </span><span 
+class="cmmi-10x-x-109">&#x03C3; </span><span 
+class="cmti-10x-x-109">from the</span>
+<span 
+class="cmti-10x-x-109">standard n-simplex </span>&#x0394;<sup><span 
+class="cmmi-8">n</span></sup> <span 
+class="cmti-10x-x-109">to </span><span 
+class="cmmi-10x-x-109">X</span><span 
+class="cmti-10x-x-109">, written </span><span 
+class="cmmi-10x-x-109">&#x03C3; </span>: &#x0394;<sup><span 
+class="cmmi-8">n</span></sup> <span 
+class="cmsy-10x-x-109">&#x2192; </span><span 
+class="cmmi-10x-x-109">X</span><span 
+class="cmti-10x-x-109">. The </span><span 
+class="cmbxti-10x-x-109">i-th face </span><span 
+class="cmti-10x-x-109">of a singular n-simplex </span><span 
+class="cmmi-10x-x-109">&#x03C3; </span><span 
+class="cmti-10x-x-109">is the</span>
+<span 
+class="cmti-10x-x-109">singular (n-1)-simplex</span>
+  <div class="math-display" >
+<img 
+src="main16x.png" alt="         n-1
+&#x03C3; &#x2218;&#x03D5;i : &#x0394;    &#x2192; X
+" class="math-display" ></div>
+<!--l. 370--><p class="indent" >  <span 
+class="cmti-10x-x-109">where the linear imbedding </span><span 
+class="cmmi-10x-x-109">&#x03D5;</span><sub><span 
+class="cmmi-8">i</span></sub> : &#x0394;<sup><span 
+class="cmmi-8">n</span><span 
+class="cmsy-8">-</span><span 
+class="cmr-8">1</span></sup> <span 
+class="cmsy-10x-x-109">&#x2192; </span>&#x0394;<sup><span 
+class="cmmi-8">n</span></sup> <span 
+class="cmti-10x-x-109">is defined by</span>
+
+  <div class="math-display" >
+<img 
+src="main17x.png" alt="&#x03D5; (t ,...,t  ,t   ,...,t ) = (t,...,t  ,0,t   ,...,t ).
+ i 0      i-1  i+1      n     0      i-1    i+1      n
+" class="math-display" ></div>
+<!--l. 372--><p class="indent" >  <span 
+class="cmti-10x-x-109">We denote the set of all n-simplices in </span><span 
+class="cmmi-10x-x-109">X </span><span 
+class="cmti-10x-x-109">as</span> Sin<sub><span 
+class="cmmi-8">n</span></sub>(<span 
+class="cmmi-10x-x-109">X</span>)<span 
+class="cmti-10x-x-109">. Note that</span> Sin<sub><span 
+class="cmmi-8">n</span></sub>(<span 
+class="cmmi-10x-x-109">X</span>) = 0 <span 
+class="cmti-10x-x-109">for </span><span 
+class="cmmi-10x-x-109">n &#x003C; </span>0<span 
+class="cmti-10x-x-109">.</span>
+  </div>
+<!--l. 373--><p class="indent" >
+  <div class="newtheorem">
+<!--l. 375--><p class="noindent" ><span class="head">
+<a 
+ id="x1-4008r12"></a>
+<span 
+class="cmbx-10x-x-109">Definition 12.</span>  </span><span 
+class="cmti-10x-x-109">The </span><span 
+class="cmbxti-10x-x-109">singular chain complex </span><span 
+class="cmti-10x-x-109">of a topological space </span><span 
+class="cmmi-10x-x-109">X</span><span 
+class="cmti-10x-x-109">, denoted </span>(<span 
+class="cmmi-10x-x-109">C</span><sub><span 
+class="cmsy-8">&#x2219;</span></sub>(<span 
+class="cmmi-10x-x-109">X</span>)<span 
+class="cmmi-10x-x-109">,d</span><sub><span 
+class="cmsy-8">&#x2219;</span></sub>) <span 
+class="cmti-10x-x-109">is</span>
+<span 
+class="cmti-10x-x-109">created where </span><span 
+class="cmmi-10x-x-109">C</span><sub><span 
+class="cmmi-8">n</span></sub>(<span 
+class="cmmi-10x-x-109">X</span>) <span 
+class="cmti-10x-x-109">is the free abelian group created by the basis</span> Sin<sub><span 
+class="cmmi-8">n</span></sub>(<span 
+class="cmmi-10x-x-109">X</span>) <span 
+class="cmti-10x-x-109">and </span><span 
+class="cmmi-10x-x-109">d</span><sub><span 
+class="cmmi-8">n</span></sub> : <span 
+class="cmmi-10x-x-109">C</span><sub><span 
+class="cmmi-8">n</span></sub>(<span 
+class="cmmi-10x-x-109">X</span>) <span 
+class="cmsy-10x-x-109">&#x2192;</span>
+<span 
+class="cmmi-10x-x-109">C</span><sub><span 
+class="cmmi-8">n</span><span 
+class="cmsy-8">-</span><span 
+class="cmr-8">1</span></sub>(<span 
+class="cmmi-10x-x-109">X</span>) <span 
+class="cmti-10x-x-109">is </span><span 
+class="cmmi-10x-x-109">d</span><sub><span 
+class="cmmi-8">n</span></sub>(<span 
+class="cmmi-10x-x-109">&#x03C3;</span>) = <span 
+class="cmex-10x-x-109">&#x2211;</span>
+  <sub><span 
+class="cmmi-8">i</span></sub>(<span 
+class="cmsy-10x-x-109">-</span>1)<sup><span 
+class="cmmi-8">i</span></sup><span 
+class="cmmi-10x-x-109">&#x03C3;</span><span 
+class="cmsy-10x-x-109">&#x2223;</span><img 
+src="main18x.png" alt="[v0,&#x22C5;&#x22C5;&#x22C5; ,&#x02C6;vi,&#x22C5;&#x22C5;&#x22C5; ,vn]"  class="left" align="middle"><span 
+class="cmti-10x-x-109">.</span>
+  </div>
+<!--l. 377--><p class="indent" >
+  <div class="newtheorem">
+<!--l. 383--><p class="noindent" ><span class="head">
+<a 
+ id="x1-4009r13"></a>
+<span 
+class="cmbx-10x-x-109">Definition 13.</span>  </span><span 
+class="cmti-10x-x-109">The </span><span 
+class="cmbxti-10x-x-109">nth singular homology group </span><span 
+class="cmti-10x-x-109">is the nth homology group of the nth singular</span>
+<span 
+class="cmti-10x-x-109">chain complex.</span>
+  </div>
+<!--l. 385--><p class="indent" >
+  <div class="newtheorem">
+<!--l. 389--><p class="noindent" ><span class="head">
+<a 
+ id="x1-4010r14"></a>
+<span 
+class="cmbx-10x-x-109">Definition 14.</span>  </span><span 
+class="cmti-10x-x-109">The </span><span 
+class="cmbxti-10x-x-109">cochain group </span><span 
+class="cmmi-10x-x-109">C</span><sup><span 
+class="cmmi-8">n</span></sup>(<span 
+class="cmmi-10x-x-109">X</span>;&#x039B;) <span 
+class="cmti-10x-x-109">is defined to be the dual module</span> Hom<sub><span 
+class="cmr-8">&#x039B;</span></sub>(<span 
+class="cmmi-10x-x-109">C</span><sub><span 
+class="cmmi-8">n</span></sub>(<span 
+class="cmmi-10x-x-109">X</span>;&#x039B;)<span 
+class="cmmi-10x-x-109">,</span>&#x039B;)
+<span 
+class="cmti-10x-x-109">consisting of all </span>&#x039B;<span 
+class="cmti-10x-x-109">-linear maps from </span><span 
+class="cmmi-10x-x-109">C</span><sub><span 
+class="cmmi-8">n</span></sub>(<span 
+class="cmmi-10x-x-109">X</span>;&#x039B;) <span 
+class="cmti-10x-x-109">to </span>&#x039B;<span 
+class="cmti-10x-x-109">.</span>
+  </div>
+<!--l. 391--><p class="indent" >
+  <div class="newtheorem">
+<!--l. 393--><p class="noindent" ><span class="head">
+<a 
+ id="x1-4011r15"></a>
+
+<span 
+class="cmbx-10x-x-109">Definition 15.</span>  </span><span 
+class="cmti-10x-x-109">The </span><span 
+class="cmbxti-10x-x-109">coboundary </span><span 
+class="cmti-10x-x-109">of a cochain </span><span 
+class="cmmi-10x-x-109">c </span><span 
+class="cmsy-10x-x-109">&#x2208; </span><span 
+class="cmmi-10x-x-109">C</span><sup><span 
+class="cmmi-8">n</span></sup>(<span 
+class="cmmi-10x-x-109">X</span>;&#x039B;) <span 
+class="cmti-10x-x-109">is defined to be the cochain </span><span 
+class="cmmi-10x-x-109">&#x03B4;c </span><span 
+class="cmsy-10x-x-109">&#x2208;</span>
+<span 
+class="cmmi-10x-x-109">C</span><sup><span 
+class="cmmi-8">n</span><span 
+class="cmr-8">+1</span></sup>(<span 
+class="cmmi-10x-x-109">X</span>;&#x039B;) <span 
+class="cmti-10x-x-109">whose value on each </span>(<span 
+class="cmmi-10x-x-109">n </span>+ 1)<span 
+class="cmti-10x-x-109">-chain </span><span 
+class="cmmi-10x-x-109">a </span><span 
+class="cmti-10x-x-109">is determined by the identity</span>
+  <div class="math-display" >
+<img 
+src="main19x.png" alt="&#x27E8;&#x03B4;c,a&#x27E9;+ (- 1)n&#x27E8;c,da&#x27E9; = 0.
+" class="math-display" ></div>
+  </div>
+<!--l. 396--><p class="indent" >
+  <div class="newtheorem">
+<!--l. 398--><p class="noindent" ><span class="head">
+<a 
+ id="x1-4012r16"></a>
+<span 
+class="cmbx-10x-x-109">Definition 16.</span>  </span><span 
+class="cmti-10x-x-109">The </span><span 
+class="cmbxti-10x-x-109">singular cohomology groups </span><span 
+class="cmti-10x-x-109">of </span><span 
+class="cmmi-10x-x-109">X </span><span 
+class="cmti-10x-x-109">is defined as</span>
+  <div class="math-display" >
+<img 
+src="main20x.png" alt="Hn (X; &#x039B; ) = Zn (X; &#x039B;)&#x2215;Bn (X; &#x039B; ) = (kerd)&#x2215;dCn -1(X; &#x039B;).
+" class="math-display" ></div>
+  </div>
+<!--l. 401--><p class="indent" >
+<!--l. 403--><p class="indent" >  We can think of <span 
+class="cmmi-10x-x-109">B</span><sup><span 
+class="cmmi-8">n</span></sup>(<span 
+class="cmmi-10x-x-109">X</span>;&#x039B;) as the coboundary of the cochain group <span 
+class="cmmi-10x-x-109">C</span><sup><span 
+class="cmmi-8">n</span><span 
+class="cmsy-8">-</span><span 
+class="cmr-8">1</span></sup>(<span 
+class="cmmi-10x-x-109">X</span>;&#x039B;) which is a subset of
+<span 
+class="cmmi-10x-x-109">C</span><sup><span 
+class="cmmi-8">n</span></sup>(<span 
+class="cmmi-10x-x-109">X</span>;&#x039B;).
+  <div class="newtheorem">
+<!--l. 405--><p class="noindent" ><span class="head">
+<a 
+ id="x1-4013r2"></a>
+<span 
+class="cmbx-10x-x-109">Remark 2.</span>  </span><span 
+class="cmti-10x-x-109">Cohomology groups are determined algebraically by homology groups. Here are the steps to do</span>
+<span 
+class="cmti-10x-x-109">so:</span>
+
+         <ol  class="enumerate1" >
+<li 
+  class="enumerate" id="x1-4015x1">
+       <!--l. 408--><p class="indent" >   <span 
+class="cmti-10x-x-109">Take a chain complex of singular, simplicial, or cellular chains.</span>
+         </li>
+<li 
+  class="enumerate" id="x1-4017x2">
+       <!--l. 409--><p class="indent" >   <span 
+class="cmti-10x-x-109">Take the homology groups of the chain complex,</span> ker<span 
+class="cmmi-10x-x-109">d&#x2215;</span>im <span 
+class="cmmi-10x-x-109">d</span><span 
+class="cmti-10x-x-109">.</span>
+         </li>
+<li 
+  class="enumerate" id="x1-4019x3">
+       <!--l. 410--><p class="indent" >   <span 
+class="cmti-10x-x-109">Replace the chain groups </span><span 
+class="cmmi-10x-x-109">C</span><sub><span 
+class="cmmi-8">n</span></sub> <span 
+class="cmti-10x-x-109">by the dual groups</span> Hom(<span 
+class="cmmi-10x-x-109">C</span><sub><span 
+class="cmmi-8">n</span></sub><span 
+class="cmmi-10x-x-109">,G</span>) <span 
+class="cmti-10x-x-109">and the boundary maps </span><span 
+class="cmmi-10x-x-109">d</span>
+       <span 
+class="cmti-10x-x-109">by their dual maps </span><span 
+class="cmmi-10x-x-109">&#x03B4;</span><span 
+class="cmti-10x-x-109">.</span>
+         </li>
+<li 
+  class="enumerate" id="x1-4021x4">
+       <!--l. 411--><p class="indent" >   <span 
+class="cmti-10x-x-109">Then, the cohomology groups are</span> ker<span 
+class="cmmi-10x-x-109">&#x03B4;&#x2215;</span>im <span 
+class="cmmi-10x-x-109">&#x03B4;</span><span 
+class="cmti-10x-x-109">.</span></li></ol>
+  </div>
+<!--l. 413--><p class="indent" >
+  <h3 class="sectionHead"><span class="titlemark">5. </span> <a 
+ id="x1-50005"></a>Stiefel-Whitney Classes</h3>
+<!--l. 418--><p class="noindent" >                                                                                         <br 
+class="newline" />Finally, we have a sufficient understanding to grasp what characteristic classes are. Primarily, we are
+interested in various characteristic classes because they are used to measure vector bundles of a
+topological space using cohomology. To do this, we map the principal bundles of a topological space <span 
+class="cmmi-10x-x-109">X </span>to
+its cohomology classes. This mapping can be done in many different ways, but in this paper we will look
+at the Steifel-Whitney Classes.
+  <div class="newtheorem">
+<!--l. 422--><p class="noindent" ><span class="head">
+<a 
+ id="x1-5001r17"></a>
+<span 
+class="cmbx-10x-x-109">Definition 17.</span>  </span><span 
+class="cmmi-10x-x-109">H</span><sup><span 
+class="cmmi-8">i</span></sup>(<span 
+class="cmmi-10x-x-109">B</span>;<span 
+class="cmmi-10x-x-109">G</span>) <span 
+class="cmti-10x-x-109">denotes the </span><span 
+class="cmmi-10x-x-109">i</span><span 
+class="cmti-10x-x-109">-th singular cohomology group of topological space </span><span 
+class="cmmi-10x-x-109">B </span><span 
+class="cmti-10x-x-109">with</span>
+<span 
+class="cmti-10x-x-109">coefficients in </span><span 
+class="cmmi-10x-x-109">G</span><span 
+class="cmti-10x-x-109">.</span>
+  </div>
+<!--l. 424--><p class="indent" >
+<!--l. 426--><p class="indent" >  For the Stiefel-Whitney classes, we give an axiomatic approach.
+  <div class="newtheorem">
+<!--l. 428--><p class="noindent" ><span class="head">
+<a 
+ id="x1-5002r1"></a>
+<span 
+class="cmbx-10x-x-109">Axiom 1.</span>  </span><span 
+class="cmti-10x-x-109">To each vector bundle </span><span 
+class="cmmi-10x-x-109">&#x03BE; </span><span 
+class="cmti-10x-x-109">there corresponds a sequence of cohomology classes</span>
+
+  <div class="math-display" >
+<img 
+src="main21x.png" alt="         i
+wi(&#x03BE;) &#x2208; H (B (&#x03BE;);&#x2124;&#x2215;2 ),i = 0,1,2,...
+" class="math-display" ></div>
+<!--l. 431--><p class="indent" >  <span 
+class="cmti-10x-x-109">called the </span><span 
+class="cmbxti-10x-x-109">Stiefel-Whitney classes </span><span 
+class="cmti-10x-x-109">of </span><span 
+class="cmmi-10x-x-109">&#x03BE;</span><span 
+class="cmti-10x-x-109">. The class </span><span 
+class="cmmi-10x-x-109">w</span><sub><span 
+class="cmr-8">0</span></sub>(<span 
+class="cmmi-10x-x-109">&#x03BE;</span>) <span 
+class="cmti-10x-x-109">is equal to the unit element</span>
+  <div class="math-display" >
+<img 
+src="main22x.png" alt="      0
+1 &#x2208; H  (B (&#x03BE;);&#x2124;&#x2215;2)
+" class="math-display" ></div>
+<!--l. 433--><p class="indent" >  <span 
+class="cmti-10x-x-109">and </span><span 
+class="cmmi-10x-x-109">w</span><sub><span 
+class="cmmi-8">i</span></sub>(<span 
+class="cmmi-10x-x-109">&#x03BE;</span>) <span 
+class="cmti-10x-x-109">equals zero for </span><span 
+class="cmmi-10x-x-109">i </span><span 
+class="cmti-10x-x-109">greater than </span><span 
+class="cmmi-10x-x-109">n </span><span 
+class="cmti-10x-x-109">if </span><span 
+class="cmmi-10x-x-109">&#x03BE; </span><span 
+class="cmti-10x-x-109">is an </span><span 
+class="cmmi-10x-x-109">n</span><span 
+class="cmti-10x-x-109">-plane bundle.</span>
+  </div>
+<!--l. 434--><p class="indent" >
+  <div class="newtheorem">
+<!--l. 436--><p class="noindent" ><span class="head">
+<a 
+ id="x1-5003r2"></a>
+<span 
+class="cmbx-10x-x-109">Axiom 2.</span>  </span><span 
+class="cmti-10x-x-109">(Naturality) If </span><span 
+class="cmmi-10x-x-109">f </span>: <span 
+class="cmmi-10x-x-109">B</span>(<span 
+class="cmmi-10x-x-109">&#x03BE;</span>) <span 
+class="cmsy-10x-x-109">&#x2192; </span><span 
+class="cmmi-10x-x-109">B</span>(<span 
+class="cmmi-10x-x-109">&#x03B7;</span>) <span 
+class="cmti-10x-x-109">is covered by a bundle map from </span><span 
+class="cmmi-10x-x-109">&#x03BE; </span><span 
+class="cmti-10x-x-109">to </span><span 
+class="cmmi-10x-x-109">&#x03B7;</span><span 
+class="cmti-10x-x-109">, then</span>
+  <div class="math-display" >
+<img 
+src="main23x.png" alt="wi(&#x03BE;) = f*wi(&#x03B7;).
+" class="math-display" ></div>
+  </div>
+<!--l. 439--><p class="indent" >
+  <div class="newtheorem">
+<!--l. 441--><p class="noindent" ><span class="head">
+<a 
+ id="x1-5004r3"></a>
+
+<span 
+class="cmbx-10x-x-109">Axiom 3.</span>  </span><span 
+class="cmti-10x-x-109">(The Whitney Product Theorem) If </span><span 
+class="cmmi-10x-x-109">&#x03BE; </span><span 
+class="cmti-10x-x-109">and </span><span 
+class="cmmi-10x-x-109">&#x03B7; </span><span 
+class="cmti-10x-x-109">are vector bundles over the same base space,</span>
+<span 
+class="cmti-10x-x-109">then</span>
+  <div class="math-display" >
+<img 
+src="main24x.png" alt="           &#x2211;k
+wk(&#x03BE; &#x2295; &#x03B7;) =    wi(&#x03BE;)&#x222A; wk-i(&#x03B7;).
+            i=0
+" class="math-display" ></div>
+  </div>
+<!--l. 444--><p class="indent" >
+  <div class="newtheorem">
+<!--l. 446--><p class="noindent" ><span class="head">
+<a 
+ id="x1-5005r4"></a>
+<span 
+class="cmbx-10x-x-109">Axiom 4.</span>  </span><span 
+class="cmti-10x-x-109">For the line bundle </span><span 
+class="cmmi-10x-x-109">&#x03B3;</span><sub><span 
+class="cmr-8">1</span></sub><sup><span 
+class="cmr-8">1</span></sup> <span 
+class="cmti-10x-x-109">over the circle </span><span 
+class="cmmi-10x-x-109">P</span><sup><span 
+class="cmr-8">1</span></sup><span 
+class="cmti-10x-x-109">, the Stiefel-Whitney class </span><span 
+class="cmmi-10x-x-109">w</span><sub><span 
+class="cmr-8">1</span></sub>(<span 
+class="cmmi-10x-x-109">&#x03B3;</span><sub><span 
+class="cmr-8">1</span></sub><sup><span 
+class="cmr-8">1</span></sup>) <span 
+class="cmti-10x-x-109">is non-zero.</span>
+  </div>
+<!--l. 448--><p class="indent" >
+<!--l. 450--><p class="indent" >  Consequently from Axiom 2, we have the following.
+  <div class="newtheorem">
+<!--l. 452--><p class="noindent" ><span class="head">
+<a 
+ id="x1-5006r1"></a>
+<span 
+class="cmbx-10x-x-109">Proposition 1.</span>  </span><span 
+class="cmti-10x-x-109">If </span><span 
+class="cmmi-10x-x-109">&#x03BE; </span><span 
+class="cmti-10x-x-109">is isomorphic to </span><span 
+class="cmmi-10x-x-109">&#x03B7;</span><span 
+class="cmti-10x-x-109">, then </span><span 
+class="cmmi-10x-x-109">w</span><sub><span 
+class="cmmi-8">i</span></sub>(<span 
+class="cmmi-10x-x-109">&#x03BE;</span>) = <span 
+class="cmmi-10x-x-109">w</span><sub><span 
+class="cmmi-8">i</span></sub>(<span 
+class="cmmi-10x-x-109">&#x03B7;</span>)<span 
+class="cmti-10x-x-109">.</span>
+  </div>
+<!--l. 454--><p class="indent" >
+  <div class="newtheorem">
+<!--l. 456--><p class="noindent" ><span class="head">
+<a 
+ id="x1-5007r2"></a>
+<span 
+class="cmbx-10x-x-109">Proposition 2.</span>  </span><span 
+class="cmti-10x-x-109">If </span><span 
+class="cmmi-10x-x-109">&#x03F5; </span><span 
+class="cmti-10x-x-109">is a trivial vector bundle, then </span><span 
+class="cmmi-10x-x-109">w</span><sub><span 
+class="cmmi-8">i</span></sub>(<span 
+class="cmmi-10x-x-109">&#x03F5;</span>) = 0 <span 
+class="cmti-10x-x-109">for </span><span 
+class="cmmi-10x-x-109">i &#x003E; </span>0<span 
+class="cmti-10x-x-109">. This is because there exists</span>
+<span 
+class="cmti-10x-x-109">a bundle map from </span><span 
+class="cmmi-10x-x-109">&#x03F5; </span><span 
+class="cmti-10x-x-109">to a vector bundle over a point.</span>
+  </div>
+<!--l. 458--><p class="indent" >
+
+<!--l. 460--><p class="indent" >  As a consequence of the Whitney Product theorem and the naturality axiom,
+  <div class="newtheorem">
+<!--l. 462--><p class="noindent" ><span class="head">
+<a 
+ id="x1-5008r3"></a>
+<span 
+class="cmbx-10x-x-109">Proposition 3.</span>  </span><span 
+class="cmti-10x-x-109">If </span><span 
+class="cmmi-10x-x-109">&#x03F5; </span><span 
+class="cmti-10x-x-109">is trivial, then </span><span 
+class="cmmi-10x-x-109">w</span><sub><span 
+class="cmmi-8">i</span></sub>(<span 
+class="cmmi-10x-x-109">&#x03F5; </span><span 
+class="cmsy-10x-x-109">&#x2295; </span><span 
+class="cmmi-10x-x-109">&#x03B7;</span>) = <span 
+class="cmmi-10x-x-109">w</span><sub><span 
+class="cmmi-8">i</span></sub>(<span 
+class="cmmi-10x-x-109">&#x03B7;</span>)<span 
+class="cmti-10x-x-109">.</span>
+  </div>
+<!--l. 464--><p class="indent" >
+  <div class="newtheorem">
+<!--l. 466--><p class="noindent" ><span class="head">
+<a 
+ id="x1-5009r4"></a>
+<span 
+class="cmbx-10x-x-109">Proposition 4.</span>  </span><span 
+class="cmti-10x-x-109">If </span><span 
+class="cmmi-10x-x-109">&#x03BE; </span><span 
+class="cmti-10x-x-109">is an </span><span 
+class="msbm-10x-x-109">&#x211D;</span><sup><span 
+class="cmmi-8">n</span></sup><span 
+class="cmti-10x-x-109">-bundle with a Euclidean metric which possesses a nowhere zero</span>
+<span 
+class="cmti-10x-x-109">cross-section, then </span><span 
+class="cmmi-10x-x-109">w</span><sub><span 
+class="cmmi-8">n</span></sub>(<span 
+class="cmmi-10x-x-109">&#x03BE;</span>) = 0<span 
+class="cmti-10x-x-109">. If </span><span 
+class="cmmi-10x-x-109">&#x03BE; </span><span 
+class="cmti-10x-x-109">possesses </span><span 
+class="cmmi-10x-x-109">k </span><span 
+class="cmti-10x-x-109">cross-sections which are nowhere linearly dependent,</span>
+<span 
+class="cmti-10x-x-109">then</span>
+  <div class="math-display" >
+<img 
+src="main25x.png" alt="wn -k+1(&#x03BE;) = wn -k+2(&#x03BE;) = &#x22C5;&#x22C5;&#x22C5; = wn(&#x03BE;) = 0.
+" class="math-display" ></div>
+  </div>
+<!--l. 469--><p class="indent" >
+  <div class="newtheorem">
+<!--l. 471--><p class="noindent" ><span class="head">
+<a 
+ id="x1-5010r9"></a>
+<span 
+class="cmbx-10x-x-109">Example 9.</span>  </span><span 
+class="cmti-10x-x-109">Using the standard imbedding of </span><span 
+class="cmmi-10x-x-109">S</span><sup><span 
+class="cmmi-8">n</span></sup> <span 
+class="cmsy-10x-x-109">&#x2282; </span><span 
+class="msbm-10x-x-109">&#x211D;</span><sup><span 
+class="cmmi-8">n</span><span 
+class="cmr-8">+1</span></sup><span 
+class="cmti-10x-x-109">, the normal bundle </span><span 
+class="cmmi-10x-x-109">v </span><span 
+class="cmti-10x-x-109">is trivial. Let </span><span 
+class="cmmi-10x-x-109">&#x03C4; </span><span 
+class="cmti-10x-x-109">be</span>
+<span 
+class="cmti-10x-x-109">the tangent bundle of the unit sphere </span><span 
+class="cmmi-10x-x-109">S</span><sup><span 
+class="cmmi-8">n</span></sup><span 
+class="cmti-10x-x-109">. Then by the Whitney Product theorem, </span><span 
+class="cmmi-10x-x-109">w</span>(<span 
+class="cmmi-10x-x-109">&#x03C4;</span>)<span 
+class="cmmi-10x-x-109">w</span>(<span 
+class="cmmi-10x-x-109">v</span>) = 1 <span 
+class="cmti-10x-x-109">and</span>
+<span 
+class="cmti-10x-x-109">since </span><span 
+class="cmmi-10x-x-109">v </span><span 
+class="cmti-10x-x-109">is trivial, </span><span 
+class="cmmi-10x-x-109">w</span>(<span 
+class="cmmi-10x-x-109">v</span>) = 1<span 
+class="cmti-10x-x-109">. Thus, </span><span 
+class="cmmi-10x-x-109">w</span>(<span 
+class="cmmi-10x-x-109">&#x03C4;</span>) = 1<span 
+class="cmti-10x-x-109">. Therefore, the class </span><span 
+class="cmmi-10x-x-109">w</span>(<span 
+class="cmmi-10x-x-109">&#x03C4;</span>) = <span 
+class="cmmi-10x-x-109">w</span>(<span 
+class="cmmi-10x-x-109">S</span><sup><span 
+class="cmmi-8">n</span></sup>) <span 
+class="cmti-10x-x-109">is equal to 1, and</span>
+<span 
+class="cmmi-10x-x-109">&#x03C4; </span><span 
+class="cmti-10x-x-109">is indistinguishable from the trivial bundle over </span><span 
+class="cmmi-10x-x-109">S</span><sup><span 
+class="cmmi-8">n</span></sup> <span 
+class="cmti-10x-x-109">by Steifel-Whitney classes.</span>
+  </div>
+<!--l. 473--><p class="indent" >
+  <div class="newtheorem">
+<!--l. 475--><p class="noindent" ><span class="head">
+<a 
+ id="x1-5011r3"></a>
+
+<span 
+class="cmbx-10x-x-109">Theorem 3.</span>  </span><span 
+class="cmti-10x-x-109">The Whitney sum </span><span 
+class="cmmi-10x-x-109">&#x03C4; </span><span 
+class="cmsy-10x-x-109">&#x2295;</span><span 
+class="cmmi-10x-x-109">&#x03F5;</span><sup><span 
+class="cmr-8">1</span></sup> <span 
+class="cmti-10x-x-109">is isomorphic to the </span>(<span 
+class="cmmi-10x-x-109">n </span>+ 1)<span 
+class="cmti-10x-x-109">-fold Whitney sum </span><span 
+class="cmmi-10x-x-109">&#x03B3;</span><sub><span 
+class="cmmi-8">n</span></sub><sup><span 
+class="cmr-8">1</span></sup> <span 
+class="cmsy-10x-x-109">&#x2295;</span><span 
+class="cmmi-10x-x-109">&#x03B3;</span><sub><span 
+class="cmmi-8">n</span></sub><sup><span 
+class="cmr-8">1</span></sup> <span 
+class="cmsy-10x-x-109">&#x2295;</span>
+<img 
+src="main26x.png" alt="&#x22C5;&#x22C5;&#x22C5;"  class="@cdots" ><span 
+class="cmsy-10x-x-109">&#x2295; </span><span 
+class="cmmi-10x-x-109">&#x03B3;</span><sub><span 
+class="cmmi-8">n</span></sub><sup><span 
+class="cmr-8">1</span></sup><span 
+class="cmti-10x-x-109">. Hence the total Stiefel-Whitney class of </span><span 
+class="cmmi-10x-x-109">P</span><sup><span 
+class="cmmi-8">n</span></sup> <span 
+class="cmti-10x-x-109">is given by</span>
+  <div class="math-display" >
+<img 
+src="main27x.png" alt="                        (     )     (     )          (     )
+w(P n) = (1 + a)n+1 = 1 +  n+ 1  a +  n + 1  a2 + &#x22C5;&#x22C5;&#x22C5;+  n+ 1  an.
+                           1           2                n
+" class="math-display" ></div>
+  </div>
+<!--l. 478--><p class="indent" >
+  <h3 class="sectionHead"><span class="titlemark">6. </span> <a 
+ id="x1-60006"></a>Applications and Examples</h3>
+  <div class="newtheorem">
+<!--l. 482--><p class="noindent" ><span class="head">
+<a 
+ id="x1-6001r18"></a>
+<span 
+class="cmbx-10x-x-109">Definition 18.</span>  </span><span 
+class="cmti-10x-x-109">A smooth map </span><span 
+class="cmmi-10x-x-109">f </span>: <span 
+class="cmmi-10x-x-109">M </span><span 
+class="cmsy-10x-x-109">&#x2192; </span><span 
+class="cmmi-10x-x-109">N </span><span 
+class="cmti-10x-x-109">between smooth manifolds is called an </span><span 
+class="cmbxti-10x-x-109">immersion </span><span 
+class="cmti-10x-x-109">if</span>
+<span 
+class="cmti-10x-x-109">the Jacobian</span>
+  <div class="math-display" >
+<img 
+src="main28x.png" alt="Df   : DM   &#x2192;  DN
+   X      X       f(x)
+" class="math-display" ></div>
+<!--l. 485--><p class="indent" >  <span 
+class="cmti-10x-x-109">maps the tangent space </span><span 
+class="cmmi-10x-x-109">DM</span><sub><span 
+class="cmmi-8">X</span></sub> <span 
+class="cmti-10x-x-109">injectively for each </span><span 
+class="cmmi-10x-x-109">x </span><span 
+class="cmsy-10x-x-109">&#x2208; </span><span 
+class="cmmi-10x-x-109">M</span><span 
+class="cmti-10x-x-109">.</span>
+  </div>
+<!--l. 486--><p class="indent" >
+<!--l. 488--><p class="noindent" >If a manifold <span 
+class="cmmi-10x-x-109">M </span>of dimension <span 
+class="cmmi-10x-x-109">n </span>can be immersed in the Euclidean space <span 
+class="msbm-10x-x-109">&#x211D;</span><sup><span 
+class="cmmi-8">n</span><span 
+class="cmr-8">+</span><span 
+class="cmmi-8">k</span></sup>, then the Whitney duality
+theorem implies that the dual Stiefel-Whitney classes are zero for <span 
+class="cmmi-10x-x-109">i &#x003E; k</span>.
+<!--l. 490--><p class="indent" >  Let <span 
+class="cmmi-10x-x-109">P</span><sup><span 
+class="cmmi-8">n</span></sup> denote the real projective space in <span 
+class="cmmi-10x-x-109">n </span>dimensions.
+  <div class="newtheorem">
+<!--l. 491--><p class="noindent" ><span class="head">
+<a 
+ id="x1-6002r4"></a>
+
+<span 
+class="cmbx-10x-x-109">Theorem 4.</span>  </span><span 
+class="cmti-10x-x-109">If </span><span 
+class="cmmi-10x-x-109">P</span><sup><span 
+class="cmr-8">2</span><sup><span 
+class="cmmi-6">r</span></sup>
+   </sup> <span 
+class="cmti-10x-x-109">can be immersed in </span><span 
+class="msbm-10x-x-109">&#x211D;</span><sup><span 
+class="cmr-8">2</span><sup><span 
+class="cmmi-6">r</span></sup><span 
+class="cmr-8">+</span><span 
+class="cmmi-8">k</span>
+      </sup><span 
+class="cmti-10x-x-109">, then </span><span 
+class="cmmi-10x-x-109">k </span><span 
+class="cmti-10x-x-109">must be at least </span>2<sup><span 
+class="cmmi-8">r</span></sup> <span 
+class="cmsy-10x-x-109">- </span>1<span 
+class="cmti-10x-x-109">.</span>
+  </div>
+<!--l. 493--><p class="indent" >
+<!--l. 495--><p class="noindent" ><span class="subsectionHead"><span class="titlemark">6.1. </span> <a 
+ id="x1-70006.1"></a><span 
+class="cmbx-10x-x-109">Stiefel-Whitney Numbers.</span></span> Stiefel-Whitney numbers allows for a comparison between the
+Stiefel-Whitney classes of two different manifolds. In studying manifolds, we consider the collection of all
+possible Stiefel-Whitney numbers. We say that two different manifolds <span 
+class="cmmi-10x-x-109">M </span>and <span 
+class="cmmi-10x-x-109">M</span><span 
+class="cmsy-10x-x-109">&#x2032; </span>have the same
+Stiefel-Whitney numbers if
+  <div class="math-display" >
+<img 
+src="main29x.png" alt=" r1     rn       r1     r1   &#x2032;
+w1 &#x22C5;&#x22C5;&#x22C5;w n [M ] = w1 &#x22C5;&#x22C5;&#x22C5;w 1 [M ]
+" class="math-display" ></div>
+<!--l. 498--><p class="indent" >  for every monomial <span 
+class="cmmi-10x-x-109">w</span><sub><span 
+class="cmr-8">1</span></sub><sup><span 
+class="cmmi-8">r</span><sub><span 
+class="cmr-6">1</span></sub></sup><img 
+src="main30x.png" alt="&#x22C5;&#x22C5;&#x22C5;"  class="@cdots" ><span 
+class="cmmi-10x-x-109">w</span><sub><span 
+class="cmmi-8">n</span></sub><sup><span 
+class="cmmi-8">r</span><sub><span 
+class="cmmi-6">n</span></sub></sup> of total dimension <span 
+class="cmmi-10x-x-109">n</span>.
+  <div class="newtheorem">
+<!--l. 500--><p class="noindent" ><span class="head">
+<a 
+ id="x1-7001r5"></a>
+<span 
+class="cmbx-10x-x-109">Theorem 5.</span>  </span><span 
+class="cmti-10x-x-109">If </span><span 
+class="cmmi-10x-x-109">B </span><span 
+class="cmti-10x-x-109">is a smooth compact </span>(<span 
+class="cmmi-10x-x-109">n </span>+ 1)<span 
+class="cmti-10x-x-109">-dimensional manifold with boundary equal to </span><span 
+class="cmmi-10x-x-109">M</span><span 
+class="cmti-10x-x-109">,</span>
+<span 
+class="cmti-10x-x-109">then the Stiefel-Whitney numbers of </span><span 
+class="cmmi-10x-x-109">M </span><span 
+class="cmti-10x-x-109">are all zero.</span>
+  </div>
+<!--l. 502--><p class="indent" >
+  <div class="newtheorem">
+<!--l. 504--><p class="noindent" ><span class="head">
+<a 
+ id="x1-7002r6"></a>
+<span 
+class="cmbx-10x-x-109">Theorem 6.</span>  </span><span 
+class="cmti-10x-x-109">If all the Stiefel-Whitney numbers of a manifold </span><span 
+class="cmmi-10x-x-109">M </span><span 
+class="cmti-10x-x-109">are zero, then </span><span 
+class="cmmi-10x-x-109">M </span><span 
+class="cmti-10x-x-109">can be realized</span>
+<span 
+class="cmti-10x-x-109">as the boundary of some smooth compact manifold.</span>
+  </div>
+<!--l. 506--><p class="indent" >
+  <div class="newtheorem">
+<!--l. 508--><p class="noindent" ><span class="head">
+<a 
+ id="x1-7003r1"></a>
+
+<span 
+class="cmbx-10x-x-109">Corollary 1.</span>  </span><span 
+class="cmti-10x-x-109">Two smooth closed </span><span 
+class="cmmi-10x-x-109">n</span><span 
+class="cmti-10x-x-109">-manifolds belong to the same cobordism class if and only if all</span>
+<span 
+class="cmti-10x-x-109">of their corresponding Stiefel-Whitney numbers are equal.</span>
+  </div>
+<!--l. 510--><p class="indent" >
+  <h3 class="sectionHead"><span class="titlemark">7. </span> <a 
+ id="x1-80007"></a>Closing Remarks</h3>
+<!--l. 513--><p class="noindent" >                                                                                         <br 
+class="newline" />To close, vector bundles themselves are quite fascinating, however it&#8217;s when we begin to construct groups
+with vector bundles that we see these magical algebraic properties of manifolds arise. Cohomology groups,
+while quite novel at first, do become a natural consideration. This is because we extract new relationships
+between spaces by way of the algebraic structure of cohomology classes of vector bundles. After the
+Stiefel-Whitney classes, there are many paths for further research after this paper. For example,
+one can explore vector bundles and manifolds in <span 
+class="msbm-10x-x-109">&#x2102;</span>, which gives the added benefit of being
+algebraically closed. Then, one could study Chern classes and Chern numbers of a compact complex
+manifold.
+<!--l. 521--><p class="indent" >
+
+  <div class="addresses">
+  </div>  
+</body></html> 
+
+
+

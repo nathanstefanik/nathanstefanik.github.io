@@ -1,0 +1,51 @@
+\expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi
+\doTocEntry\tocnav{}{\csname a:TocLink\endcsname{1}{x1-1}{}{\headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}}}{}\relax 
+\doTocEntry\tocnav{}{\csname a:TocLink\endcsname{1}{x1-1}{}{\headcommand {\beamer@framepages {1}{1}}}}{}\relax 
+\doTocEntry\tocnav{}{\csname a:TocLink\endcsname{1}{x1-1}{}{\headcommand {\slideentry {0}{0}{2}{4/4}{}{0}}}}{}\relax 
+\doTocEntry\tocnav{}{\csname a:TocLink\endcsname{1}{x1-1}{}{\headcommand {\beamer@framepages {4}{4}}}}{}\relax 
+\doTocEntry\toctoc{}{\csname a:TocLink\endcsname{1}{x1-2r1}{}{\beamer@sectionintoc {1}{Introduction}{6}{0}{1}}}{}\relax 
+\doTocEntry\tocnav{}{\csname a:TocLink\endcsname{1}{x1-2r1}{}{\headcommand {\beamer@sectionpages {1}{5}}}}{}\relax 
+\doTocEntry\tocnav{}{\csname a:TocLink\endcsname{1}{x1-2r1}{}{\headcommand {\beamer@subsectionpages {1}{5}}}}{}\relax 
+\doTocEntry\tocnav{}{\csname a:TocLink\endcsname{1}{x1-2r1}{}{\headcommand {\sectionentry {1}{Introduction}{6}{Introduction}{0}}}}{}\relax 
+\doTocEntry\tocnav{}{\csname a:TocLink\endcsname{1}{x1-2r1}{}{\headcommand {\slideentry {1}{0}{1}{6/15}{}{0}}}}{}\relax 
+\doTocEntry\tocnav{}{\csname a:TocLink\endcsname{1}{x1-2r1}{}{\headcommand {\beamer@framepages {6}{15}}}}{}\relax 
+\doTocEntry\toctoc{}{\csname a:TocLink\endcsname{1}{x1-28r2}{}{\beamer@sectionintoc {2}{Definition}{17}{0}{2}}}{}\relax 
+\doTocEntry\tocnav{}{\csname a:TocLink\endcsname{1}{x1-28r2}{}{\headcommand {\beamer@sectionpages {6}{16}}}}{}\relax 
+\doTocEntry\tocnav{}{\csname a:TocLink\endcsname{1}{x1-28r2}{}{\headcommand {\beamer@subsectionpages {6}{16}}}}{}\relax 
+\doTocEntry\tocnav{}{\csname a:TocLink\endcsname{1}{x1-28r2}{}{\headcommand {\sectionentry {2}{Definition}{17}{Definition}{0}}}}{}\relax 
+\doTocEntry\tocnav{}{\csname a:TocLink\endcsname{1}{x1-28r2}{}{\headcommand {\slideentry {2}{0}{1}{17/17}{}{0}}}}{}\relax 
+\doTocEntry\tocnav{}{\csname a:TocLink\endcsname{1}{x1-28r2}{}{\headcommand {\beamer@framepages {17}{17}}}}{}\relax 
+\doTocEntry\tocnav{}{\csname a:TocLink\endcsname{1}{x1-28r2}{}{\headcommand {\slideentry {2}{0}{2}{20/20}{}{0}}}}{}\relax 
+\doTocEntry\tocnav{}{\csname a:TocLink\endcsname{1}{x1-28r2}{}{\headcommand {\beamer@framepages {20}{20}}}}{}\relax 
+\doTocEntry\tocnav{}{\csname a:TocLink\endcsname{1}{x1-28r2}{}{\headcommand {\slideentry {2}{0}{3}{22/22}{}{0}}}}{}\relax 
+\doTocEntry\tocnav{}{\csname a:TocLink\endcsname{1}{x1-28r2}{}{\headcommand {\beamer@framepages {22}{22}}}}{}\relax 
+\doTocEntry\tocnav{}{\csname a:TocLink\endcsname{1}{x1-28r2}{}{\headcommand {\slideentry {2}{0}{4}{24/24}{}{0}}}}{}\relax 
+\doTocEntry\tocnav{}{\csname a:TocLink\endcsname{1}{x1-28r2}{}{\headcommand {\beamer@framepages {24}{24}}}}{}\relax 
+\doTocEntry\toctoc{}{\csname a:TocLink\endcsname{1}{x1-34r3}{}{\beamer@sectionintoc {3}{Theorems}{26}{0}{3}}}{}\relax 
+\doTocEntry\tocnav{}{\csname a:TocLink\endcsname{1}{x1-34r3}{}{\headcommand {\beamer@sectionpages {17}{25}}}}{}\relax 
+\doTocEntry\tocnav{}{\csname a:TocLink\endcsname{1}{x1-34r3}{}{\headcommand {\beamer@subsectionpages {17}{25}}}}{}\relax 
+\doTocEntry\tocnav{}{\csname a:TocLink\endcsname{1}{x1-34r3}{}{\headcommand {\sectionentry {3}{Theorems}{26}{Theorems}{0}}}}{}\relax 
+\doTocEntry\tocnav{}{\csname a:TocLink\endcsname{1}{x1-34r3}{}{\headcommand {\slideentry {3}{0}{1}{26/29}{}{0}}}}{}\relax 
+\doTocEntry\tocnav{}{\csname a:TocLink\endcsname{1}{x1-34r3}{}{\headcommand {\beamer@framepages {26}{29}}}}{}\relax 
+\doTocEntry\tocnav{}{\csname a:TocLink\endcsname{1}{x1-34r3}{}{\headcommand {\slideentry {3}{0}{2}{31/31}{}{0}}}}{}\relax 
+\doTocEntry\tocnav{}{\csname a:TocLink\endcsname{1}{x1-34r3}{}{\headcommand {\beamer@framepages {31}{31}}}}{}\relax 
+\doTocEntry\tocnav{}{\csname a:TocLink\endcsname{1}{x1-34r3}{}{\headcommand {\slideentry {3}{0}{3}{33/33}{}{0}}}}{}\relax 
+\doTocEntry\tocnav{}{\csname a:TocLink\endcsname{1}{x1-34r3}{}{\headcommand {\beamer@framepages {33}{33}}}}{}\relax 
+\doTocEntry\tocnav{}{\csname a:TocLink\endcsname{1}{x1-34r3}{}{\headcommand {\slideentry {3}{0}{4}{35/35}{}{0}}}}{}\relax 
+\doTocEntry\tocnav{}{\csname a:TocLink\endcsname{1}{x1-34r3}{}{\headcommand {\beamer@framepages {35}{35}}}}{}\relax 
+\doTocEntry\tocnav{}{\csname a:TocLink\endcsname{1}{x1-34r3}{}{\headcommand {\slideentry {3}{0}{5}{37/37}{}{0}}}}{}\relax 
+\doTocEntry\tocnav{}{\csname a:TocLink\endcsname{1}{x1-34r3}{}{\headcommand {\beamer@framepages {37}{37}}}}{}\relax 
+\doTocEntry\tocnav{}{\csname a:TocLink\endcsname{1}{x1-34r3}{}{\headcommand {\slideentry {3}{0}{6}{39/41}{}{0}}}}{}\relax 
+\doTocEntry\tocnav{}{\csname a:TocLink\endcsname{1}{x1-34r3}{}{\headcommand {\beamer@framepages {39}{41}}}}{}\relax 
+\doTocEntry\tocnav{}{\csname a:TocLink\endcsname{1}{x1-34r3}{}{\headcommand {\slideentry {3}{0}{7}{43/47}{}{0}}}}{}\relax 
+\doTocEntry\tocnav{}{\csname a:TocLink\endcsname{1}{x1-34r3}{}{\headcommand {\beamer@framepages {43}{47}}}}{}\relax 
+\doTocEntry\toctoc{}{\csname a:TocLink\endcsname{1}{x1-53r4}{}{\beamer@sectionintoc {4}{Examples}{49}{0}{4}}}{}\relax 
+\doTocEntry\tocnav{}{\csname a:TocLink\endcsname{1}{x1-53r4}{}{\headcommand {\beamer@sectionpages {26}{48}}}}{}\relax 
+\doTocEntry\tocnav{}{\csname a:TocLink\endcsname{1}{x1-53r4}{}{\headcommand {\beamer@subsectionpages {26}{48}}}}{}\relax 
+\doTocEntry\tocnav{}{\csname a:TocLink\endcsname{1}{x1-53r4}{}{\headcommand {\sectionentry {4}{Examples}{49}{Examples}{0}}}}{}\relax 
+\doTocEntry\tocnav{}{\csname a:TocLink\endcsname{1}{x1-53r4}{}{\headcommand {\slideentry {4}{0}{1}{49/54}{}{0}}}}{}\relax 
+\doTocEntry\tocnav{}{\csname a:TocLink\endcsname{1}{x1-53r4}{}{\headcommand {\beamer@framepages {49}{54}}}}{}\relax 
+\doTocEntry\tocnav{}{\csname a:TocLink\endcsname{1}{x1-53r4}{}{\headcommand {\slideentry {4}{0}{2}{56/58}{}{0}}}}{}\relax 
+\doTocEntry\tocnav{}{\csname a:TocLink\endcsname{1}{x1-53r4}{}{\headcommand {\beamer@framepages {56}{58}}}}{}\relax 
+\doTocEntry\tocnav{}{\csname a:TocLink\endcsname{1}{x1-53r4}{}{\headcommand {\slideentry {4}{0}{3}{60/60}{}{0}}}}{}\relax 
+\doTocEntry\tocnav{}{\csname a:TocLink\endcsname{1}{x1-53r4}{}{\headcommand {\beamer@framepages {60}{60}}}}{}\relax 
