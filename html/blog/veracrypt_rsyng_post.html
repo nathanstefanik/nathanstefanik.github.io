@@ -1,0 +1,99 @@
+<hr>
+<p>Using Veracrypt and Rsync for Backup Between Multiple Computers
+[2021-08-11]</p>
+<hr>
+<h2 id="motivation">Motivation</h2>
+<p>I thank Sun Knudsen&#39;s privacy guides for this post. This method of backup is not convenient, rather it offers a secure and privacy-friendly alternative to the usual means of file synchronization. There are three notable levels of precaution. First, we prefer physical external drives as a way to prevent unwanted access and tampering from third parties. Second, we will store files in an encrypted volume by way of Veracrypt. Third, we will hash the volume using the SHA-512 algorithm as a final measure against tampering. </p>
+<p>For my use case, Rsync was the most appropriate tool that I found. I highly recommend checking out the algorithm below.</p>
+<p><a href="https://youtu.be/X3Stha8pxXc" title="Camilo Aguilar on the Rsync Algorithm"><img src="https://img.youtube.com/vi/X3Stha8pxXc/0.jpg" alt="Rsync Algorithm"></a></p>
+<h2 id="required-tools">Required Tools</h2>
+<ul>
+<li>Veracrypt</li>
+<li>Rsync</li>
+</ul>
+<h2 id="create-a-veracrypt-volume">Create a Veracrypt Volume</h2>
+<ol>
+<li>Format your usb drive in the appropriate file system. Since I will be going back and forth between Windows, MacOS, and Linux machines, I chose exFAT. Mount the drive to your computer. A tip if you are on MacOS, the easiest method would be to pass <strong>diskutil eraseDisk name-of-disk /dev/diskn</strong> in terminal where n is the number of your drive in <strong>diskutil list</strong>.</li>
+<li>In your terminal, launch veracrypt and pass in <strong>-t -c</strong> (-t for --text, -c for --create) to create a volume in the command line and the path to your drive. For example on Arch Linux, this is usually <strong>/run/media/$USER/name-of-drive</strong>. On MacOS, it is <strong>/Volumes/name-of-drive</strong>.</li>
+<li>If you are unsure on what to select, use my recommendation: <ol>
+<li><strong>veracrypt -t -c --volume-type=normal /path_to_drive --encryption=aes-twofish-serpent --hash=sha-512 --filesystem=FAT -p 1nseRt-str0nG-p7sswoRd --pim=0 -k &quot;&quot; --random-source=/dev/urandom</strong></li>
+</ol>
+</li>
+</ol>
+<h2 id="backup-desired-files">Backup Desired Files</h2>
+<p>The general process to backup files to the veracrypt volume using rsync is as follows. </p>
+<ol>
+<li>Before using rsync, it may be helpful to read the documentation as improper uses may result in deleting important files. Typically, as long as you are wary of using the --delete flag, you should be fine.</li>
+<li>Mount your veracrypt volume in terminal. <strong>veracrypt -t -m --pim=0 -k &quot;&quot; --protect-hidden=no /path_to_volume /path_to_mount</strong>. For Linux, it is okay to use the /mnt directory if this is the only device you need to mount during sync. For MacOS, it will typically be /Volumes/NO\ NAME unless you wish to rename it.</li>
+<li>Sync your desired data and repeat for unrelated folders/files as the archive option -a will sync recursively. <strong>rsync -axS /path_of_source /path_of_mount</strong><ol>
+<li>If you wish to exclude certain files or file types, insert the --exclude flag and pass in your param. </li>
+<li>If you wish to see progress, use -axSP.</li>
+<li>If you wish to see a verbose summary, use -axvS.</li>
+</ol>
+</li>
+<li>When finished, dismount your veracrypt volume using <strong>veracrypt -d /path_to_mount</strong> or <strong>veracrypt -d</strong> for all volumes.</li>
+<li>You can generate a hash of the volume using <strong>openssl dgst -sha512 /path_to_volume</strong></li>
+</ol>
+<p>However, I have also written a Linux bash shell script to do this for me. Remember to enable this scripts execution permission using <strong>chmod +x /path_to_script</strong></p>
+<pre><code>#! /bin/sh
+
+set -e
+set -o pipefail
+
+veracrypt -t -m --pim=0 -k &quot;&quot; --protect-hidden=no /path_to_volume /path_to_mount
+
+rsync -axSP --exclude=&quot;file_type_to_exclude&quot; --exclude=/path_to_file /path_of_source1 /path_to_mount
+
+rsync -axSP --exclude=&quot;file_type_to_exclude&quot; --exclude=/path_to_file /path_of_source2 /path_to_mount
+
+veracrypt -t -d /path_to_mount
+
+openssl dgst -sha512 /path_to_volume
+</code></pre>
+<h2 id="check-for-tampering">Check for tampering</h2>
+<p>Below is a script for checking the hash of your backup. </p>
+<pre><code>#! /bin/sh
+
+set -e
+set -o pipefail
+
+printf &quot;Backup hash: &quot;
+
+read -r previous
+
+current=$(openssl dgst -sha512 /path_to_volume)
+
+current=${current:39}
+
+printf &quot;Current hash: %s\n&quot; $current
+
+if [ &quot;$current&quot; != &quot;$previous&quot; ]; then
+  printf &quot;%s\n&quot; &quot;Integrity check failed&quot;
+  exit 1
+fi
+
+if [ &quot;$current&quot; == &quot;$previous&quot; ]; then
+  printf &quot;%s\n&quot; &quot;Integrity check passed&quot;
+  exit 1
+fi
+</code></pre>
+<h2 id="load-from-backup">Load from Backup</h2>
+<p>Note, we use the --delete option in the below rsync commands. Use precaution as this will delete files so your local machine will sync with your backup on your usb flash drive. When you are syncing folders, follow the syntax I have given below.</p>
+<pre><code>#! /bin/sh
+
+set -e
+set -o pipefail
+
+veracrypt -t -m --pim=0 -k &quot;&quot; --protect-hidden=no /path_to_volume /path_to_mount
+
+rsync -axSP --delete /path_to_mount/path_of_folder/ /path_of_folder
+
+rsync -axSP --delete /path_to_mount/path_of_file /path_of_file
+
+veracrypt -t -d /path_to_mount
+
+printf &quot;%s\n&quot; &quot;Done&quot;
+</code></pre>
+<h2 id="ideas-for-proper-synchronization">Ideas for proper synchronization</h2>
+<p>If you are familiar with collaborating through git, I would treat your usb flash drive as a remote repository and your backup as the master branch. However, with my current script, you MUST load from back up before you make any changes on your local machine as they will be deleted in order to match the backup. To change this, simply omit --delete from the load script.</p>
+<p>If you have any suggestions, please email me.</p>
