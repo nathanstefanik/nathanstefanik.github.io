@@ -17,6 +17,19 @@ html, body {
     font-family: 'Open Sans', sans-serif;
 }
 
+.navigation {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.navigation li {
+  margin: 15px;
+  font-size: 20px;
+}
+
+.navigation ul {
+  list-style-type: none;
+}
+
 .wrapper {
     /* background-color: white; */
     max-width: 70%;

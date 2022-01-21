@@ -1,0 +1,52 @@
+.navigation {
+   top: 0px;
+   font-family: 'Open Sans', sans-serif;
+}
+
+.navigation li {
+    float: left;
+}
+
+.navigation a {
+    display: block;
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+}
+
+.navigation ul {
+    list-style-type: none;
+}
+
+.resnav {
+    top: 0px;
+    font-family: 'Open Sans', sans-serif;
+ }
+ 
+ .resnav li {
+     float: left;
+ }
+ 
+ .resnav a {
+     display: block;
+     padding-top: 0px;
+     padding-left: 20px;
+     padding-right: 20px;
+     padding-bottom: 15px;
+ }
+ 
+ .resnav ul {
+     list-style-type: none;
+ }
+ 
+
+.articles {
+    padding-top: 10%;
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.resume {
+    height: 96%;
+}
