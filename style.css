@@ -54,7 +54,6 @@ html, body {
 .social-links {
     list-style: none;
     padding-left: 0px;
-    font-size: 18px;
 }  
 .social-links li {
     display: inline-block;
