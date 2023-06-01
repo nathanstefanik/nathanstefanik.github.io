@@ -32,21 +32,6 @@ body {
     text-decoration: underline;
 }
 
-/* Article styles */
-.articles {
-    display: flex;
-    padding-bottom: 5%;
-}
-
-/* Blog section styles */
-.blog_section {
-    display: block;
-    padding-bottom: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-}
-
 /* CV styles */
 .cv {
     height: 96%;
@@ -57,9 +42,9 @@ p {
     line-height: 1.5;
     text-align: justify;
 }
-.articles a {
+a {
     text-decoration: none;
 }
-.articles a:hover {
+a:hover {
     text-decoration: underline;
 }

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nathan Stefanik</title>
+    <link rel="stylesheet" type="text/css" href="../pagestyle.css">
+    <style>
+      table, th, td {
+        border:1px solid black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navigation">  
+      <ul>  
+        <li><a href="../../index.html"> Home </a></li>  
+        <li><a href="../cv.html"> CV </a></li>
+        <li><a href="../blog.html"> Blog </a></li>
+        <li><a href="../projects.html"> Projects </a></li>
+      </ul>  
+    </nav> 
+
+    <h1>Julia and Flux: Building Models in Julia for Fashion-MNIST</h1>
+    <p>As a first foray into Julia, I try out Julia for deep learning by building 
+    some models for Fashion-MNIST. See my code <a href="https://github.com/nathanstefanik/julia-fashionmnist">here</a>. 
+    I'm preferring Fashion-MNIST over MNIST 
+    because MNIST is pretty overused and an easy problem for simple convolutional 
+    networks. It also doesn't really represent any modern computer vision problems.</p>
+    <h2>Fashion-MNIST</h2>
+    <p>Features are 28x28 grayscale images that are associated with a label of 10 
+    classes:</p>
+    <table>
+      <thead>
+        <tr>
+          <th> Label </th>
+          <th> Description </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td> 0 </td>
+          <td> T-shirt/top </td>
+        </tr>
+        <tr>
+          <td> 1 </td>
+          <td> Trouser </td>
+        </tr>
+        <tr>
+          <td> 2 </td>
+          <td> Pullover </td>
+        </tr>
+        <tr>
+          <td> 3 </td>
+          <td> Dress </td>
+        </tr>
+        <tr>
+          <td> 4 </td>
+          <td> Dress </td>
+        </tr>
+        <tr>
+          <td> 5 </td>
+          <td> Sandal </td>
+        </tr>
+        <tr>
+          <td> 6 </td>
+          <td> Shirt</td>
+        </tr>
+        <tr>
+          <td> 7 </td>
+          <td> Sneaker </td>
+        </tr>
+        <tr>
+          <td> 8 </td>
+          <td> Bag </td>
+        </tr>
+        <tr>
+          <td> 9 </td>
+          <td> Ankle boot </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>LeNet Architecture</h2>
+    <p><a href="https://en.wikipedia.org/wiki/LeNet">LeNet-5</a> was proposed in 1998 and 
+    comprises of two basic parts:</p>
+    <ul>
+    <li>Convolutional encoder (2 convolutional layers)</li>
+    <li>Dense block (3 fully-connected layers)</li>
+    </ul>
+    <h3>Conclusion</h3>
+    <p>Hyperparameters
+    | Trainable Parameters | 44426 |
+    | E | Trouser |</p>
+    <p>Results
+    | Trainable Parameters | 44426 |
+    | Training Loss | loss = 0.0639 |
+    | Training Accuracy | 97.9967 |
+    | Test Loss | 0.0639 |
+    | Test Accuracy | 97.9967 |</p>
+    <h2>AlexNet Architecture</h2>
+    <p><a href="https://en.wikipedia.org/wiki/AlexNet">AlexNet</a> was proposed in 2012 by
+    Krizhevsky, et al. in one of the most influential papers in deep learning 
+    <a href="https://www.cs.cmu.edu/~epxing/Class/10715-14f/reading/imagenet.pdf">"ImageNet Classification with Deep Convolutional Neural Networks"</a>.
+    AlexNet is similar LeNet in that it uses blocks of convolutions and 
+    fully-connected layers, however it improves upon the design by adding 
+    normalization, dropout, and linear layers.</p>
+    <p>The model can be outlined in the following manner, taken from <a href="https://en.wikipedia.org/wiki/AlexNet#Network_design">Wikipedia</a>.
+    $$(CNN\to RN\to MP)^{2}\to (CNN^{3}\to MP)\to (FC\to DO)^{2}\to Linear\to softmax$$</p>
+    <p>| CNN | convolution with ReLU activation |
+    | RN | local response normalization |
+    | MP | max-pooling |
+    | FC | fully-connected layer with ReLU activation |
+    | DO | dropout |
+    | Linear | fully connected layer without activation |</p>
+    <p>However, we are dealing with classifying features of size 28x28x1 into 
+    10 classes. We scale AlexNet down into the following model:</p>
+  </body>
+</html>
