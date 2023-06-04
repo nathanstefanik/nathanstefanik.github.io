@@ -1,0 +1,2230 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head>
+    <title></title> 
+    <meta  charset="utf-8" /> 
+    <meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+    <meta name="viewport" content="width=device-width,initial-scale=1" /> 
+    <link rel="stylesheet" type="text/css" href="main.css" /> 
+    <meta name="src" content="main.tex" /> 
+</head>
+
+<body>
+<nav class="navigation">  
+    <ul>  
+        <li><a href="../../../index.html"> Home </a></li>  
+        <li><a href="../../cv.html"> CV </a></li>
+        <li><a href="../../blog.html"> Blog </a></li>
+        <li><a href="../../projects.html"> Projects </a></li>
+    </ul>  
+</nav> 
+
+                                                        
+<div class="slide"> <div class="titlepage"><a 
+ id="sl1"></a><p class="links"><a 
+href="main2.html#bookmark" target="tex4ht-menu" >toc</a></p>
+                       <h1 class="title"><span 
+class="cmss-12x-x-120">Equivalence</span>
+                        <span 
+class="cmss-12x-x-120">Relations</span>
+                            <span 
+class="cmss-12x-x-120">on</span>
+                        <span 
+class="cmss-12x-x-120">Algebraic</span>
+                          <span 
+class="cmss-12x-x-120">Cycles</span></h1>                          
+                          <div class="author">Nathan
+                          Stefanik</div>                          
+                             <div class="institute"></div>                             
+                           <div class="date" >April
+                           21,
+                           2022</div>
+                                                           
+</div>                                                               </div>
+                                                           
+<div class="slide">  <span 
+class="cmss-12x-x-120">History</span>
+  <span 
+class="cmss-12x-x-120">and</span>
+  <span 
+class="cmss-12x-x-120">Motivation</span>                                                              
+<h2 class="frametitle"></h2><g visibility="hidden">
+ 
+     <ul class="itemize1">
+     <li class="itemize">
+     <!--l. 20--><p class="noindent" >19<sup>th</sup>
+      century
+      -
+      significant
+      work
+      on
+      functions
+      on
+      algebraic
+      curves</g> <g visibility="hidden">
+ 
+      </p></li>
+      <li class="itemize">
+      <!--l. 20--><p class="noindent" >Riemann-Roch
+      Theorem,
+      Abel-Jacobi
+      Theorem
+      major
+      contributions
+      using
+      divisors
+      (algebraic
+      cycles
+      of
+      codimension
+      1)</g> <g visibility="hidden">
+ 
+      </p></li>
+      <li class="itemize">
+      <!--l. 20--><p class="noindent" >In
+      higher
+      dimensions,
+      behavior
+      of
+      varieties
+      becomes
+      more
+      complicated
+      and
+      these
+      theorems
+      don’t
+      nicely
+      extend</p></li></ul>
+</g>                                                            </div>
+                                                           
+                                                           
+<div class="slide">
+                                                           
+                                                           
+<span 
+class="cmss-12x-x-120">History</span>
+  <span 
+class="cmss-12x-x-120">and</span>
+  <span 
+class="cmss-12x-x-120">Motivation</span>                                                        
+<h2 class="frametitle"></h2>
+    <ul class="itemize1">
+    <li class="itemize">
+    <!--l. 20--><p class="noindent" >19<sup>th</sup>
+    century
+    -
+    significant
+    work
+    on
+    functions
+    on
+    algebraic
+    curves<g visibility="hidden">
+ 
+    </p></li>
+    <li class="itemize">
+    <!--l. 20--><p class="noindent" >Riemann-Roch
+    Theorem,
+    Abel-Jacobi
+    Theorem
+    major
+    contributions
+    using
+    divisors
+    (algebraic
+    cycles
+    of
+    codimension
+    1)</g> <g visibility="hidden">
+ 
+    </p></li>
+    <li class="itemize">
+    <!--l. 20--><p class="noindent" >In
+    higher
+    dimensions,
+    behavior
+    of
+    varieties
+    becomes
+    more
+    complicated
+    and
+    these
+    theorems
+    don’t
+    nicely
+    extend</p></li></ul>
+</g>                                                            
+                                                           
+</div> <div class="slide">
+                                                           
+                                                           
+<span 
+class="cmss-12x-x-120">History</span>
+  <span 
+class="cmss-12x-x-120">and</span>
+  <span 
+class="cmss-12x-x-120">Motivation</span>                                                        
+<h2 class="frametitle"></h2>
+    <ul class="itemize1">
+    <li class="itemize">
+    <!--l. 20--><p class="noindent" >19<sup>th</sup>
+    century
+    -
+    significant
+    work
+    on
+    functions
+    on
+    algebraic
+    curves
+    </p></li>
+    <li class="itemize">
+    <!--l. 20--><p class="noindent" >Riemann-Roch
+    Theorem,
+    Abel-Jacobi
+    Theorem
+    major
+    contributions
+    using
+    divisors
+    (algebraic
+    cycles
+    of
+    codimension
+    1)<g visibility="hidden">
+ 
+    </p></li>
+    <li class="itemize">
+    <!--l. 20--><p class="noindent" >In
+    higher
+    dimensions,
+    behavior
+    of
+    varieties
+    becomes
+    more
+    complicated
+    and
+    these
+    theorems
+    don’t
+    nicely
+    extend</p></li></ul>
+</g>                                                            
+                                                           
+</div> <div class="slide">
+                                                           
+                                                           
+<span 
+class="cmss-12x-x-120">History</span>
+  <span 
+class="cmss-12x-x-120">and</span>
+  <span 
+class="cmss-12x-x-120">Motivation</span>                                                        
+<h2 class="frametitle"></h2>
+    <ul class="itemize1">
+    <li class="itemize">
+    <!--l. 20--><p class="noindent" >19<sup>th</sup>
+    century
+    -
+    significant
+    work
+    on
+    functions
+    on
+    algebraic
+    curves
+    </p></li>
+    <li class="itemize">
+    <!--l. 20--><p class="noindent" >Riemann-Roch
+    Theorem,
+    Abel-Jacobi
+    Theorem
+    major
+    contributions
+    using
+    divisors
+    (algebraic
+    cycles
+    of
+    codimension
+    1)
+    </p></li>
+    <li class="itemize">
+    <!--l. 20--><p class="noindent" >In
+    higher
+    dimensions,
+    behavior
+    of
+    varieties
+    becomes
+    more
+    complicated
+    and
+    these
+    theorems
+    don’t
+    nicely
+    extend</p></li></ul>                                                 
+                                                           
+</div>
+                                                           
+                                                           
+<div class="slide">  <span 
+class="cmss-12x-x-120">Algebraic</span>
+  <span 
+class="cmss-12x-x-120">Cycles</span>                                                                    
+<h2 class="frametitle"></h2><g visibility="hidden">
+ Let <span 
+class="mathkerncmssi-10x-x-109">X </span>be any variety defined over a field <span 
+class="mathkerncmssi-10x-x-109">k</span>.</g> <g visibility="hidden">
+ 
+<a 
+ id="x1-2r1"></a>
+<div class="definition">
+<span 
+class="cmss-12">Definition</span>                                                                  
+A
+<span 
+class="cmssbx-10x-x-109">cycle</span>
+<span 
+class="mathkerncmssi-10x-x-109">Z</span>
+<span 
+class="cmssbx-10x-x-109">of</span>
+<span 
+class="cmssbx-10x-x-109">codimension</span>
+<span 
+class="mathkerncmssi-10x-x-109">r</span>
+on
+<span 
+class="mathkerncmssi-10x-x-109">X</span>
+is
+an
+element
+of
+the
+free
+abelian
+group
+generated
+by
+the
+closed
+irreducible
+subvarieties
+of
+codimension
+<span 
+class="mathkerncmssi-10x-x-109">r</span>
+of
+<span 
+class="mathkerncmssi-10x-x-109">X</span>.
+It
+is
+a
+finite
+formal
+sum<span 
+class="cmex-10x-x-109">∑</span>
+  <span 
+class="mathkerncmssi-10x-x-109">n</span><sub><span 
+class="mathkerncmssi-8">i</span></sub>[<span 
+class="mathkerncmssi-10x-x-109">V</span><sub><span 
+class="mathkerncmssi-8">i</span></sub>]
+where
+<span 
+class="mathkerncmssi-10x-x-109">n</span><sub><span 
+class="mathkerncmssi-8">i</span></sub>
+are
+integers
+and
+<span 
+class="mathkerncmssi-10x-x-109">V</span><sub><span 
+class="mathkerncmssi-8">i</span></sub>
+are
+subvarieties.                                                                     
+</div></div>
+<!--l. 33--><p class="noindent" ></g> <g visibility="hidden">
+ We denote by <span 
+class="mathkerncmssi-10x-x-109">C</span><sup><span 
+class="mathkerncmssi-8">r</span></sup>(<span 
+class="mathkerncmssi-10x-x-109">X</span>) the group of all cycles of codimension <span 
+class="mathkerncmssi-10x-x-109">r </span>on
+<span 
+class="mathkerncmssi-10x-x-109">X</span>.
+</g>                                                            </p></div>
+                                                           
+                                                           
+<div class="slide">
+                                                           
+                                                           
+<span 
+class="cmss-12x-x-120">Algebraic</span>
+  <span 
+class="cmss-12x-x-120">Cycles</span>                                                             
+<h2 class="frametitle"></h2>Let <span 
+class="mathkerncmssi-10x-x-109">X </span>be any variety defined over a field <span 
+class="mathkerncmssi-10x-x-109">k</span>.<g visibility="hidden">
+ 
+<a 
+ id="x1-3r1"></a>
+<div class="definition">
+<span 
+class="cmss-12">Definition</span>                                                 
+A
+<span 
+class="cmssbx-10x-x-109">cycle</span>
+<span 
+class="mathkerncmssi-10x-x-109">Z</span>
+<span 
+class="cmssbx-10x-x-109">of</span>
+<span 
+class="cmssbx-10x-x-109">codimension</span>
+<span 
+class="mathkerncmssi-10x-x-109">r</span>
+on
+<span 
+class="mathkerncmssi-10x-x-109">X</span>
+is
+an
+element
+of
+the
+free
+abelian
+group
+generated
+by
+the
+closed
+irreducible
+subvarieties
+of
+codimension
+<span 
+class="mathkerncmssi-10x-x-109">r</span>
+of
+<span 
+class="mathkerncmssi-10x-x-109">X</span>.
+It
+is
+a
+finite
+formal
+sum
+<span 
+class="cmex-10x-x-109">∑</span>
+   <span 
+class="mathkerncmssi-10x-x-109">n</span><sub><span 
+class="mathkerncmssi-8">i</span></sub>[<span 
+class="mathkerncmssi-10x-x-109">V</span><sub><span 
+class="mathkerncmssi-8">i</span></sub>]
+where
+<span 
+class="mathkerncmssi-10x-x-109">n</span><sub><span 
+class="mathkerncmssi-8">i</span></sub>
+are
+integers
+and
+<span 
+class="mathkerncmssi-10x-x-109">V</span><sub><span 
+class="mathkerncmssi-8">i</span></sub>
+are
+subvarieties.                                                
+</div></div>
+<!--l. 33--><p class="noindent" ></g> <g visibility="hidden">
+ We denote by <span 
+class="mathkerncmssi-10x-x-109">C</span><sup><span 
+class="mathkerncmssi-8">r</span></sup>(<span 
+class="mathkerncmssi-10x-x-109">X</span>) the group of all cycles of codimension <span 
+class="mathkerncmssi-10x-x-109">r </span>on
+<span 
+class="mathkerncmssi-10x-x-109">X</span>.
+</g>                                                            
+                                                           
+</p>
+</div> <div class="slide">
+                                                           
+                                                           
+<span 
+class="cmss-12x-x-120">Algebraic</span>
+  <span 
+class="cmss-12x-x-120">Cycles</span>                                                             
+<h2 class="frametitle"></h2>Let <span 
+class="mathkerncmssi-10x-x-109">X </span>be any variety defined over a field <span 
+class="mathkerncmssi-10x-x-109">k</span>.
+<a 
+ id="x1-4r1"></a>
+<div class="definition">
+<span 
+class="cmss-12">Definition</span>                                                 
+A
+<span 
+class="cmssbx-10x-x-109">cycle</span>
+<span 
+class="mathkerncmssi-10x-x-109">Z</span>
+<span 
+class="cmssbx-10x-x-109">of</span>
+<span 
+class="cmssbx-10x-x-109">codimension</span>
+<span 
+class="mathkerncmssi-10x-x-109">r</span>
+on
+<span 
+class="mathkerncmssi-10x-x-109">X</span>
+is
+an
+element
+of
+the
+free
+abelian
+group
+generated
+by
+the
+closed
+irreducible
+subvarieties
+of
+codimension
+<span 
+class="mathkerncmssi-10x-x-109">r</span>
+of
+<span 
+class="mathkerncmssi-10x-x-109">X</span>.
+It
+is
+a
+finite
+formal
+sum
+<span 
+class="cmex-10x-x-109">∑</span>
+   <span 
+class="mathkerncmssi-10x-x-109">n</span><sub><span 
+class="mathkerncmssi-8">i</span></sub>[<span 
+class="mathkerncmssi-10x-x-109">V</span><sub><span 
+class="mathkerncmssi-8">i</span></sub>]
+where
+<span 
+class="mathkerncmssi-10x-x-109">n</span><sub><span 
+class="mathkerncmssi-8">i</span></sub>
+are
+integers
+and
+<span 
+class="mathkerncmssi-10x-x-109">V</span><sub><span 
+class="mathkerncmssi-8">i</span></sub>
+are
+subvarieties.                                                
+</div></div>
+<!--l. 33--><p class="noindent" ><g visibility="hidden">
+ We denote by <span 
+class="mathkerncmssi-10x-x-109">C</span><sup><span 
+class="mathkerncmssi-8">r</span></sup>(<span 
+class="mathkerncmssi-10x-x-109">X</span>) the group of all cycles of codimension <span 
+class="mathkerncmssi-10x-x-109">r </span>on
+<span 
+class="mathkerncmssi-10x-x-109">X</span>.
+</g>                                                            
+                                                           
+</p>
+</div> <div class="slide">
+                                                           
+                                                           
+<span 
+class="cmss-12x-x-120">Algebraic</span>
+  <span 
+class="cmss-12x-x-120">Cycles</span>                                                             
+<h2 class="frametitle"></h2>Let <span 
+class="mathkerncmssi-10x-x-109">X </span>be any variety defined over a field <span 
+class="mathkerncmssi-10x-x-109">k</span>.
+<a 
+ id="x1-5r1"></a>
+<div class="definition">
+<span 
+class="cmss-12">Definition</span>                                                 
+A
+<span 
+class="cmssbx-10x-x-109">cycle</span>
+<span 
+class="mathkerncmssi-10x-x-109">Z</span>
+<span 
+class="cmssbx-10x-x-109">of</span>
+<span 
+class="cmssbx-10x-x-109">codimension</span>
+<span 
+class="mathkerncmssi-10x-x-109">r</span>
+on
+<span 
+class="mathkerncmssi-10x-x-109">X</span>
+is
+an
+element
+of
+the
+free
+abelian
+group
+generated
+by
+the
+closed
+irreducible
+subvarieties
+of
+codimension
+<span 
+class="mathkerncmssi-10x-x-109">r</span>
+of
+<span 
+class="mathkerncmssi-10x-x-109">X</span>.
+It
+is
+a
+finite
+formal
+sum
+<span 
+class="cmex-10x-x-109">∑</span>
+   <span 
+class="mathkerncmssi-10x-x-109">n</span><sub><span 
+class="mathkerncmssi-8">i</span></sub>[<span 
+class="mathkerncmssi-10x-x-109">V</span><sub><span 
+class="mathkerncmssi-8">i</span></sub>]
+where
+<span 
+class="mathkerncmssi-10x-x-109">n</span><sub><span 
+class="mathkerncmssi-8">i</span></sub>
+are
+integers
+and
+<span 
+class="mathkerncmssi-10x-x-109">V</span><sub><span 
+class="mathkerncmssi-8">i</span></sub>
+are
+subvarieties.                                                
+</div></div>
+<!--l. 33--><p class="noindent" >We denote by <span 
+class="mathkerncmssi-10x-x-109">C</span><sup><span 
+class="mathkerncmssi-8">r</span></sup>(<span 
+class="mathkerncmssi-10x-x-109">X</span>) the group of all cycles of codimension <span 
+class="mathkerncmssi-10x-x-109">r </span>on
+<span 
+class="mathkerncmssi-10x-x-109">X</span>.                                                        
+                                                           
+</p>
+</div>
+                                                           
+                                                           
+<div class="slide">  <span 
+class="cmss-12x-x-120">Algebraic</span>
+  <span 
+class="cmss-12x-x-120">Cycles</span>                                                                    
+<h2 class="frametitle"></h2>
+     <ul class="itemize1">
+     <li class="itemize">
+     <!--l. 42--><p class="noindent" ><span 
+class="mathkerncmssi-10x-x-109">C</span><sup><span 
+class="mathkerncmssi-8">r</span></sup>(<span 
+class="mathkerncmssi-10x-x-109">X</span>)
+      is
+      naturally
+      quite
+      large<g visibility="hidden">
+ 
+      </p></li>
+      <li class="itemize">
+      <!--l. 42--><p class="noindent" >Use
+      equivalence
+      relations
+      to
+      develop
+      more
+      intuition
+      on
+      the
+      geometry
+      of
+      <span 
+class="mathkerncmssi-10x-x-109">X</span>.</p></li></ul>
+</g>                                                            </div>
+                                                           
+                                                           
+<div class="slide">
+                                                           
+                                                           
+<span 
+class="cmss-12x-x-120">Algebraic</span>
+  <span 
+class="cmss-12x-x-120">Cycles</span>                                                             
+<h2 class="frametitle"></h2>
+    <ul class="itemize1">
+    <li class="itemize">
+    <!--l. 42--><p class="noindent" ><span 
+class="mathkerncmssi-10x-x-109">C</span><sup><span 
+class="mathkerncmssi-8">r</span></sup>(<span 
+class="mathkerncmssi-10x-x-109">X</span>)
+    is
+    naturally
+    quite
+    large
+    </p></li>
+    <li class="itemize">
+    <!--l. 42--><p class="noindent" >Use
+    equivalence
+    relations
+    to
+    develop
+    more
+    intuition
+    on
+    the
+    geometry
+    of
+    <span 
+class="mathkerncmssi-10x-x-109">X</span>.</p></li></ul>                                                    
+                                                           
+</div>
+                                                           
+                                                           
+<div class="slide">  <span 
+class="cmss-12x-x-120">A</span>
+  <span 
+class="cmss-12x-x-120">Nice</span>
+  <span 
+class="cmss-12x-x-120">Example</span>                                                                 
+<h2 class="frametitle"></h2>Let <span 
+class="mathkerncmssi-10x-x-109">r </span>= 1. A cycle of codimension one is a divisor.
+<a 
+ id="x1-6r2"></a>
+<div class="definition">
+<span 
+class="cmss-12">Definition</span>                                                                  
+Two
+divisors
+<span 
+class="mathkerncmssi-10x-x-109">D</span><sub><span 
+class="cmss-8">1</span></sub>
+and
+<span 
+class="mathkerncmssi-10x-x-109">D</span><sub><span 
+class="cmss-8">2</span></sub>
+on
+<span 
+class="mathkerncmssi-10x-x-109">X</span>
+are
+linearly
+equivalent
+if
+there
+exists
+a
+rational
+function
+on
+<span 
+class="mathkerncmssi-10x-x-109">X</span>
+such
+that
+<span 
+class="mathkerncmssi-10x-x-109">D</span><sub><span 
+class="cmss-8">1</span></sub> <span 
+class="cmsy-10x-x-109">− </span><span 
+class="mathkerncmssi-10x-x-109">D</span><sub><span 
+class="cmss-8">2</span></sub> = (<span 
+class="mathkerncmssi-10x-x-109">f </span>)<sub><span 
+class="cmss-8">0</span></sub> <span 
+class="cmsy-10x-x-109">− </span>(<span 
+class="mathkerncmssi-10x-x-109">f </span>)<sub><span 
+class="cmsy-8">∞</span></sub>,
+where
+(<span 
+class="mathkerncmssi-10x-x-109">f </span>)<sub><span 
+class="cmss-8">0</span></sub>
+denotes
+the
+divisor
+of
+zeros
+and
+(<span 
+class="mathkerncmssi-10x-x-109">f </span>)<sub><span 
+class="cmsy-8">∞</span></sub>
+denotes
+the
+divisor
+of
+poles.                                                                             
+</div></div>
+<!--l. 58--><p class="noindent" ><g visibility="hidden">
+ 
+<a 
+ id="x1-7r3"></a>
+</p>
+<div class="example">
+<span 
+class="cmss-12">Example</span>                                                                    
+Let
+<span 
+class="mathkerncmssi-10x-x-109">C</span><sub>lin</sub><sup><span 
+class="cmss-8">1</span></sup>(<span 
+class="mathkerncmssi-10x-x-109">X</span>)
+denote
+the
+group
+of
+divisors
+linearly
+equivalent
+to
+0.
+Then,
+the
+quotient
+group
+<span 
+class="mathkerncmssi-10x-x-109">C</span><sup><span 
+class="cmss-8">1</span></sup>(<span 
+class="mathkerncmssi-10x-x-109">X</span>)<span 
+class="cmmi-10x-x-109">∕</span><span 
+class="mathkerncmssi-10x-x-109">C</span><sub>lin</sub><sup><span 
+class="cmss-8">1</span></sup>(<span 
+class="mathkerncmssi-10x-x-109">X</span>)
+is
+Pic <span 
+class="mathkerncmssi-10x-x-109">X</span>,
+the
+group
+of
+linear
+equivalence
+classes
+of
+divisors
+on
+<span 
+class="mathkerncmssi-10x-x-109">X</span>.                                                                                 
+</div></div>
+<!--l. 58--><p class="noindent" >
+</g>                                                            </p></div>
+                                                           
+                                                           
+<div class="slide">
+                                                           
+                                                           
+<span 
+class="cmss-12x-x-120">A</span>
+  <span 
+class="cmss-12x-x-120">Nice</span>
+  <span 
+class="cmss-12x-x-120">Example</span>                                                          
+<h2 class="frametitle"></h2>Let <span 
+class="mathkerncmssi-10x-x-109">r </span>= 1. A cycle of codimension one is a divisor.
+<a 
+ id="x1-8r2"></a>
+<div class="definition">
+<span 
+class="cmss-12">Definition</span>                                                 
+Two
+divisors
+<span 
+class="mathkerncmssi-10x-x-109">D</span><sub><span 
+class="cmss-8">1</span></sub>
+and
+<span 
+class="mathkerncmssi-10x-x-109">D</span><sub><span 
+class="cmss-8">2</span></sub>
+on
+<span 
+class="mathkerncmssi-10x-x-109">X</span>
+are
+linearly
+equivalent
+if
+there
+exists
+a
+rational
+function
+on
+<span 
+class="mathkerncmssi-10x-x-109">X</span>
+such
+that
+<span 
+class="mathkerncmssi-10x-x-109">D</span><sub><span 
+class="cmss-8">1</span></sub> <span 
+class="cmsy-10x-x-109">− </span><span 
+class="mathkerncmssi-10x-x-109">D</span><sub><span 
+class="cmss-8">2</span></sub> = (<span 
+class="mathkerncmssi-10x-x-109">f </span>)<sub><span 
+class="cmss-8">0</span></sub> <span 
+class="cmsy-10x-x-109">− </span>(<span 
+class="mathkerncmssi-10x-x-109">f </span>)<sub><span 
+class="cmsy-8">∞</span></sub>,
+where
+(<span 
+class="mathkerncmssi-10x-x-109">f </span>)<sub><span 
+class="cmss-8">0</span></sub>
+denotes
+the
+divisor
+of
+zeros
+and
+(<span 
+class="mathkerncmssi-10x-x-109">f </span>)<sub><span 
+class="cmsy-8">∞</span></sub>
+denotes
+the
+divisor
+of
+poles.                                                      
+</div></div>
+<!--l. 58--><p class="noindent" >
+<a 
+ id="x1-9r3"></a>
+</p>
+<div class="example">
+<span 
+class="cmss-12">Example</span>                                                   
+Let
+<span 
+class="mathkerncmssi-10x-x-109">C</span><sub>lin</sub><sup><span 
+class="cmss-8">1</span></sup>(<span 
+class="mathkerncmssi-10x-x-109">X</span>)
+denote
+the
+group
+of
+divisors
+linearly
+equivalent
+to
+0.
+Then,
+the
+quotient
+group
+<span 
+class="mathkerncmssi-10x-x-109">C</span><sup><span 
+class="cmss-8">1</span></sup>(<span 
+class="mathkerncmssi-10x-x-109">X</span>)<span 
+class="cmmi-10x-x-109">∕</span><span 
+class="mathkerncmssi-10x-x-109">C</span><sub>lin</sub><sup><span 
+class="cmss-8">1</span></sup>(<span 
+class="mathkerncmssi-10x-x-109">X</span>)
+is
+Pic <span 
+class="mathkerncmssi-10x-x-109">X</span>,
+the
+group
+of
+linear
+equivalence
+classes
+of
+divisors
+on
+<span 
+class="mathkerncmssi-10x-x-109">X</span>.                                                        
+</div></div>
+<!--l. 58--><p class="noindent" >                                                           
+                                                           
+</p>
+</div>
+                                                           
+                                                           
+<div class="slide">  <span 
+class="cmss-12x-x-120">A</span>
+  <span 
+class="cmss-12x-x-120">Nice</span>
+  <span 
+class="cmss-12x-x-120">Example</span>                                                                 
+<h2 class="frametitle"></h2>For <span 
+class="mathkerncmssi-10x-x-109">X </span>= <span 
+class="msbm-10x-x-109">ℙ</span><sup><span 
+class="mathkerncmssi-8">n</span></sup>, <span 
+class="mathkerncmssi-10x-x-109">C</span><sup><span 
+class="cmss-8">1</span></sup>(<span 
+class="mathkerncmssi-10x-x-109">X</span>)<span 
+class="cmmi-10x-x-109">∕</span><span 
+class="mathkerncmssi-10x-x-109">C</span><sub>lin</sub><sup><span 
+class="cmss-8">1</span></sup>(<span 
+class="mathkerncmssi-10x-x-109">X</span>)<img 
+src="main0x.png" alt="∼="  class="cong"  /><span 
+class="msbm-10x-x-109">ℤ</span>.
+                                                            </div>
+                                                           
+                                                           
+<div class="slide">  <span 
+class="cmss-12x-x-120">Rational</span>
+  <span 
+class="cmss-12x-x-120">Equivalence</span>                                                             
+<h2 class="frametitle"></h2>
+     <ul class="itemize1">
+     <li class="itemize">
+     <!--l. 78--><p class="noindent" >Same
+      as
+      linear
+      equivalence
+      in
+      codim
+      1<g visibility="hidden">
+ </p></li></ul>
+<a 
+ id="x1-10r4"></a>
+<div class="definition">
+<span 
+class="cmss-12">Definition</span>                                                                  
+Two
+cycles
+<span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">1</span></sub>
+and
+<span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">2</span></sub>
+of
+codimension
+<span 
+class="mathkerncmssi-10x-x-109">r</span>
+on
+<span 
+class="mathkerncmssi-10x-x-109">X</span>
+are
+<span 
+class="cmssbx-10x-x-109">rationally</span>
+<span 
+class="cmssbx-10x-x-109">equivalent</span>
+if
+there
+is
+a
+cycle
+<span 
+class="mathkerncmssi-10x-x-109">Z</span>
+on
+<span 
+class="mathkerncmssi-10x-x-109">X </span><span 
+class="cmsy-10x-x-109">× </span><span 
+class="msbm-10x-x-109">ℙ</span><sup><span 
+class="cmss-8">1</span></sup>,
+which
+intersects
+each
+fiber
+<span 
+class="mathkerncmssi-10x-x-109">X </span><span 
+class="cmsy-10x-x-109">×{</span><span 
+class="mathkerncmssi-10x-x-109">t</span><span 
+class="cmsy-10x-x-109">}</span>
+in
+something
+of
+codimension
+<span 
+class="mathkerncmssi-10x-x-109">r</span>,
+and
+such
+that
+<span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">1</span></sub>
+and
+<span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">2</span></sub>
+are
+obtained
+respectively
+by
+intersecting
+<span 
+class="mathkerncmssi-10x-x-109">Z</span>
+with
+the
+fibers
+<span 
+class="mathkerncmssi-10x-x-109">X </span><span 
+class="cmsy-10x-x-109">×{</span>0<span 
+class="cmsy-10x-x-109">}</span>
+and
+<span 
+class="mathkerncmssi-10x-x-109">X </span><span 
+class="cmsy-10x-x-109">×{</span>1<span 
+class="cmsy-10x-x-109">}</span>.                                                                         
+</div></div>
+<!--l. 78--><p class="noindent" >
+</g>                                                            </p></div>
+                                                           
+                                                           
+<div class="slide">
+                                                           
+                                                           
+<span 
+class="cmss-12x-x-120">Rational</span>
+  <span 
+class="cmss-12x-x-120">Equivalence</span>                                                       
+<h2 class="frametitle"></h2>
+    <ul class="itemize1">
+    <li class="itemize">
+    <!--l. 78--><p class="noindent" >Same
+    as
+    linear
+    equivalence
+    in
+    codim
+    1</p></li></ul>
+<a 
+ id="x1-11r4"></a>
+<div class="definition">
+<span 
+class="cmss-12">Definition</span>                                                 
+Two
+cycles
+<span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">1</span></sub>
+and
+<span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">2</span></sub>
+of
+codimension
+<span 
+class="mathkerncmssi-10x-x-109">r</span>
+on
+<span 
+class="mathkerncmssi-10x-x-109">X</span>
+are
+<span 
+class="cmssbx-10x-x-109">rationally</span>
+<span 
+class="cmssbx-10x-x-109">equivalent</span>
+if
+there
+is
+a
+cycle
+<span 
+class="mathkerncmssi-10x-x-109">Z</span>
+on
+<span 
+class="mathkerncmssi-10x-x-109">X </span><span 
+class="cmsy-10x-x-109">× </span><span 
+class="msbm-10x-x-109">ℙ</span><sup><span 
+class="cmss-8">1</span></sup>,
+which
+intersects
+each
+fiber
+<span 
+class="mathkerncmssi-10x-x-109">X </span><span 
+class="cmsy-10x-x-109">×{</span><span 
+class="mathkerncmssi-10x-x-109">t</span><span 
+class="cmsy-10x-x-109">}</span>
+in
+something
+of
+codimension
+<span 
+class="mathkerncmssi-10x-x-109">r</span>,
+and
+such
+that
+<span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">1</span></sub>
+and
+<span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">2</span></sub>
+are
+obtained
+respectively
+by
+intersecting
+<span 
+class="mathkerncmssi-10x-x-109">Z</span>
+with
+the
+fibers
+<span 
+class="mathkerncmssi-10x-x-109">X </span><span 
+class="cmsy-10x-x-109">×{</span>0<span 
+class="cmsy-10x-x-109">}</span>
+and
+<span 
+class="mathkerncmssi-10x-x-109">X </span><span 
+class="cmsy-10x-x-109">×{</span>1<span 
+class="cmsy-10x-x-109">}</span>.                                                   
+</div></div>
+<!--l. 78--><p class="noindent" >                                                           
+                                                           
+</p>
+</div>
+                                                           
+                                                           
+<div class="slide">  <span 
+class="cmss-12x-x-120">Rational</span>
+  <span 
+class="cmss-12x-x-120">Equivalence</span>
+  <span 
+class="cmss-12x-x-120">is</span>
+  <span 
+class="cmss-12x-x-120">an</span>
+  <span 
+class="cmss-12x-x-120">Equivalence</span>
+  <span 
+class="cmss-12x-x-120">Relation</span>                                                                 
+<h2 class="frametitle"></h2>
+     <ul class="itemize1">
+     <li class="itemize">
+     <!--l. 91--><p class="noindent" >Reflectivity:
+      <span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">1</span></sub> <span 
+class="cmsy-10x-x-109">∼</span><sub><span 
+class="mathkerncmssi-8">rat</span></sub><span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">1</span></sub>.
+      Take
+      <span 
+class="mathkerncmssi-10x-x-109">Z </span>= <span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">1</span></sub> <span 
+class="cmsy-10x-x-109">× </span><span 
+class="msbm-10x-x-109">ℙ</span><sup><span 
+class="cmss-8">1</span></sup><g visibility="hidden">
+ 
+        </p></li>
+        <li class="itemize">
+        <!--l. 91--><p class="noindent" >Symmetry:
+      <span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">1</span></sub> <span 
+class="cmsy-10x-x-109">∼</span><sub><span 
+class="mathkerncmssi-8">rat</span></sub><span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">2</span></sub> <img 
+src="main1x.png" alt="=⇒"  class="Longrightarrow"  /> <span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">2</span></sub> <span 
+class="cmsy-10x-x-109">∼</span><sub><span 
+class="mathkerncmssi-8">rat</span></sub><span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">1</span></sub>.
+      Apply
+      automorphism
+      of
+      <span 
+class="msbm-10x-x-109">ℙ</span><sup><span 
+class="cmss-8">1</span></sup>
+        that
+      interchanges
+      0
+      and
+      1.</g> <g visibility="hidden">
+ 
+      </p></li>
+      <li class="itemize">
+      <!--l. 91--><p class="noindent" >Transivity:
+      <span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">1</span></sub> <span 
+class="cmsy-10x-x-109">∼</span><sub><span 
+class="mathkerncmssi-8">rat</span></sub><span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">2</span></sub><span 
+class="cmmi-10x-x-109">,</span><span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">2</span></sub> <span 
+class="cmsy-10x-x-109">∼</span><sub><span 
+class="mathkerncmssi-8">rat</span></sub><span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">3</span></sub> <img 
+src="main2x.png" alt="= ⇒"  class="Longrightarrow"  /> <span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">1</span></sub> <span 
+class="cmsy-10x-x-109">∼</span><sub><span 
+class="mathkerncmssi-8">rat</span></sub><span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">3</span></sub>.
+      Let
+      <span 
+class="mathkerncmssi-10x-x-109">Z </span><span 
+class="cmsy-10x-x-109">⊆ </span><span 
+class="mathkerncmssi-10x-x-109">X </span><span 
+class="cmsy-10x-x-109">× </span><span 
+class="msbm-10x-x-109">ℙ</span><sup><span 
+class="cmss-8">1</span></sup>
+        give
+      <span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">1</span></sub> <span 
+class="cmsy-10x-x-109">∼</span><sub><span 
+class="mathkerncmssi-8">rat</span></sub><span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">2</span></sub>
+        and
+      <span 
+class="mathkerncmssi-10x-x-109">Z</span><span 
+class="cmsy-10x-x-109">′⊆ </span><span 
+class="mathkerncmssi-10x-x-109">X </span><span 
+class="cmsy-10x-x-109">× </span><span 
+class="msbm-10x-x-109">ℙ</span><sup><span 
+class="cmss-8">1</span></sup>
+        give
+      <span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">2</span></sub> <span 
+class="cmsy-10x-x-109">∼</span><sub><span 
+class="mathkerncmssi-8">rat</span></sub><span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">3</span></sub>.
+      Then,
+      <span 
+class="mathkerncmssi-10x-x-109">Z </span>+ <span 
+class="mathkerncmssi-10x-x-109">Z</span><span 
+class="cmsy-10x-x-109">′− </span><span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">2</span></sub> <span 
+class="cmsy-10x-x-109">× </span><span 
+class="msbm-10x-x-109">ℙ</span><sup><span 
+class="cmss-8">1</span></sup>
+        gives
+      <span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">1</span></sub> <span 
+class="cmsy-10x-x-109">∼</span><sub><span 
+class="mathkerncmssi-8">rat</span></sub><span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">3</span></sub>.</p></li></ul>
+</g>                                                            </div>
+                                                           
+                                                           
+<div class="slide">
+                                                           
+                                                           
+<span 
+class="cmss-12x-x-120">Rational</span>
+  <span 
+class="cmss-12x-x-120">Equivalence</span>
+  <span 
+class="cmss-12x-x-120">is</span>
+  <span 
+class="cmss-12x-x-120">an</span>
+  <span 
+class="cmss-12x-x-120">Equivalence</span>
+<span 
+class="cmss-12x-x-120">Relation</span>                                                           
+<h2 class="frametitle"></h2>
+    <ul class="itemize1">
+    <li class="itemize">
+    <!--l. 91--><p class="noindent" >Reflectivity:
+    <span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">1</span></sub> <span 
+class="cmsy-10x-x-109">∼</span><sub><span 
+class="mathkerncmssi-8">rat</span></sub><span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">1</span></sub>.
+    Take
+    <span 
+class="mathkerncmssi-10x-x-109">Z </span>= <span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">1</span></sub> <span 
+class="cmsy-10x-x-109">× </span><span 
+class="msbm-10x-x-109">ℙ</span><sup><span 
+class="cmss-8">1</span></sup>
+    </p></li>
+    <li class="itemize">
+    <!--l. 91--><p class="noindent" >Symmetry:
+    <span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">1</span></sub> <span 
+class="cmsy-10x-x-109">∼</span><sub><span 
+class="mathkerncmssi-8">rat</span></sub><span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">2</span></sub> <img 
+src="main3x.png" alt="= ⇒"  class="Longrightarrow"  /> <span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">2</span></sub> <span 
+class="cmsy-10x-x-109">∼</span><sub><span 
+class="mathkerncmssi-8">rat</span></sub><span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">1</span></sub>.
+    Apply
+    automorphism
+    of
+    <span 
+class="msbm-10x-x-109">ℙ</span><sup><span 
+class="cmss-8">1</span></sup>
+    that
+    interchanges
+    0
+    and
+    1.<g visibility="hidden">
+ 
+    </p></li>
+    <li class="itemize">
+    <!--l. 91--><p class="noindent" >Transivity:
+    <span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">1</span></sub> <span 
+class="cmsy-10x-x-109">∼</span><sub><span 
+class="mathkerncmssi-8">rat</span></sub><span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">2</span></sub><span 
+class="cmmi-10x-x-109">,</span><span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">2</span></sub> <span 
+class="cmsy-10x-x-109">∼</span><sub><span 
+class="mathkerncmssi-8">rat</span></sub><span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">3</span></sub> <img 
+src="main4x.png" alt="=⇒"  class="Longrightarrow"  /> <span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">1</span></sub> <span 
+class="cmsy-10x-x-109">∼</span><sub><span 
+class="mathkerncmssi-8">rat</span></sub><span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">3</span></sub>.
+    Let
+    <span 
+class="mathkerncmssi-10x-x-109">Z </span><span 
+class="cmsy-10x-x-109">⊆ </span><span 
+class="mathkerncmssi-10x-x-109">X </span><span 
+class="cmsy-10x-x-109">× </span><span 
+class="msbm-10x-x-109">ℙ</span><sup><span 
+class="cmss-8">1</span></sup>
+    give
+    <span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">1</span></sub> <span 
+class="cmsy-10x-x-109">∼</span><sub><span 
+class="mathkerncmssi-8">rat</span></sub><span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">2</span></sub>
+    and
+    <span 
+class="mathkerncmssi-10x-x-109">Z</span><span 
+class="cmsy-10x-x-109">′⊆ </span><span 
+class="mathkerncmssi-10x-x-109">X </span><span 
+class="cmsy-10x-x-109">× </span><span 
+class="msbm-10x-x-109">ℙ</span><sup><span 
+class="cmss-8">1</span></sup>
+    give
+    <span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">2</span></sub> <span 
+class="cmsy-10x-x-109">∼</span><sub><span 
+class="mathkerncmssi-8">rat</span></sub><span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">3</span></sub>.
+    Then,
+    <span 
+class="mathkerncmssi-10x-x-109">Z </span>+ <span 
+class="mathkerncmssi-10x-x-109">Z</span><span 
+class="cmsy-10x-x-109">′− </span><span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">2</span></sub> <span 
+class="cmsy-10x-x-109">× </span><span 
+class="msbm-10x-x-109">ℙ</span><sup><span 
+class="cmss-8">1</span></sup>
+    gives
+    <span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">1</span></sub> <span 
+class="cmsy-10x-x-109">∼</span><sub><span 
+class="mathkerncmssi-8">rat</span></sub><span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">3</span></sub>.</p></li></ul>
+</g>                                                            
+                                                           
+</div> <div class="slide">
+                                                           
+                                                           
+<span 
+class="cmss-12x-x-120">Rational</span>
+  <span 
+class="cmss-12x-x-120">Equivalence</span>
+  <span 
+class="cmss-12x-x-120">is</span>
+  <span 
+class="cmss-12x-x-120">an</span>
+  <span 
+class="cmss-12x-x-120">Equivalence</span>
+<span 
+class="cmss-12x-x-120">Relation</span>                                                           
+<h2 class="frametitle"></h2>
+    <ul class="itemize1">
+    <li class="itemize">
+    <!--l. 91--><p class="noindent" >Reflectivity:
+    <span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">1</span></sub> <span 
+class="cmsy-10x-x-109">∼</span><sub><span 
+class="mathkerncmssi-8">rat</span></sub><span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">1</span></sub>.
+    Take
+    <span 
+class="mathkerncmssi-10x-x-109">Z </span>= <span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">1</span></sub> <span 
+class="cmsy-10x-x-109">× </span><span 
+class="msbm-10x-x-109">ℙ</span><sup><span 
+class="cmss-8">1</span></sup>
+    </p></li>
+    <li class="itemize">
+    <!--l. 91--><p class="noindent" >Symmetry:
+    <span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">1</span></sub> <span 
+class="cmsy-10x-x-109">∼</span><sub><span 
+class="mathkerncmssi-8">rat</span></sub><span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">2</span></sub> <img 
+src="main5x.png" alt="= ⇒"  class="Longrightarrow"  /> <span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">2</span></sub> <span 
+class="cmsy-10x-x-109">∼</span><sub><span 
+class="mathkerncmssi-8">rat</span></sub><span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">1</span></sub>.
+    Apply
+    automorphism
+    of
+    <span 
+class="msbm-10x-x-109">ℙ</span><sup><span 
+class="cmss-8">1</span></sup>
+    that
+    interchanges
+    0
+    and
+    1.
+    </p></li>
+    <li class="itemize">
+    <!--l. 91--><p class="noindent" >Transivity:
+    <span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">1</span></sub> <span 
+class="cmsy-10x-x-109">∼</span><sub><span 
+class="mathkerncmssi-8">rat</span></sub><span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">2</span></sub><span 
+class="cmmi-10x-x-109">,</span><span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">2</span></sub> <span 
+class="cmsy-10x-x-109">∼</span><sub><span 
+class="mathkerncmssi-8">rat</span></sub><span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">3</span></sub> <img 
+src="main6x.png" alt="=⇒"  class="Longrightarrow"  /> <span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">1</span></sub> <span 
+class="cmsy-10x-x-109">∼</span><sub><span 
+class="mathkerncmssi-8">rat</span></sub><span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">3</span></sub>.
+    Let
+    <span 
+class="mathkerncmssi-10x-x-109">Z </span><span 
+class="cmsy-10x-x-109">⊆ </span><span 
+class="mathkerncmssi-10x-x-109">X </span><span 
+class="cmsy-10x-x-109">× </span><span 
+class="msbm-10x-x-109">ℙ</span><sup><span 
+class="cmss-8">1</span></sup>
+    give
+    <span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">1</span></sub> <span 
+class="cmsy-10x-x-109">∼</span><sub><span 
+class="mathkerncmssi-8">rat</span></sub><span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">2</span></sub>
+    and
+    <span 
+class="mathkerncmssi-10x-x-109">Z</span><span 
+class="cmsy-10x-x-109">′⊆ </span><span 
+class="mathkerncmssi-10x-x-109">X </span><span 
+class="cmsy-10x-x-109">× </span><span 
+class="msbm-10x-x-109">ℙ</span><sup><span 
+class="cmss-8">1</span></sup>
+    give
+    <span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">2</span></sub> <span 
+class="cmsy-10x-x-109">∼</span><sub><span 
+class="mathkerncmssi-8">rat</span></sub><span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">3</span></sub>.
+    Then,
+    <span 
+class="mathkerncmssi-10x-x-109">Z </span>+ <span 
+class="mathkerncmssi-10x-x-109">Z</span><span 
+class="cmsy-10x-x-109">′− </span><span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">2</span></sub> <span 
+class="cmsy-10x-x-109">× </span><span 
+class="msbm-10x-x-109">ℙ</span><sup><span 
+class="cmss-8">1</span></sup>
+    gives
+    <span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">1</span></sub> <span 
+class="cmsy-10x-x-109">∼</span><sub><span 
+class="mathkerncmssi-8">rat</span></sub><span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">3</span></sub>.</p></li></ul>                                            
+                                                           
+</div>
+                                                           
+                                                           
+<div class="slide">  <span 
+class="cmss-12x-x-120">Algebraic</span>
+  <span 
+class="cmss-12x-x-120">Equivalence</span>                                                             
+<h2 class="frametitle"></h2>
+     <ul class="itemize1">
+     <li class="itemize">
+     <!--l. 111--><p class="noindent" >Use
+      same
+      construction
+      for
+      rational
+      equivalence<g visibility="hidden">
+ </p></li></ul>
+<a 
+ id="x1-12r5"></a>
+<div class="definition">
+<span 
+class="cmss-12">Definition</span>                                                                  
+Let
+<span 
+class="mathkerncmssi-10x-x-109">C</span>
+be
+an
+irreducible
+curve,
+and
+<span 
+class="mathkerncmssi-10x-x-109">a</span><span 
+class="cmmi-10x-x-109">,</span><span 
+class="mathkerncmssi-10x-x-109">b </span><span 
+class="cmsy-10x-x-109">∈ </span><span 
+class="mathkerncmssi-10x-x-109">C</span>
+be
+any
+two
+points.
+Two
+cycles
+<span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">1</span></sub>
+and
+<span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">2</span></sub>
+of
+codimension
+<span 
+class="mathkerncmssi-10x-x-109">r</span>
+on
+<span 
+class="mathkerncmssi-10x-x-109">X</span>
+are
+<span 
+class="cmssbx-10x-x-109">algebraically</span>
+<span 
+class="cmssbx-10x-x-109">equivalent</span>
+if
+there
+is
+a
+cycle
+<span 
+class="mathkerncmssi-10x-x-109">Z</span>
+on
+<span 
+class="mathkerncmssi-10x-x-109">X </span><span 
+class="cmsy-10x-x-109">× </span><span 
+class="mathkerncmssi-10x-x-109">C</span>,
+which
+intersects
+each
+fiber
+<span 
+class="mathkerncmssi-10x-x-109">X </span><span 
+class="cmsy-10x-x-109">×{</span><span 
+class="mathkerncmssi-10x-x-109">t</span><span 
+class="cmsy-10x-x-109">}</span>
+in
+something
+of
+codimension
+<span 
+class="mathkerncmssi-10x-x-109">r</span>,
+and
+such
+that
+<span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">1</span></sub>
+and
+<span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">2</span></sub>
+are
+obtained
+respectively
+by
+intersecting
+<span 
+class="mathkerncmssi-10x-x-109">Z</span>
+with
+the
+fibers
+<span 
+class="mathkerncmssi-10x-x-109">X </span><span 
+class="cmsy-10x-x-109">×{</span><span 
+class="mathkerncmssi-10x-x-109">a</span><span 
+class="cmsy-10x-x-109">}</span>
+and
+<span 
+class="mathkerncmssi-10x-x-109">X </span><span 
+class="cmsy-10x-x-109">×{</span><span 
+class="mathkerncmssi-10x-x-109">b</span><span 
+class="cmsy-10x-x-109">}</span>.                                                                         
+</div></div>
+<!--l. 111--><p class="noindent" ></g> <g visibility="hidden">
+ 
+</p>
+<div class="block">
+<span 
+class="cmss-12">Remark</span>                                                                     
+<span 
+class="mathkerncmssi-10x-x-109">C</span><sub><span 
+class="mathkerncmssi-8">rat</span></sub><sup><span 
+class="mathkerncmssi-8">r</span></sup>(<span 
+class="mathkerncmssi-10x-x-109">X</span>) <span 
+class="cmsy-10x-x-109">⊂ </span><span 
+class="mathkerncmssi-10x-x-109">C</span><sub><span 
+class="mathkerncmssi-8">alg</span></sub><sup><span 
+class="mathkerncmssi-8">r</span></sup>(<span 
+class="mathkerncmssi-10x-x-109">X</span>) <span 
+class="cmsy-10x-x-109">⊂ </span><span 
+class="mathkerncmssi-10x-x-109">C</span><sup><span 
+class="mathkerncmssi-8">r</span></sup>(<span 
+class="mathkerncmssi-10x-x-109">X</span>)                                             
+</div></div>
+<!--l. 111--><p class="noindent" >
+</g>                                                            </p></div>
+                                                           
+                                                           
+<div class="slide">
+                                                           
+                                                           
+<span 
+class="cmss-12x-x-120">Algebraic</span>
+  <span 
+class="cmss-12x-x-120">Equivalence</span>                                                       
+<h2 class="frametitle"></h2>
+    <ul class="itemize1">
+    <li class="itemize">
+    <!--l. 111--><p class="noindent" >Use
+    same
+    construction
+    for
+    rational
+    equivalence</p></li></ul>
+<a 
+ id="x1-13r5"></a>
+<div class="definition">
+<span 
+class="cmss-12">Definition</span>                                                 
+Let
+<span 
+class="mathkerncmssi-10x-x-109">C</span>
+be
+an
+irreducible
+curve,
+and
+<span 
+class="mathkerncmssi-10x-x-109">a</span><span 
+class="cmmi-10x-x-109">,</span><span 
+class="mathkerncmssi-10x-x-109">b </span><span 
+class="cmsy-10x-x-109">∈ </span><span 
+class="mathkerncmssi-10x-x-109">C</span>
+be
+any
+two
+points.
+Two
+cycles
+<span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">1</span></sub>
+and
+<span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">2</span></sub>
+of
+codimension
+<span 
+class="mathkerncmssi-10x-x-109">r</span>
+on
+<span 
+class="mathkerncmssi-10x-x-109">X</span>
+are
+<span 
+class="cmssbx-10x-x-109">algebraically</span>
+<span 
+class="cmssbx-10x-x-109">equivalent</span>
+if
+there
+is
+a
+cycle
+<span 
+class="mathkerncmssi-10x-x-109">Z</span>
+on
+<span 
+class="mathkerncmssi-10x-x-109">X </span><span 
+class="cmsy-10x-x-109">× </span><span 
+class="mathkerncmssi-10x-x-109">C</span>,
+which
+intersects
+each
+fiber
+<span 
+class="mathkerncmssi-10x-x-109">X </span><span 
+class="cmsy-10x-x-109">×{</span><span 
+class="mathkerncmssi-10x-x-109">t</span><span 
+class="cmsy-10x-x-109">}</span>
+in
+something
+of
+codimension
+<span 
+class="mathkerncmssi-10x-x-109">r</span>,
+and
+such
+that
+<span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">1</span></sub>
+and
+<span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">2</span></sub>
+are
+obtained
+respectively
+by
+intersecting
+<span 
+class="mathkerncmssi-10x-x-109">Z</span>
+with
+the
+fibers
+<span 
+class="mathkerncmssi-10x-x-109">X </span><span 
+class="cmsy-10x-x-109">×{</span><span 
+class="mathkerncmssi-10x-x-109">a</span><span 
+class="cmsy-10x-x-109">}</span>
+and
+<span 
+class="mathkerncmssi-10x-x-109">X </span><span 
+class="cmsy-10x-x-109">×{</span><span 
+class="mathkerncmssi-10x-x-109">b</span><span 
+class="cmsy-10x-x-109">}</span>.                                                   
+</div></div>
+<!--l. 111--><p class="noindent" ><g visibility="hidden">
+ 
+</p>
+<div class="block">
+<span 
+class="cmss-12">Remark</span>                                                   
+<span 
+class="mathkerncmssi-10x-x-109">C</span><sub><span 
+class="mathkerncmssi-8">rat</span></sub><sup><span 
+class="mathkerncmssi-8">r</span></sup>(<span 
+class="mathkerncmssi-10x-x-109">X</span>) <span 
+class="cmsy-10x-x-109">⊂ </span><span 
+class="mathkerncmssi-10x-x-109">C</span><sub><span 
+class="mathkerncmssi-8">alg</span></sub><sup><span 
+class="mathkerncmssi-8">r</span></sup>(<span 
+class="mathkerncmssi-10x-x-109">X</span>) <span 
+class="cmsy-10x-x-109">⊂ </span><span 
+class="mathkerncmssi-10x-x-109">C</span><sup><span 
+class="mathkerncmssi-8">r</span></sup>(<span 
+class="mathkerncmssi-10x-x-109">X</span>)                                
+</div></div>
+<!--l. 111--><p class="noindent" >
+</g>                                                            
+                                                           
+</p>
+</div> <div class="slide">
+                                                           
+                                                           
+<span 
+class="cmss-12x-x-120">Algebraic</span>
+  <span 
+class="cmss-12x-x-120">Equivalence</span>                                                       
+<h2 class="frametitle"></h2>
+    <ul class="itemize1">
+    <li class="itemize">
+    <!--l. 111--><p class="noindent" >Use
+    same
+    construction
+    for
+    rational
+    equivalence</p></li></ul>
+<a 
+ id="x1-14r5"></a>
+<div class="definition">
+<span 
+class="cmss-12">Definition</span>                                                 
+Let
+<span 
+class="mathkerncmssi-10x-x-109">C</span>
+be
+an
+irreducible
+curve,
+and
+<span 
+class="mathkerncmssi-10x-x-109">a</span><span 
+class="cmmi-10x-x-109">,</span><span 
+class="mathkerncmssi-10x-x-109">b </span><span 
+class="cmsy-10x-x-109">∈ </span><span 
+class="mathkerncmssi-10x-x-109">C</span>
+be
+any
+two
+points.
+Two
+cycles
+<span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">1</span></sub>
+and
+<span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">2</span></sub>
+of
+codimension
+<span 
+class="mathkerncmssi-10x-x-109">r</span>
+on
+<span 
+class="mathkerncmssi-10x-x-109">X</span>
+are
+<span 
+class="cmssbx-10x-x-109">algebraically</span>
+<span 
+class="cmssbx-10x-x-109">equivalent</span>
+if
+there
+is
+a
+cycle
+<span 
+class="mathkerncmssi-10x-x-109">Z</span>
+on
+<span 
+class="mathkerncmssi-10x-x-109">X </span><span 
+class="cmsy-10x-x-109">× </span><span 
+class="mathkerncmssi-10x-x-109">C</span>,
+which
+intersects
+each
+fiber
+<span 
+class="mathkerncmssi-10x-x-109">X </span><span 
+class="cmsy-10x-x-109">×{</span><span 
+class="mathkerncmssi-10x-x-109">t</span><span 
+class="cmsy-10x-x-109">}</span>
+in
+something
+of
+codimension
+<span 
+class="mathkerncmssi-10x-x-109">r</span>,
+and
+such
+that
+<span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">1</span></sub>
+and
+<span 
+class="mathkerncmssi-10x-x-109">Z</span><sub><span 
+class="cmss-8">2</span></sub>
+are
+obtained
+respectively
+by
+intersecting
+<span 
+class="mathkerncmssi-10x-x-109">Z</span>
+with
+the
+fibers
+<span 
+class="mathkerncmssi-10x-x-109">X </span><span 
+class="cmsy-10x-x-109">×{</span><span 
+class="mathkerncmssi-10x-x-109">a</span><span 
+class="cmsy-10x-x-109">}</span>
+and
+<span 
+class="mathkerncmssi-10x-x-109">X </span><span 
+class="cmsy-10x-x-109">×{</span><span 
+class="mathkerncmssi-10x-x-109">b</span><span 
+class="cmsy-10x-x-109">}</span>.                                                   
+</div></div>
+<!--l. 111--><p class="noindent" >
+</p>
+<div class="block">
+<span 
+class="cmss-12">Remark</span>                                                   
+<span 
+class="mathkerncmssi-10x-x-109">C</span><sub><span 
+class="mathkerncmssi-8">rat</span></sub><sup><span 
+class="mathkerncmssi-8">r</span></sup>(<span 
+class="mathkerncmssi-10x-x-109">X</span>) <span 
+class="cmsy-10x-x-109">⊂ </span><span 
+class="mathkerncmssi-10x-x-109">C</span><sub><span 
+class="mathkerncmssi-8">alg</span></sub><sup><span 
+class="mathkerncmssi-8">r</span></sup>(<span 
+class="mathkerncmssi-10x-x-109">X</span>) <span 
+class="cmsy-10x-x-109">⊂ </span><span 
+class="mathkerncmssi-10x-x-109">C</span><sup><span 
+class="mathkerncmssi-8">r</span></sup>(<span 
+class="mathkerncmssi-10x-x-109">X</span>)                                
+</div></div>
+<!--l. 111--><p class="noindent" >                                                           
+                                                           
+</p>
+</div>
+                                                           
+                                                           
+<div class="slide">  <span 
+class="cmss-12x-x-120">Other</span>
+  <span 
+class="cmss-12x-x-120">Adequate</span>
+  <span 
+class="cmss-12x-x-120">Equivalence</span>
+  <span 
+class="cmss-12x-x-120">Relations</span>                                                                
+<h2 class="frametitle"></h2>
+     <ul class="itemize1">
+     <li class="itemize">
+     <!--l. 120--><p class="noindent" >Numerical
+      equivalence,
+      torsion
+      equivalence,
+      homological
+      equivalence<g visibility="hidden">
+ 
+      </p></li>
+      <li class="itemize">
+      <!--l. 120--><p class="noindent" ><span 
+class="mathkerncmssi-10x-x-109">C</span><sup><span 
+class="mathkerncmssi-8">r</span></sup> <span 
+class="cmsy-10x-x-109">⊇ </span><span 
+class="mathkerncmssi-10x-x-109">C</span><sub><span 
+class="mathkerncmssi-8">num</span></sub><sup><span 
+class="mathkerncmssi-8">r</span></sup> <span 
+class="cmsy-10x-x-109">⊇ </span><span 
+class="mathkerncmssi-10x-x-109">C</span><sub><span 
+class="mathkerncmssi-8">hom</span></sub><sup><span 
+class="mathkerncmssi-8">r</span></sup> <span 
+class="cmsy-10x-x-109">⊇ </span><span 
+class="mathkerncmssi-10x-x-109">C</span><sub><span 
+class="cmmi-8">τ</span></sub><sup><span 
+class="mathkerncmssi-8">r</span></sup> <span 
+class="cmsy-10x-x-109">⊇ </span><span 
+class="mathkerncmssi-10x-x-109">C</span><sub><span 
+class="mathkerncmssi-8">alg</span></sub><sup><span 
+class="mathkerncmssi-8">r</span></sup></p></li></ul>
+</g>                                                            </div>
+                                                           
+                                                           
+<div class="slide">
+                                                           
+                                                           
+<span 
+class="cmss-12x-x-120">Other</span>
+  <span 
+class="cmss-12x-x-120">Adequate</span>
+  <span 
+class="cmss-12x-x-120">Equivalence</span>
+<span 
+class="cmss-12x-x-120">Relations</span>                                                          
+<h2 class="frametitle"></h2>
+    <ul class="itemize1">
+    <li class="itemize">
+    <!--l. 120--><p class="noindent" >Numerical
+    equivalence,
+    torsion
+    equivalence,
+    homological
+    equivalence
+    </p></li>
+    <li class="itemize">
+    <!--l. 120--><p class="noindent" ><span 
+class="mathkerncmssi-10x-x-109">C</span><sup><span 
+class="mathkerncmssi-8">r</span></sup> <span 
+class="cmsy-10x-x-109">⊇ </span><span 
+class="mathkerncmssi-10x-x-109">C</span><sub><span 
+class="mathkerncmssi-8">num</span></sub><sup><span 
+class="mathkerncmssi-8">r</span></sup> <span 
+class="cmsy-10x-x-109">⊇ </span><span 
+class="mathkerncmssi-10x-x-109">C</span><sub><span 
+class="mathkerncmssi-8">hom</span></sub><sup><span 
+class="mathkerncmssi-8">r</span></sup> <span 
+class="cmsy-10x-x-109">⊇ </span><span 
+class="mathkerncmssi-10x-x-109">C</span><sub><span 
+class="cmmi-8">τ</span></sub><sup><span 
+class="mathkerncmssi-8">r</span></sup> <span 
+class="cmsy-10x-x-109">⊇ </span><span 
+class="mathkerncmssi-10x-x-109">C</span><sub><span 
+class="mathkerncmssi-8">alg</span></sub><sup><span 
+class="mathkerncmssi-8">r</span></sup></p></li></ul>
+                                                           
+                                                           
+</div>
+                                                           
+                                                           
+<div class="slide">  <span 
+class="cmss-12x-x-120">Further</span>
+  <span 
+class="cmss-12x-x-120">Study</span>
+  <span 
+class="cmss-12x-x-120">and</span>
+  <span 
+class="cmss-12x-x-120">Applications</span>                                                            
+<h2 class="frametitle"></h2>
+     <ul class="itemize1">
+     <li class="itemize">
+     <!--l. 129--><p class="noindent" >intermediate
+      jacobians,
+      k-theoretic
+      and
+      cohomology
+      methods,
+      relative
+      cycles<g visibility="hidden">
+ 
+      </p></li>
+      <li class="itemize">
+      <!--l. 129--><p class="noindent" >behavior
+      of
+      algebraic
+      cycles
+      useful
+      in
+      intersection
+      theory,
+      algebraic
+      k-theory,
+      and
+      hodge
+      conjecture</p></li></ul>
+</g>                                                            </div>
+                                                           
+                                                           
+<div class="slide">
+                                                           
+                                                           
+<span 
+class="cmss-12x-x-120">Further</span>
+  <span 
+class="cmss-12x-x-120">Study</span>
+  <span 
+class="cmss-12x-x-120">and</span>
+<span 
+class="cmss-12x-x-120">Applications</span>                                                      
+<h2 class="frametitle"></h2>
+    <ul class="itemize1">
+    <li class="itemize">
+    <!--l. 129--><p class="noindent" >intermediate
+    jacobians,
+    k-theoretic
+    and
+    cohomology
+    methods,
+    relative
+    cycles
+    </p></li>
+    <li class="itemize">
+    <!--l. 129--><p class="noindent" >behavior
+    of
+    algebraic
+    cycles
+    useful
+    in
+    intersection
+    theory,
+    algebraic
+    k-theory,
+    and
+    hodge
+    conjecture</p></li></ul>                                             
+                                                           
+</div>
+                                                           
+                                                           
+<div class="slide">  <span 
+class="cmss-12x-x-120">References</span>                                                              
+<h2 class="frametitle"></h2>
+     <ul class="itemize1">
+     <li class="itemize">
+     <!--l. 139--><p class="noindent" >Spencer
+      Bloch
+      (1980)
+      ”Lectures
+      on
+      Algebraic
+      Cycles”,
+      Mathematics
+      Department
+      Duke
+      University.
+      </p></li>
+      <li class="itemize">
+      <!--l. 139--><p class="noindent" >Robin
+      Hartshorne
+      (1974)
+      ”Equivalence
+      Relations
+      on
+      Algebraic
+      Cycles
+      and
+      Subvarieties
+      of
+      Small
+      Codimension”,
+      AMS.</p></li></ul>                                                 </div>
+                                                           
+                                                           
+                                                           
+                                                           
+ 
+</body>  
+</html>
+                                                           
+
+

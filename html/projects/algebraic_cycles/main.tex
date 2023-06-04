@@ -1,0 +1,145 @@
+\input{preamble.tex}
+\input{meta.tex}
+
+\begin{document}
+
+%------------------------------------------------------------
+\frame{\titlepage}
+%------------------------------------------------------------
+
+%------------------------------------------------------------
+\begin{frame}{History and Motivation}
+  \pause
+  \begin{itemize}
+    \item $19^{\text{th}}$ century - significant work on functions on algebraic curves \pause
+    \item Riemann-Roch Theorem, Abel-Jacobi Theorem major contributions using divisors (algebraic cycles of
+      codimension 1) \pause
+    \item In higher dimensions, behavior of varieties becomes more complicated and these theorems don't
+      nicely extend
+  \end{itemize}
+\end{frame}
+%------------------------------------------------------------
+
+%------------------------------------------------------------
+\begin{frame}{Algebraic Cycles}
+  \pause
+  Let $X$ be any variety defined over a field $k$.\pause
+  \begin{definition}
+    A \textbf{cycle $Z$ of codimension $r$} on $X$ is an element of the free abelian group generated
+    by the closed irreducible subvarieties of codimension $r$ of $X$. It is a finite formal sum $\sum n_i [V_i]$ where
+    $n_i$ are integers and $V_i$ are subvarieties. 
+  \end{definition}\pause
+  We denote by $C^r(X)$ the group of all cycles of codimension $r$ on $X$.
+\end{frame}
+%-----------------------------------------------------------
+
+%-----------------------------------------------------------
+\begin{frame}{Algebraic Cycles}
+  \begin{itemize}
+    \item $C^r(X)$ is naturally quite large \pause
+    \item Use equivalence relations to develop more intuition on the geometry of $X$.
+  \end{itemize}
+\end{frame}
+%-----------------------------------------------------------
+
+%-----------------------------------------------------------
+\begin{frame}{A Nice Example}
+  Let $r=1$. A cycle of codimension one is a divisor. 
+  \begin{definition}
+    Two divisors $D_1$ and $D_2$ on $X$ are linearly equivalent if there exists a rational function on $X$ such that
+    $D_1 - D_2 = (f)_0 - (f)_\infty$, where $(f)_0$ denotes the divisor of zeros and $(f)_\infty$ denotes the
+    divisor of poles. 
+  \end{definition}\pause
+
+  \begin{example}
+    Let $C^1_{\text{lin}}(X)$ denote the group of divisors linearly equivalent to 0. Then, the quotient group 
+    $C^1(X) / C^1_{\text{lin}}(X)$ is $\text{Pic } X$, the group of linear equivalence classes of divisors on $X$.
+  \end{example}
+\end{frame}
+%-----------------------------------------------------------
+
+%-----------------------------------------------------------
+\begin{frame}{A Nice Example}
+  For $X = \mathbb{P}^n$, $C^1(X) / C^1_{\text{lin}}(X) \cong \mathbb{Z}$.
+\end{frame}
+%-----------------------------------------------------------
+
+%-----------------------------------------------------------
+\begin{frame}{Rational Equivalence}
+  \begin{itemize}
+    \item Same as linear equivalence in codim 1 \pause
+  \end{itemize}
+  \begin{definition}
+    Two cycles $Z_1$ and $Z_2$ of codimension $r$ on $X$ are \textbf{rationally equivalent} if there is a cycle
+    $Z$ on $X \times \mathbb{P}^1$, which intersects each fiber $X \times \{t\}$ in something of codimension $r$, and
+    such that $Z_1$ and $Z_2$ are obtained respectively by intersecting $Z$ with the fibers $X\times\{0\}$ 
+    and $X\times\{1\}$.
+  \end{definition}
+\end{frame}
+%-----------------------------------------------------------
+
+%-----------------------------------------------------------
+\begin{frame}{Rational Equivalence is an Equivalence Relation}
+  \begin{itemize}
+    \item Reflectivity: $Z_1 \sim_{rat} Z_1$. Take $Z = Z_1 \times \mathbb{P}^1$ \pause
+    \item Symmetry: $Z_1 \sim_{rat} Z_2 \implies Z_2 \sim_{rat} Z_1$. Apply automorphism of $\mathbb{P}^1$ that 
+      interchanges $0$ and $1$. \pause
+    \item Transivity: $Z_1 \sim_{rat} Z_2, Z_2 \sim_{rat} Z_3 \implies Z_1 \sim_{rat} Z_3$. Let $Z \subseteq 
+      X \times \mathbb{P}^1$ give $Z_1 \sim_{rat} Z_2$ and $Z' \subseteq X \times \mathbb{P}^1$ give $Z_2 \sim_{rat}
+      Z_3$. Then, $Z+Z'-Z_2 \times \mathbb{P}^1$ gives $Z_1 \sim_{rat} Z_3$. 
+  \end{itemize}
+\end{frame}
+%-----------------------------------------------------------
+
+\newtheorem*{remark}{Remark}
+%-----------------------------------------------------------
+\begin{frame}{Algebraic Equivalence}
+   \begin{itemize}
+    \item Use same construction for rational equivalence \pause
+  \end{itemize}
+  \begin{definition}
+    Let $C$ be an irreducible curve, and $a, b \in C$ be any two points. 
+    Two cycles $Z_1$ and $Z_2$ of codimension $r$ on $X$ are \textbf{algebraically equivalent} if there is a cycle
+    $Z$ on $X \times C$, which intersects each fiber $X \times \{t\}$ in something of codimension $r$, and
+    such that $Z_1$ and $Z_2$ are obtained respectively by intersecting $Z$ with the fibers $X\times\{a\}$ 
+    and $X\times\{b\}$.
+  \end{definition}\pause
+  \begin{remark}
+    $C^r_{rat}(X) \subset C^r_{alg}(X) \subset C^r(X)$
+  \end{remark}
+  
+\end{frame}
+%-----------------------------------------------------------
+
+%-----------------------------------------------------------
+\begin{frame}{Other Adequate Equivalence Relations}
+  \begin{itemize}
+    \item Numerical equivalence, torsion equivalence, homological equivalence \pause
+    \item $C^r \supseteq C^r_{num} \supseteq C^r_{hom} \supseteq C^r_{\tau} \supseteq C^r_{alg}$
+  \end{itemize}
+\end{frame}
+%-----------------------------------------------------------
+
+%-----------------------------------------------------------
+\begin{frame}{Further Study and Applications}
+  \begin{itemize}
+    \item intermediate jacobians, k-theoretic and cohomology methods, relative cycles \pause
+    \item behavior of algebraic cycles useful in intersection theory, algebraic k-theory, and hodge conjecture
+  \end{itemize}
+\end{frame}
+%-----------------------------------------------------------
+
+%-----------------------------------------------------------
+\begin{frame}{References}
+  \begin{itemize}
+    \item Spencer Bloch (1980) "Lectures on Algebraic Cycles", Mathematics Department Duke University.
+    \item Robin Hartshorne (1974) "Equivalence Relations on Algebraic Cycles and Subvarieties of Small Codimension", 
+      AMS.
+  \end{itemize}
+\end{frame}
+%-----------------------------------------------------------
+
+
+
+\end{document}
+
