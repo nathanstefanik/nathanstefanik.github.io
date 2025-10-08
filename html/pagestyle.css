@@ -48,3 +48,48 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+/* Photo gallery */
+body.photos { --gap: 8px; }
+
+body.photos main.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--gap);
+  padding: 16px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+@supports (content-visibility: auto) {
+  body.photos figure { content-visibility: auto; contain: content; }
+}
+
+body.photos figure { margin: 0; }
+body.photos figure img { width: 100%; height: auto; display: block; }
+body.photos dialog#lightbox { border: 0; padding: 0; background: transparent; }
+body.photos dialog::backdrop { background: rgba(0, 0, 0, 0.87); }
+body.photos .lb-img { max-width: 96vw; max-height: 96vh; display: block; margin: 0 auto; }
+
+body.photos { --gap: 8px; --thumb-h: 300px; } 
+
+body.photos main.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+  align-items: flex-start;
+}
+
+body.photos figure { margin: 0; flex: 0 0 auto; }
+
+body.photos a.thumb { display: block; }
+
+body.photos img.thumb {
+  height: var(--thumb-h);
+  width: auto;
+  display: block;
+}
+body.photos figcaption { 
+  margin-top: .4rem;
+  text-align: center;
+}

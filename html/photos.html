@@ -1,0 +1,104 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nathan Stefanik — Photos</title>
+<link rel="stylesheet" href="../pagestyle.css">
+<html>
+  <head>
+    <title>Nathan Stefanik</title>
+    <link rel="stylesheet" type="text/css" href="pagestyle.css">
+  </head>
+  <nav class="navigation">  
+    <ul>  
+      <li><a href="../index.html"> Home </a></li> 
+      <li><a href="cv.html"> CV </a></li> 
+      <li><a href="blog.html"> Blog </a></li>
+      <li><a href="projects.html"> Projects </a></li>
+      <li><a href="photos.html"> Photos </a></li>
+    </ul>  
+  </nav> 
+
+  <body class="photos">
+    <main class="gallery" id="gallery">
+
+      <figure>
+        <a class="thumb" href="../img/photos/large/photo_001.jpg">
+          <picture>
+            <img class="thumb" src="../img/photos/thumbnails/thumbnail_001.jpg"
+                srcset="../thumbnails/thumbnail_001.jpg 400w, ../img/photos/large/photo_001.jpg 800w"
+                sizes="(min-width:900px) 25vw, 50vw"
+                width="800" height="1200" 
+                loading="lazy" decoding="async">
+          </picture>
+        </a>
+        <figcaption>Kola / ATL / Oct 2025</figcaption>
+      </figure>
+
+      <figure>
+        <a class="thumb" href="../img/photos/large/photo_002.jpg">
+          <picture>
+            <img class="thumb" src="../img/photos/thumbnails/thumbnail_002.jpg"
+                srcset="../thumbnails/thumbnail_002.jpg 400w, ../img/photos/large/photo_002.jpg 800w"
+                sizes="(min-width:900px) 25vw, 50vw"
+                width="800" height="1200" 
+                loading="lazy" decoding="async">
+          </picture>
+        </a>
+        <figcaption>AirTrain / NYC / Oct 2025</figcaption>
+      </figure>
+
+      <figure>
+        <a class="thumb" href="../img/photos/large/photo_003.jpg">
+          <picture>
+            <img class="thumb" src="../img/photos/thumbnails/thumbnail_003.jpg"
+                srcset="../thumbnails/thumbnail_003.jpg 400w, ../img/photos/large/photo_003.jpg 1200w"
+                sizes="(min-width:900px) 25vw, 50vw"
+                width="1200" height="800" 
+                loading="lazy" decoding="async">
+          </picture>
+        </a>
+        <figcaption>Little Island / NYC / Oct 2025</figcaption>
+      </figure>
+
+      <figure>
+        <a class="thumb" href="../img/photos/large/photo_004.jpg">
+          <picture>
+            <img class="thumb" src="../img/photos/thumbnails/thumbnail_004.jpg"
+                srcset="../thumbnails/thumbnail_004.jpg 400w, ../img/photos/large/photo_004.jpg 1200w"
+                sizes="(min-width:900px) 25vw, 50vw"
+                width="1200" height="514" 
+                loading="lazy" decoding="async">
+          </picture>
+        </a>
+        <figcaption>Little Island / NYC / Oct 2025</figcaption>
+      </figure>
+
+    </main>
+    <dialog id="lightbox" aria-label="Image viewer">
+      <picture id="lb-picture">
+        <img id="lb-jpg" class="lb-img">
+      </picture>
+    </dialog>
+  </body>
+</html>
+<script>
+  const d = document, lb = d.getElementById('lightbox');
+  const lbJpg = d.getElementById('lb-jpg');
+  const items = [...d.querySelectorAll('main.gallery figure a')];
+  let i = -1;
+
+  function openAt(idx){
+    i = (idx + items.length) % items.length;
+    const a = items[i];
+    lbJpg.src = a.getAttribute('href');
+    lb.showModal();
+  }
+  items.forEach((a, idx) => a.addEventListener('click', e => { e.preventDefault(); openAt(idx); }));
+  lb.addEventListener('click', e => { if (e.target === lb) lb.close(); });
+  addEventListener('keydown', e => {
+    if (!lb.open) return;
+    if (e.key === 'Escape') lb.close();
+    if (e.key === 'ArrowRight') openAt(i+1);
+    if (e.key === 'ArrowLeft') openAt(i-1);
+  });
+</script>
