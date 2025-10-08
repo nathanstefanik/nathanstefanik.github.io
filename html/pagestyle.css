@@ -71,7 +71,10 @@ body.photos dialog#lightbox { border: 0; padding: 0; background: transparent; }
 body.photos dialog::backdrop { background: rgba(0, 0, 0, 0.87); }
 body.photos .lb-img { max-width: 96vw; max-height: 96vh; display: block; margin: 0 auto; }
 
-body.photos { --gap: 8px; --thumb-h: 300px; } 
+body.photos { --gap: 8px; --thumb-h: clamp(150px, 35vw, 300px); } 
+@media (min-width: 900px) {
+  body.photos { --thumb-h: 300px; }
+}
 
 body.photos main.gallery {
   display: flex;
