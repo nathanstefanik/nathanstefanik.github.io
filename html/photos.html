@@ -2,9 +2,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Nathan Stefanik — Photos</title>
-<link rel="stylesheet" href="../pagestyle.css">
+<link rel="stylesheet" href="pagestyle.css">
 <html>
   <head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https: data:; frame-src 'self'; base-uri 'self';">
+
     <title>Nathan Stefanik</title>
     <link rel="stylesheet" type="text/css" href="pagestyle.css">
   </head>
@@ -31,7 +33,7 @@
                 loading="lazy" decoding="async">
           </picture>
         </a>
-        <figcaption>Kola / ATL / Oct 2025</figcaption>
+        <figcaption>Kola / ATL / Oct 2025. <a href="photos/photo_001.html">Print</a></figcaption>
       </figure>
 
       <figure>
@@ -44,7 +46,7 @@
                 loading="lazy" decoding="async">
           </picture>
         </a>
-        <figcaption>AirTrain / NYC / Oct 2025</figcaption>
+        <figcaption>AirTrain / NYC / Oct 2025. <a href="photos/photo_002.html">Print</a></figcaption>
       </figure>
 
       <figure>
@@ -57,7 +59,7 @@
                 loading="lazy" decoding="async">
           </picture>
         </a>
-        <figcaption>Little Island / NYC / Oct 2025</figcaption>
+        <figcaption>Little Island I / NYC / Oct 2025. <a href="photos/photo_003.html">Print</a></figcaption>
       </figure>
 
       <figure>
@@ -70,7 +72,7 @@
                 loading="lazy" decoding="async">
           </picture>
         </a>
-        <figcaption>Little Island / NYC / Oct 2025</figcaption>
+        <figcaption>Little Island II / NYC / Oct 2025. <a href="photos/photo_004.html">Print</a></figcaption>
       </figure>
 
     </main>
@@ -79,26 +81,6 @@
         <img id="lb-jpg" class="lb-img">
       </picture>
     </dialog>
+    <script src="photos-gallery.js" defer></script>
   </body>
 </html>
-<script>
-  const d = document, lb = d.getElementById('lightbox');
-  const lbJpg = d.getElementById('lb-jpg');
-  const items = [...d.querySelectorAll('main.gallery figure a')];
-  let i = -1;
-
-  function openAt(idx){
-    i = (idx + items.length) % items.length;
-    const a = items[i];
-    lbJpg.src = a.getAttribute('href');
-    lb.showModal();
-  }
-  items.forEach((a, idx) => a.addEventListener('click', e => { e.preventDefault(); openAt(idx); }));
-  lb.addEventListener('click', e => { if (e.target === lb) lb.close(); });
-  addEventListener('keydown', e => {
-    if (!lb.open) return;
-    if (e.key === 'Escape') lb.close();
-    if (e.key === 'ArrowRight') openAt(i+1);
-    if (e.key === 'ArrowLeft') openAt(i-1);
-  });
-</script>
