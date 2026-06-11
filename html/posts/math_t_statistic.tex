@@ -26,8 +26,8 @@
 We prove that the $t$-statistic of an OLS coefficient follows a Student
 $t$-distribution with $n-p$ degrees of freedom, under the assumption of
 Gaussian errors. The proof uses three tools: the sampling distribution
-of $\hat\beta$, Cochran's theorem applied to the residual quadratic form,
-and the independence of $\hat\beta$ and $\hat\sigma^2$.
+of $\widehat{\beta}$, Cochran's theorem applied to the residual quadratic form,
+and the independence of $\widehat{\beta}$ and $\widehat{\sigma}^2$.
 \end{abstract}
 
 \section{Introduction}
@@ -38,16 +38,16 @@ I thought I'd work on what he was working on Friday during slow work hours.
 It turns out, I misremembered, so this is a completely different proof to 
 what he had.
 
-When we fit a linear model and read off a coefficient $\hat\beta_j$, we want
+When we fit a linear model and read off a coefficient $\widehat{\beta}_j$, we want
 to know whether the estimate is distinguishable from a hypothesized value
 $\beta_j$ given the noise in the data. The $t$-statistic answers this by
-standardizing the estimation error $\hat\beta_j - \beta_j$ by its estimated
+standardizing the estimation error $\widehat{\beta}_j - \beta_j$ by its estimated
 standard deviation. The price of estimating $\sigma^2$ rather than knowing it
 is that the resulting ratio is not normal but $t$-distributed, with heavier
 tails.
 
 The proof below generally follows dependency order. We first derive the sampling
-distribution of $\hat\beta$ (Section~3.1), which gives a standard normal
+distribution of $\widehat{\beta}$ (Section~3.1), which gives a standard normal
 numerator. We then take the residual-maker matrix $M$ (Section~3.2) and use
 Cochran's theorem (Section~3.3) to show that the scaled residual sum of squares,
 is $\chi^2_{n-p}$ (Section~3.4). After establishing that the
@@ -60,15 +60,15 @@ follows directly from the characterization of the $t$-distribution
 \subsection{The model and OLS estimator}
 Given a regression problem $y = X\beta + \epsilon$ with unknown parameters $\beta$ and 
 error $\epsilon \mid X \sim \mathcal{N}(0, \sigma^2 I)$, the 
-ordinary least squares solution is $\hat\beta = (X^T X)^{-1} X^T y$.
+ordinary least squares solution is $\widehat{\beta} = (X^T X)^{-1} X^T y$.
 Here $X$ is the $n \times p$ design matrix and $\beta$ is a $p \times 1$
 vector. All distributional statements below are conditional on $X$.
 
 \subsection{The $t$-statistic}
 \begin{definition}
     The $t$-statistic for coefficient $\beta_j$ is defined as
-    $$t_j = \frac{\hat\beta_j - \beta_j}{\operatorname{S.E.}(\hat\beta_j)}
-          = \frac{\hat\beta_j - \beta_j}{\sqrt{\hat\sigma^2 \left[(X^T X)^{-1}\right]_{jj}}}$$
+    $$t_j = \frac{\widehat{\beta}_j - \beta_j}{\operatorname{S.E.}(\widehat{\beta}_j)}
+          = \frac{\widehat{\beta}_j - \beta_j}{\sqrt{\widehat{\sigma}^2 \left[(X^T X)^{-1}\right]_{jj}}}$$
 \end{definition}
 \subsection{The error assumptions}
 For $n$ observations, the error terms $\epsilon$ are an $n \times 1$ vector satisfying the conditions 
@@ -78,26 +78,26 @@ Our assumption is that a fitted model has uncorrelated and constant variance acr
 
 Standard error is the estimated standard deviation of a statistic. Since
 $\sigma^2$ is unknown, we must estimate it from the residuals; the estimator
-$\hat\sigma^2$ is constructed in Section~3.4.
+$\widehat{\sigma}^2$ is constructed in Section~3.4.
 
 \section{Building blocks}
 
-\subsection{Sampling distribution of $\hat\beta$}
-To find the standard error, we first compute $\operatorname{Var}(\hat\beta \mid X)$ and substitute the population variance $\sigma^2$
-for the sample variance $\hat\sigma^2$.
+\subsection{Sampling distribution of $\widehat{\beta}$}
+To find the standard error, we first compute $\operatorname{Var}(\widehat{\beta} \mid X)$ and substitute the population variance $\sigma^2$
+for the sample variance $\widehat{\sigma}^2$.
 \begin{lemma}\label{lem:beta-dist}
-    $\hat\beta \,|\, X \sim \mathcal{N}(\beta, \sigma^2 (X^T X)^{-1})$
+    $\widehat{\beta} \,|\, X \sim \mathcal{N}(\beta, \sigma^2 (X^T X)^{-1})$
 \end{lemma}
 
 \begin{proof}
     Substituting $y = X\beta + \epsilon$,
-    $$\hat\beta = (X^T X)^{-1} X^T (X\beta + \epsilon) = \beta + (X^T X)^{-1} X^T \epsilon.$$
-    So $\hat\beta$ is an affine transformation of the Gaussian vector
+    $$\widehat{\beta} = (X^T X)^{-1} X^T (X\beta + \epsilon) = \beta + (X^T X)^{-1} X^T \epsilon.$$
+    So $\widehat{\beta}$ is an affine transformation of the Gaussian vector
     $\epsilon$ and is therefore Gaussian. Its mean is
-    $$\mathbb{E}(\hat\beta \mid X) = \beta + (X^T X)^{-1} X^T \, \mathbb{E}(\epsilon \mid X) = \beta.$$
+    $$\mathbb{E}(\widehat{\beta} \mid X) = \beta + (X^T X)^{-1} X^T \, \mathbb{E}(\epsilon \mid X) = \beta.$$
     For the variance, let $A = (X^T X)^{-1} X^T$ and recall $\operatorname{Var}(\epsilon \mid X) = \sigma^2 I$. Then,
 \begin{align*}
-    \operatorname{Var}(\hat\beta \mid X) &= \operatorname{Var}(A y \mid X) \\
+    \operatorname{Var}(\widehat{\beta} \mid X) &= \operatorname{Var}(A y \mid X) \\
                                 &= A \operatorname{Var}(y \mid X) A^T \\
                                 &= (X^T X)^{-1} X^T (\sigma^2 I) \big[ (X^T X)^{-1} X^T\big]^T \\
                                 &= (X^T X)^{-1} X^T (\sigma^2 I) X (X^T X)^{-1} \\
@@ -108,23 +108,23 @@ for the sample variance $\hat\sigma^2$.
 Thus, we have one building block for the $t$-distribution: for each
 coordinate $j$,
 
-$$ \hat\beta_j - \beta_j \sim \mathcal{N}\big(0, \, \sigma^2 \left[(X^T X)^{-1}\right]_{jj}\big) \implies \frac{\hat\beta_j - \beta_j}{\sqrt{\sigma^2 \left[(X^T X)^{-1}\right]_{jj}}} \sim \mathcal{N}(0, 1) $$
+$$ \widehat{\beta}_j - \beta_j \sim \mathcal{N}\big(0, \, \sigma^2 \left[(X^T X)^{-1}\right]_{jj}\big) \implies \frac{\widehat{\beta}_j - \beta_j}{\sqrt{\sigma^2 \left[(X^T X)^{-1}\right]_{jj}}} \sim \mathcal{N}(0, 1) $$
 
 And, the standard error
 
-$$\operatorname{S.E.}(\hat\beta_j) = \sqrt{\hat\sigma^2 \left[(X^T X)^{-1}\right]_{jj}}.$$
+$$\operatorname{S.E.}(\widehat{\beta}_j) = \sqrt{\widehat{\sigma}^2 \left[(X^T X)^{-1}\right]_{jj}}.$$
 
-In order to develop a definition for $\hat\sigma^2$, we need to first define the residuals $\hat\epsilon$ or $e$.
+In order to develop a definition for $\widehat{\sigma}^2$, we need to first define the residuals $\widehat{\epsilon}$ or $e$.
 
 \begin{align*}
-    e &= y - X\hat\beta \\
+    e &= y - X\widehat{\beta} \\
       &= y - X (X^T X)^{-1} X^T y \\
       &= (I - X (X^T X)^{-1} X^T) y
 \end{align*}
 
 \subsection{The residual-maker matrix or annihilator matrix}
 Since we are estimating the linear model with OLS, our fitted values are 
-$$\hat y = X \hat\beta = X (X^T X)^{-1} X^T y = \mathbf{P} y$$
+$$\widehat{y} = X \widehat{\beta} = X (X^T X)^{-1} X^T y = \mathbf{P} y$$
 Thus, our projection matrix is 
 $$\mathbf{P} = X(X^T X)^{-1} X^T.$$
 \begin{lemma}\label{lem:residual-maker}
@@ -169,14 +169,14 @@ $$\mathbf{P} = X(X^T X)^{-1} X^T.$$
 In our application we take $z^T z = z^T \mathbf{P} z + z^T (I - \mathbf{P}) z$,
 with $\operatorname{rank}(\mathbf{P}) + \operatorname{rank}(I - \mathbf{P}) = p + (n - p) = n$.
 
-\subsection{Distribution of $\hat\sigma^2$}
+\subsection{Distribution of $\widehat{\sigma}^2$}
 
 \begin{definition}[Residual sum of squares]
     $\mathrm{RSS} = e^T e = \left\| (I - \mathbf{P}) y \right\|^2$.
 \end{definition}
 
 \begin{definition}[Variance estimator]
-    $\displaystyle \hat\sigma^2 = \frac{\mathrm{RSS}}{n - p}$.
+    $\displaystyle \widehat{\sigma}^2 = \frac{\mathrm{RSS}}{n - p}$.
 \end{definition}
 
 We express $\mathrm{RSS}$ as a quadratic form in the errors $\epsilon$.
@@ -216,38 +216,38 @@ We express $\mathrm{RSS}$ as a quadratic form in the errors $\epsilon$.
 \end{proof}
 
 \begin{corollary}\label{cor:s2-dist}
-    $\displaystyle \frac{(n-p)\,\hat\sigma^2}{\sigma^2} \sim \chi^2_{n-p}$.
+    $\displaystyle \frac{(n-p)\,\widehat{\sigma}^2}{\sigma^2} \sim \chi^2_{n-p}$.
 \end{corollary}
 
 \begin{proof}
     Follows from Proposition~\ref{prop:rss-chisq}, since
-    $(n-p)\,\hat\sigma^2 = \mathrm{RSS}$.
+    $(n-p)\,\widehat{\sigma}^2 = \mathrm{RSS}$.
 \end{proof}
 
 \begin{corollary}[Unbiasedness]
-    $\mathbb{E}\big(\hat\sigma^2\big) = \sigma^2$.
+    $\mathbb{E}\big(\widehat{\sigma}^2\big) = \sigma^2$.
 \end{corollary}
 
 \begin{proof}
     A $\chi^2_{n-p}$ random variable has mean $n-p$. Taking expectations in
     Corollary~\ref{cor:s2-dist},
-    $\mathbb{E}\big((n-p)\,\hat\sigma^2/\sigma^2\big) = n-p$, and rearranging
-    gives $\mathbb{E}\big(\hat\sigma^2\big) = \sigma^2$.
+    $\mathbb{E}\big((n-p)\,\widehat{\sigma}^2/\sigma^2\big) = n-p$, and rearranging
+    gives $\mathbb{E}\big(\widehat{\sigma}^2\big) = \sigma^2$.
 \end{proof}
 
-\subsection{Independence of $\hat\beta$ and $\hat\sigma^2$}
+\subsection{Independence of $\widehat{\beta}$ and $\widehat{\sigma}^2$}
 The last building block is that the numerator and denominator of the
 $t$-statistic do not share information.
 
 \begin{lemma}\label{lem:independence}
-    Conditional on $X$, $\hat\beta$ and $\hat\sigma^2$ are independent.
+    Conditional on $X$, $\widehat{\beta}$ and $\widehat{\sigma}^2$ are independent.
 \end{lemma}
 
 \begin{proof}
-    From the proof of Lemma~\ref{lem:beta-dist}, $\hat\beta - \beta = A\epsilon$
+    From the proof of Lemma~\ref{lem:beta-dist}, $\widehat{\beta} - \beta = A\epsilon$
     with $A = (X^T X)^{-1} X^T$, and from Lemma~\ref{lem:residual-maker},
     $e = M\epsilon$. Both are linear in the same Gaussian vector $\epsilon$,
-    so $(\hat\beta - \beta, \, e)$ is jointly Gaussian. Their cross-covariance is
+    so $(\widehat{\beta} - \beta, \, e)$ is jointly Gaussian. Their cross-covariance is
     \begin{align*}
         \operatorname{Cov}(A\epsilon, M\epsilon) &= A \operatorname{Var}(\epsilon) M^T \\
                                                  &= \sigma^2 A M \\
@@ -256,9 +256,9 @@ $t$-statistic do not share information.
                                                  &= 0
     \end{align*}
     using symmetry of $M$ and $MX = 0$. Uncorrelated jointly Gaussian vectors
-    are independent, so $\hat\beta$ is independent of $e$. Since
-    $\hat\sigma^2 = e^T e / (n-p)$ is a function of $e$ alone, $\hat\beta$ is
-    independent of $\hat\sigma^2$.
+    are independent, so $\widehat{\beta}$ is independent of $e$. Since
+    $\widehat{\sigma}^2 = e^T e / (n-p)$ is a function of $e$ alone, $\widehat{\beta}$ is
+    independent of $\widehat{\sigma}^2$.
 \end{proof}
 
 \section{The Student $t$-distribution}
@@ -277,26 +277,26 @@ $t$-statistic do not share information.
     Write $c_{jj} = \left[(X^T X)^{-1}\right]_{jj}$. Dividing the numerator and
     denominator of $t_j$ by $\sqrt{\sigma^2 c_{jj}}$,
     \begin{align*}
-        t_j &= \frac{\hat\beta_j - \beta_j}{\sqrt{\hat\sigma^2 \, c_{jj}}} \\
-            &= \frac{\big(\hat\beta_j - \beta_j\big) \big/ \sqrt{\sigma^2 c_{jj}}}{\sqrt{\hat\sigma^2 / \sigma^2}} \\
+        t_j &= \frac{\widehat{\beta}_j - \beta_j}{\sqrt{\widehat{\sigma}^2 \, c_{jj}}} \\
+            &= \frac{\big(\widehat{\beta}_j - \beta_j\big) \big/ \sqrt{\sigma^2 c_{jj}}}{\sqrt{\widehat{\sigma}^2 / \sigma^2}} \\
             &= \frac{Z}{\sqrt{W / (n-p)}},
     \end{align*}
     where
-    $$Z = \frac{\hat\beta_j - \beta_j}{\sqrt{\sigma^2 c_{jj}}} \sim \mathcal{N}(0,1)
+    $$Z = \frac{\widehat{\beta}_j - \beta_j}{\sqrt{\sigma^2 c_{jj}}} \sim \mathcal{N}(0,1)
     \qquad \text{and} \qquad
-    W = \frac{(n-p)\,\hat\sigma^2}{\sigma^2} \sim \chi^2_{n-p}$$
+    W = \frac{(n-p)\,\widehat{\sigma}^2}{\sigma^2} \sim \chi^2_{n-p}$$
     by Lemma~\ref{lem:beta-dist} and Corollary~\ref{cor:s2-dist} respectively.
     See that the unknown $\sigma^2$ cancels in the ratio. By
-    Lemma~\ref{lem:independence}, $Z$ (a function of $\hat\beta$) and $W$ (a
-    function of $\hat\sigma^2$) are independent. By
+    Lemma~\ref{lem:independence}, $Z$ (a function of $\widehat{\beta}$) and $W$ (a
+    function of $\widehat{\sigma}^2$) are independent. By
     Definition~\ref{def:t-dist}, $t_j \sim t_{n-p}$.
 \end{proof}
 
 \section{Remarks}
 \begin{remark}
     Statistical libraries test the null hypothesis $H_0 \colon \beta_j = 0$,
-    where the numerator then reduces to $\hat\beta_j$ and the reported
-    statistic is $t_j = \hat\beta_j / \operatorname{S.E.}(\hat\beta_j)$. Thus, a
+    where the numerator then reduces to $\widehat{\beta}_j$ and the reported
+    statistic is $t_j = \widehat{\beta}_j / \operatorname{S.E.}(\widehat{\beta}_j)$. Thus, a
     large $|t_j|$ relative to the $t_{n-p}$ distribution indicates that the
     coefficient is statistically significant.
 \end{remark}
@@ -311,13 +311,13 @@ $t$-statistic do not share information.
 
 
 %\begin{corollary}[Unbiasedness]
-%    $\mathbb{E}\big[\hat\sigma^2\big] = \sigma^2$.
+%    $\mathbb{E}\big[\widehat{\sigma}^2\big] = \sigma^2$.
 %\end{corollary}
 %
 %\begin{proof}
 %    A $\chi^2_{n-p}$ random variable has mean $n - p$. Taking expectations
 %    in Corollary~\ref{cor:s2-dist},
-%    $\mathbb{E}\big[(n-p)\,\hat\sigma^2 / \sigma^2\big] = n - p$,
-%    and rearranging gives $\mathbb{E}\big[\hat\sigma^2\big] = \sigma^2$.
+%    $\mathbb{E}\big[(n-p)\,\widehat{\sigma}^2 / \sigma^2\big] = n - p$,
+%    and rearranging gives $\mathbb{E}\big[\widehat{\sigma}^2\big] = \sigma^2$.
 %\end{proof}
 
