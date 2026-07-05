@@ -148,6 +148,7 @@ def page_html(title, plain_title, html):
     <li><a href="../blog.html"> Blog </a></li>
     <li><a href="../projects.html"> Projects </a></li>
     <li><a href="../photos.html"> Photos </a></li>
+    <li><a href="https://showtimes.nathanstefanik.xyz"> Showtimes </a></li>
   </ul>
 </nav>
 
