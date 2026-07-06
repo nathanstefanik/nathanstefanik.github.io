@@ -122,7 +122,7 @@ def page_html(title, plain_title, html):
   <meta charset="utf-8">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https: data:; frame-src 'self'; base-uri 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline';">
   <title>{plain_title}</title>
-  <link rel="stylesheet" type="text/css" href="../pagestyle.css">
+  <link rel="stylesheet" type="text/css" href="/html/pagestyle.css">
   <script>
     MathJax = {{
       tex: {{
