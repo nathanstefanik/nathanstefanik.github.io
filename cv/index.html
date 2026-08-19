@@ -1,25 +1,197 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https: data:; frame-src 'self'; base-uri 'self';">
-
-    <title>Nathan Stefanik - CV</title>
+    <title>Nathan Stefanik — CV</title>
     <link rel="stylesheet" type="text/css" href="/html/pagestyle.css">
-  </head> 
-
+  </head>
   <body>
-
-    <nav class="navigation">  
-      <ul>  
+    <nav class="navigation">
+      <ul>
         <li><a href="/"> Home </a></li>
-        <li><a href="/cv/"> CV </a></li>  
+        <li><a href="/cv/"> CV </a></li>
         <li><a href="/blog/"> Blog </a></li>
         <li><a href="/projects/"> Projects </a></li>
         <li><a href="/photos/"> Photos </a></li>
         <li><a href="https://showtimes.nathanstefanik.xyz"> Showtimes </a></li>
-      </ul>  
-    </nav> 
+      </ul>
+    </nav>
 
-    <iframe class="cv" src="/html/Nathan_Stefanik_CV.pdf" width="100%" height="90%">
-    </iframe>
+    <article class="vita">
+      <header>
+        <h1>Nathan Stefanik</h1>
+        <p class="vita-meta">
+          New York, NY
+          · <a href="mailto:nathan487@protonmail.com">nathan487@protonmail.com</a>
+          · <a href="https://github.com/nathanstefanik">GitHub</a>
+          · <a href="https://linkedin.com/in/nathanstefanik">LinkedIn</a>
+          · <a href="/html/Nathan_Stefanik_CV.pdf">PDF</a>
+        </p>
+      </header>
+
+      <h2>Experience</h2>
+
+      <h3>JetBlue Airways <span class="when">Jun 2023 – Present</span></h3>
+      <p class="role">Data Scientist · New York, NY</p>
+      <p>
+        Airline revenue management: continuous pricing and demand forecasting,
+        including spill-spoil curves for Core and Mint cabins.
+      </p>
+      <ul>
+        <li>
+          Built and maintain a production-oriented GLMM pipeline that generates
+          Core and Mint spill-spoil curves for revenue-management review —
+          Python/Polars feature stages, R <code>glmmTMB</code> training,
+          Snowflake inputs, Databricks jobs, and MLflow model handling.
+        </li>
+        <li>
+          Moved MLflow run lifecycle, artifact logging, and registry operations
+          to Python while retaining R for fit/score I/O, producing packageable
+          Databricks model artifacts.
+        </li>
+        <li>
+          Defined experiment-comparison metrics on prediction bands
+          (denominator-weighted in-band rate, coverage, bandwidth, tail
+          imbalance) and improved a Tableau validation workbook so coverage
+          alone is not treated as quality.
+        </li>
+        <li>
+          Designed a slice-first red-flag framework on optimized-price deltas
+          (grain health, directional correctness, false positives, ranked
+          slices) and a 30-minute decision-oriented MVP.
+        </li>
+        <li>
+          Propagated exact MLflow model IDs through prediction, post-processing,
+          evaluation, and production-candidate tables so evaluation can
+          distinguish models rather than only groups.
+        </li>
+        <li>
+          Fixed a shared-SQL mismatch that mixed cabin seat-factor data and
+          implemented task-owned cabin parameters for Core (Y) and Mint (J).
+        </li>
+      </ul>
+
+      <h3>Invesco Ltd <span class="when">Jun 2022 – Aug 2022</span></h3>
+      <p class="role">Info Risk and Controls Intern · Atlanta, GA</p>
+      <ul>
+        <li>
+          Analysis for the Global Risk and Controls team, including an
+          incident-ticket classification model (Doc2Vec + GMM) at 70% accuracy.
+        </li>
+        <li>
+          Processed large datasets in Python from Microsoft SQL Server
+          (<code>pyodbc</code>).
+        </li>
+        <li>
+          Built PowerApps for internal risk management and control validation.
+        </li>
+      </ul>
+
+      <h3>Georgia Tech School of Mathematics <span class="when">Fall 2021</span></h3>
+      <p class="role">Grader, Linear Algebra II · Atlanta, GA</p>
+      <ul>
+        <li>
+          Graded problem sets for over 70 students and wrote answer keys and
+          rubrics.
+        </li>
+      </ul>
+
+      <h2>Education</h2>
+
+      <h3>Georgia Institute of Technology <span class="when">Dec 2022</span></h3>
+      <p class="role">
+        B.S., Mathematics and Computer Science · Atlanta, GA · GPA 3.6/4.0 ·
+        Highest Honors
+      </p>
+      <ul>
+        <li>Concentration in Machine Learning and Enterprise Computing.</li>
+        <li>Zell Miller Scholarship, 2018–2022.</li>
+        <li>
+          Math: Real Algebraic Geometry &amp; Optimization, Algebraic Topology,
+          Statistical Theory, Probability Theory, Real Analysis, Complex
+          Analysis, Abstract Algebra.
+        </li>
+        <li>
+          CS: Database System Implementations, Deep Learning, Machine Learning,
+          Honors Algorithms, Intro to AI, Computer Systems &amp; Networks.
+        </li>
+      </ul>
+
+      <h2>Projects</h2>
+
+      <h3>Paper-trading infrastructure</h3>
+      <p>
+        Systematic trading against Interactive Brokers, paper account only.
+        Connectivity (<code>ib_async</code>), Polars bar cache, kill switch
+        (1% daily loss cap, 5% equity-path position cap), Telegram alerts,
+        Docker + systemd, and a read-only dashboard. Futures side: EWMA
+        volatility, DuckDB per-contract store, vectorized weight-space
+        backtest on a 12-instrument CME-group universe. Not live trading.
+      </p>
+
+      <h3>BTS fare intelligence</h3>
+      <p>
+        Independent Polars pipelines over public DOT DB1B (10% ticket sample)
+        and T-100 traffic data. Intended product (route-pricing model, Amadeus
+        polling, alerts) is pre-MVP; what exists is exploratory ingest and
+        cleaning, not a shipped consumer tool.
+      </p>
+
+      <h3>Lean 4</h3>
+      <p>
+        Practice proofs (tactics actually used: <code>calc</code>,
+        <code>rw</code>, <code>simp</code>, <code>ring</code>,
+        <code>linarith</code>, <code>induction</code>) and an in-progress
+        chi-squared formalization as a gamma with shape <i>p</i>/2. No Mathlib
+        PR.
+      </p>
+
+      <h2>Writing</h2>
+      <ul>
+        <li>
+          <a href="/blog/math_t_statistic.html">The t-statistic is t-distributed</a>
+          (2026). Proof that the OLS coefficient t-statistic follows Student-t
+          with <i>n</i>−<i>p</i> degrees of freedom under Gaussian errors.
+          Not peer-reviewed.
+        </li>
+        <li>
+          <a href="https://daily.nathanstefanik.xyz">daily.nathanstefanik.xyz</a>
+          — daily quant-interview and ML/stats problems, generated in batches
+          and published statically.
+        </li>
+        <li>
+          Course and DRP notes (see <a href="/projects/">Projects</a>):
+          <a href="/projects/conway_knot/main.html">The Conway Knot is not slice</a>,
+          <a href="/projects/algebraic_cycles/main.html">algebraic cycles</a>,
+          <a href="/projects/abelian-varieties/main.html">abelian varieties</a>,
+          <a href="/projects/intro-characteristic-classes/main.html">characteristic classes</a>,
+          <a href="/projects/tropical-polynomials/main.html">tropical polynomials</a>,
+          <a href="/projects/playlist_dancibility/playlist_dancibility.html">playlist danceability</a>,
+          <a href="/projects/julia_mnist.html">Fashion-MNIST in Julia/Flux</a>.
+        </li>
+      </ul>
+
+      <h2>Skills</h2>
+      <ul>
+        <li>
+          <strong>Languages and data:</strong> Python, SQL, Snowflake, Polars,
+          DuckDB, R.
+        </li>
+        <li>
+          <strong>Statistics and models:</strong> GLMM (<code>glmmTMB</code>),
+          statistical prediction intervals, experiment comparison (coverage,
+          bandwidth, in-band rate).
+        </li>
+        <li>
+          <strong>Platform:</strong> Databricks, MLflow, Tableau, Docker.
+        </li>
+        <li>
+          <strong>Domain:</strong> airline revenue management, continuous
+          pricing, demand forecasting.
+        </li>
+      </ul>
+    </article>
   </body>
 </html>
